@@ -1,0 +1,1470 @@
+account_id,city_norm,street_norm,building_norm,unit_norm,postcode_norm,family_token_norm,observed_orders,exact_address_key
+ACC-000001,north city,cedar street 1,1,1,pc10001,fam 00001,5,north city|cedar street 1|1|1|pc10001
+ACC-000002,north city,cedar street 1,1,1,pc10001,fam 00001,5,north city|cedar street 1|1|1|pc10001
+ACC-000003,north city,cedar street 1,1,2,pc10001,fam 00002,4,north city|cedar street 1|1|2|pc10001
+ACC-000004,north city,cedr street 1,1,2,,fam 00002,2,north city|cedr street 1|1|2|
+ACC-000005,north city,cedar street 1,1,3,pc10001,fam x 000005,4,north city|cedar street 1|1|3|pc10001
+ACC-000006,north city,cedar street 1,1,4,pc10001,fam 00004,2,north city|cedar street 1|1|4|pc10001
+ACC-000007,north city,cedar s 1,1,4,pc10001,fam 00004,3,north city|cedar s 1|1|4|pc10001
+ACC-000008,north city,cdar street 1,1,,,fam 00004,5,north city|cdar street 1|1||
+ACC-000009,north city,edar street 1,1,4,,fam 00004,4,north city|edar street 1|1|4|
+ACC-000010,central city,maple street 1,2,1,pc20002,fam x 000010,3,central city|maple street 1|2|1|pc20002
+ACC-000011,central city,maple street 1,2,2,pc20002,fam x 000011,2,central city|maple street 1|2|2|pc20002
+ACC-000012,central city,maple street 1,2,3,pc20002,fam x 000012,2,central city|maple street 1|2|3|pc20002
+ACC-000013,central city,maple street 1,2,4,pc20002,fam x 000013,5,central city|maple street 1|2|4|pc20002
+ACC-000014,south city,willow street 1,3,1,pc30003,fam x 000014,2,south city|willow street 1|3|1|pc30003
+ACC-000015,south city,willow street 1,3,2,pc30003,fam 00010,2,south city|willow street 1|3|2|pc30003
+ACC-000016,south city,willow street 1,3,2,pc30003,fam 00010,2,south city|willow street 1|3|2|pc30003
+ACC-000017,south city,willow street 1,3,3,pc30003,fam x 000017,4,south city|willow street 1|3|3|pc30003
+ACC-000018,south city,willow street 1,3,4,pc30003,fam x 000018,4,south city|willow street 1|3|4|pc30003
+ACC-000019,north city,oak street 1,4,1,pc10004,fam 00013,3,north city|oak street 1|4|1|pc10004
+ACC-000020,north city,oak street 1,4,1,pc10004,fam x 000020,2,north city|oak street 1|4|1|pc10004
+ACC-000021,north city,oa street 1,4,1,pc10004,fam 00013,3,north city|oa street 1|4|1|pc10004
+ACC-000022,north city,oak s 1,4,2,,fam 00013,5,north city|oak s 1|4|2|
+ACC-000023,north city,oak street 1,4,2,pc10004,fam x 000023,2,north city|oak street 1|4|2|pc10004
+ACC-000024,north city,oak street 1,4,3,pc10004,fam 00015,5,north city|oak street 1|4|3|pc10004
+ACC-000025,north city,oak street 1,4,3,pc10004,fam 00015,2,north city|oak street 1|4|3|pc10004
+ACC-000026,north city,oak street 1,4,4,pc10004,fam x 000026,5,north city|oak street 1|4|4|pc10004
+ACC-000027,central city,pine street 1,5,1,pc20005,fam x 000027,4,central city|pine street 1|5|1|pc20005
+ACC-000028,central city,pine street 1,5,2,pc20005,fam x 000028,2,central city|pine street 1|5|2|pc20005
+ACC-000029,central city,pine street 1,5,3,pc20005,fam x 000029,5,central city|pine street 1|5|3|pc20005
+ACC-000030,central city,pine street 1,5,4,pc20005,fam x 000030,5,central city|pine street 1|5|4|pc20005
+ACC-000031,south city,elm street 1,6,1,pc30006,fam x 000031,2,south city|elm street 1|6|1|pc30006
+ACC-000032,south city,el street 1,6,,pc30006,fam x 000032,4,south city|el street 1|6||pc30006
+ACC-000033,south city,elm s 1,6,3,,fam x 000033,4,south city|elm s 1|6|3|
+ACC-000034,south city,elm street 1,6,3,pc30006,fam x 000034,4,south city|elm street 1|6|3|pc30006
+ACC-000035,south city,elm street 1,6,3,pc30006,fam x 000035,4,south city|elm street 1|6|3|pc30006
+ACC-000036,south city,elm street 1,6,3,pc30006,fam x 000036,2,south city|elm street 1|6|3|pc30006
+ACC-000037,south city,elm street 1,6,3,pc30006,fam x 000037,3,south city|elm street 1|6|3|pc30006
+ACC-000038,south city,elm street 1,6,3,pc30006,fam x 000038,3,south city|elm street 1|6|3|pc30006
+ACC-000039,south city,elm s 1,6,4,,fam x 000039,3,south city|elm s 1|6|4|
+ACC-000040,north city,cedar street 2,7,1,pc10007,fam x 000040,5,north city|cedar street 2|7|1|pc10007
+ACC-000041,north city,cedar street 2,7,1,pc10007,fam x 000041,4,north city|cedar street 2|7|1|pc10007
+ACC-000042,north city,cedar street 2,7,2,pc10007,fam x 000042,4,north city|cedar street 2|7|2|pc10007
+ACC-000043,north city,edar street 2,7,3,,fam 00027,5,north city|edar street 2|7|3|
+ACC-000044,north city,cedar street 2,7,3,pc10007,fam 00027,4,north city|cedar street 2|7|3|pc10007
+ACC-000045,north city,cedar street 2,7,3,pc10007,fam 00027,4,north city|cedar street 2|7|3|pc10007
+ACC-000046,north city,cdar street 2,7,3,pc10007,fam 00027,4,north city|cdar street 2|7|3|pc10007
+ACC-000047,north city,cedar street 2,7,4,pc10007,fam 00028,4,north city|cedar street 2|7|4|pc10007
+ACC-000048,north city,cedar street 2,7,4,pc10007,fam 00028,5,north city|cedar street 2|7|4|pc10007
+ACC-000049,central city,maple street 2,8,1,pc20008,fam 00029,2,central city|maple street 2|8|1|pc20008
+ACC-000050,central city,mapl street 2,8,1,,fam x 000050,3,central city|mapl street 2|8|1|
+ACC-000051,central city,maple street 2,8,1,pc20008,fam x 000051,5,central city|maple street 2|8|1|pc20008
+ACC-000052,central city,maple street 2,8,1,pc20008,fam 00029,4,central city|maple street 2|8|1|pc20008
+ACC-000053,central city,maple street 2,8,2,pc20008,fam x 000053,3,central city|maple street 2|8|2|pc20008
+ACC-000054,central city,maple street 2,8,3,pc20008,fam x 000054,3,central city|maple street 2|8|3|pc20008
+ACC-000055,central city,maple street 2,8,3,pc20008,fam x 000055,5,central city|maple street 2|8|3|pc20008
+ACC-000056,central city,maple street 2,8,3,pc20008,fam x 000056,2,central city|maple street 2|8|3|pc20008
+ACC-000057,central city,aple street 2,8,,,fam x 000057,3,central city|aple street 2|8||
+ACC-000058,central city,maple s 2,8,4,,fam x 000058,2,central city|maple s 2|8|4|
+ACC-000059,south city,willow street 2,9,1,pc30009,fam x 000059,3,south city|willow street 2|9|1|pc30009
+ACC-000060,south city,illow street 2,9,1,pc30009,fam x 000060,5,south city|illow street 2|9|1|pc30009
+ACC-000061,south city,willow street 2,9,2,pc30009,fam x 000061,2,south city|willow street 2|9|2|pc30009
+ACC-000062,south city,willow street 2,9,3,pc30009,fam x 000062,5,south city|willow street 2|9|3|pc30009
+ACC-000063,south city,willow street 2,9,3,pc30009,fam x 000063,4,south city|willow street 2|9|3|pc30009
+ACC-000064,south city,illow street 2,9,4,,fam 00036,5,south city|illow street 2|9|4|
+ACC-000065,south city,willow t 2,9,4,,fam x 000065,4,south city|willow t 2|9|4|
+ACC-000066,north city,oa street 2,10,,,fam 00037,4,north city|oa street 2|10||
+ACC-000067,north city,oak street 2,10,1,pc10010,fam 00037,4,north city|oak street 2|10|1|pc10010
+ACC-000068,north city,oak street 2,10,2,pc10010,fam x 000068,4,north city|oak street 2|10|2|pc10010
+ACC-000069,north city,oak street 2,10,3,pc10010,fam x 000069,3,north city|oak street 2|10|3|pc10010
+ACC-000070,north city,oak street 2,10,4,pc10010,fam x 000070,3,north city|oak street 2|10|4|pc10010
+ACC-000071,central city,pine street 2,11,1,pc20011,fam x 000071,2,central city|pine street 2|11|1|pc20011
+ACC-000072,central city,pine street 2,11,1,pc20011,fam x 000072,4,central city|pine street 2|11|1|pc20011
+ACC-000073,central city,pine s 2,11,2,,fam x 000073,4,central city|pine s 2|11|2|
+ACC-000074,central city,ine street 2,11,2,,fam x 000074,2,central city|ine street 2|11|2|
+ACC-000075,central city,pine street 2,11,3,pc20011,fam x 000075,4,central city|pine street 2|11|3|pc20011
+ACC-000076,central city,pne street 2,11,4,,fam 00044,2,central city|pne street 2|11|4|
+ACC-000077,central city,pine street 2,11,4,pc20011,fam x 000077,2,central city|pine street 2|11|4|pc20011
+ACC-000078,central city,pine street 2,11,4,pc20011,fam 00044,5,central city|pine street 2|11|4|pc20011
+ACC-000079,south city,elm street 2,12,1,pc30012,fam 00045,3,south city|elm street 2|12|1|pc30012
+ACC-000080,south city,elm s 2,12,1,pc30012,fam x 000080,4,south city|elm s 2|12|1|pc30012
+ACC-000081,south city,elm street 2,12,2,pc30012,fam x 000081,5,south city|elm street 2|12|2|pc30012
+ACC-000082,south city,elm street 2,12,3,pc30012,fam x 000082,2,south city|elm street 2|12|3|pc30012
+ACC-000083,south city,elm street 2,12,4,pc30012,fam x 000083,2,south city|elm street 2|12|4|pc30012
+ACC-000084,north city,cedar street 3,13,1,pc10013,fam 00049,5,north city|cedar street 3|13|1|pc10013
+ACC-000085,north city,cedar street 3,13,1,pc10013,fam 00049,4,north city|cedar street 3|13|1|pc10013
+ACC-000086,north city,cedr street 3,13,2,pc10013,fam x 000086,4,north city|cedr street 3|13|2|pc10013
+ACC-000087,north city,cedar street 3,13,3,pc10013,fam x 000087,5,north city|cedar street 3|13|3|pc10013
+ACC-000088,north city,cedar street 3,13,3,pc10013,fam x 000088,2,north city|cedar street 3|13|3|pc10013
+ACC-000089,north city,cedar street 3,13,4,pc10013,fam 00052,3,north city|cedar street 3|13|4|pc10013
+ACC-000090,north city,cedar street 3,13,4,pc10013,fam 00052,2,north city|cedar street 3|13|4|pc10013
+ACC-000091,central city,maple street 3,14,1,pc20014,fam x 000091,2,central city|maple street 3|14|1|pc20014
+ACC-000092,central city,maple street 3,14,2,pc20014,fam x 000092,5,central city|maple street 3|14|2|pc20014
+ACC-000093,central city,maple street 3,14,2,pc20014,fam x 000093,3,central city|maple street 3|14|2|pc20014
+ACC-000094,central city,mape street 3,14,,,fam x 000094,4,central city|mape street 3|14||
+ACC-000095,central city,mple street 3,14,2,pc20014,fam x 000095,3,central city|mple street 3|14|2|pc20014
+ACC-000096,central city,maple street 3,14,2,pc20014,fam x 000096,3,central city|maple street 3|14|2|pc20014
+ACC-000097,central city,maple street 3,14,2,pc20014,fam x 000097,5,central city|maple street 3|14|2|pc20014
+ACC-000098,central city,maple s 3,14,,,fam x 000098,4,central city|maple s 3|14||
+ACC-000099,central city,maple street 3,14,4,pc20014,fam x 000099,5,central city|maple street 3|14|4|pc20014
+ACC-000100,south city,willo street 3,15,1,pc30015,fam x 000100,3,south city|willo street 3|15|1|pc30015
+ACC-000101,south city,willow street 3,15,1,pc30015,fam x 000101,2,south city|willow street 3|15|1|pc30015
+ACC-000102,south city,willow street 3,15,1,pc30015,fam x 000102,2,south city|willow street 3|15|1|pc30015
+ACC-000103,south city,willow street 3,15,2,pc30015,fam x 000103,4,south city|willow street 3|15|2|pc30015
+ACC-000104,south city,wllow street 3,15,4,,fam 00059,2,south city|wllow street 3|15|4|
+ACC-000105,south city,willow street 3,15,3,pc30015,fam 00059,5,south city|willow street 3|15|3|pc30015
+ACC-000106,south city,willow t 3,15,4,,fam 00059,2,south city|willow t 3|15|4|
+ACC-000107,south city,willow street 3,15,4,pc30015,fam x 000107,5,south city|willow street 3|15|4|pc30015
+ACC-000108,south city,willow street 3,15,4,pc30015,fam 00060,3,south city|willow street 3|15|4|pc30015
+ACC-000109,south city,willow street 3,15,4,pc30015,fam 00060,3,south city|willow street 3|15|4|pc30015
+ACC-000110,north city,oak street 3,16,1,pc10016,fam x 000110,5,north city|oak street 3|16|1|pc10016
+ACC-000111,north city,oak street 3,16,1,pc10016,fam 00061,5,north city|oak street 3|16|1|pc10016
+ACC-000112,north city,oak street 3,16,1,pc10016,fam 00061,3,north city|oak street 3|16|1|pc10016
+ACC-000113,north city,oak street 3,16,2,pc10016,fam x 000113,5,north city|oak street 3|16|2|pc10016
+ACC-000114,north city,oak street 3,16,3,pc10016,fam x 000114,3,north city|oak street 3|16|3|pc10016
+ACC-000115,north city,oak s 3,16,4,,fam x 000115,3,north city|oak s 3|16|4|
+ACC-000116,north city,oak street 3,16,4,pc10016,fam 00064,5,north city|oak street 3|16|4|pc10016
+ACC-000117,north city,oak street 3,16,4,pc10016,fam 00064,5,north city|oak street 3|16|4|pc10016
+ACC-000118,north city,oak street 3,16,4,pc10016,fam 00064,4,north city|oak street 3|16|4|pc10016
+ACC-000119,north city,oak street 3,16,4,pc10016,fam 00064,4,north city|oak street 3|16|4|pc10016
+ACC-000120,central city,pine street 3,17,1,pc20017,fam x 000120,3,central city|pine street 3|17|1|pc20017
+ACC-000121,central city,pine street 3,17,2,pc20017,fam 00066,4,central city|pine street 3|17|2|pc20017
+ACC-000122,central city,pine street 3,17,2,pc20017,fam 00066,3,central city|pine street 3|17|2|pc20017
+ACC-000123,central city,pine street 3,17,3,pc20017,fam x 000123,4,central city|pine street 3|17|3|pc20017
+ACC-000124,central city,pine street 3,17,4,pc20017,fam x 000124,4,central city|pine street 3|17|4|pc20017
+ACC-000125,central city,pine street 3,17,4,pc20017,fam x 000125,5,central city|pine street 3|17|4|pc20017
+ACC-000126,south city,elm street 3,18,1,pc30018,fam 00069,2,south city|elm street 3|18|1|pc30018
+ACC-000127,south city,elm street 3,18,1,pc30018,fam x 000127,4,south city|elm street 3|18|1|pc30018
+ACC-000128,south city,elm t 3,18,2,,fam x 000128,2,south city|elm t 3|18|2|
+ACC-000129,south city,elm street 3,18,2,pc30018,fam 00070,5,south city|elm street 3|18|2|pc30018
+ACC-000130,south city,elm street 3,18,2,pc30018,fam 00070,3,south city|elm street 3|18|2|pc30018
+ACC-000131,south city,elm street 3,18,3,pc30018,fam x 000131,3,south city|elm street 3|18|3|pc30018
+ACC-000132,south city,elm t 3,18,4,,fam 00072,4,south city|elm t 3|18|4|
+ACC-000133,south city,el street 3,18,,,fam x 000133,4,south city|el street 3|18||
+ACC-000134,south city,elm s 3,18,4,,fam 00072,4,south city|elm s 3|18|4|
+ACC-000135,north city,cedar street 4,19,1,pc10019,fam x 000135,3,north city|cedar street 4|19|1|pc10019
+ACC-000136,north city,cdar street 4,19,2,,fam x 000136,2,north city|cdar street 4|19|2|
+ACC-000137,north city,cedar street 4,19,2,pc10019,fam x 000137,3,north city|cedar street 4|19|2|pc10019
+ACC-000138,north city,cedar street 4,19,2,pc10019,fam x 000138,5,north city|cedar street 4|19|2|pc10019
+ACC-000139,north city,cedar street 4,19,3,pc10019,fam x 000139,5,north city|cedar street 4|19|3|pc10019
+ACC-000140,north city,cdar street 4,19,,,fam x 000140,5,north city|cdar street 4|19||
+ACC-000141,north city,cedar street 4,19,4,pc10019,fam x 000141,3,north city|cedar street 4|19|4|pc10019
+ACC-000142,north city,cedar street 4,19,4,pc10019,fam x 000142,4,north city|cedar street 4|19|4|pc10019
+ACC-000143,north city,edar street 4,19,4,pc10019,fam x 000143,4,north city|edar street 4|19|4|pc10019
+ACC-000144,central city,maple t 4,20,1,pc20020,fam x 000144,5,central city|maple t 4|20|1|pc20020
+ACC-000145,central city,maple street 4,20,2,pc20020,fam 00078,4,central city|maple street 4|20|2|pc20020
+ACC-000146,central city,maple street 4,20,2,pc20020,fam 00078,2,central city|maple street 4|20|2|pc20020
+ACC-000147,central city,maple street 4,20,3,pc20020,fam x 000147,2,central city|maple street 4|20|3|pc20020
+ACC-000148,central city,maple street 4,20,4,pc20020,fam x 000148,5,central city|maple street 4|20|4|pc20020
+ACC-000149,south city,willow street 4,21,1,pc30021,fam x 000149,3,south city|willow street 4|21|1|pc30021
+ACC-000150,south city,willow street 4,21,2,pc30021,fam x 000150,3,south city|willow street 4|21|2|pc30021
+ACC-000151,south city,willow street 4,21,3,pc30021,fam 00083,5,south city|willow street 4|21|3|pc30021
+ACC-000152,south city,willow s 4,21,3,pc30021,fam x 000152,4,south city|willow s 4|21|3|pc30021
+ACC-000153,south city,wilow street 4,21,4,,fam 00084,2,south city|wilow street 4|21|4|
+ACC-000154,south city,wllow street 4,21,4,pc30021,fam 00084,5,south city|wllow street 4|21|4|pc30021
+ACC-000155,north city,ok street 4,22,,,fam 00085,5,north city|ok street 4|22||
+ACC-000156,north city,oak street 4,22,1,pc10022,fam 00085,3,north city|oak street 4|22|1|pc10022
+ACC-000157,north city,oak s 4,22,2,,fam 00085,3,north city|oak s 4|22|2|
+ACC-000158,north city,oak street 4,22,2,pc10022,fam x 000158,3,north city|oak street 4|22|2|pc10022
+ACC-000159,north city,oak street 4,22,2,pc10022,fam x 000159,3,north city|oak street 4|22|2|pc10022
+ACC-000160,north city,oak street 4,22,2,pc10022,fam x 000160,3,north city|oak street 4|22|2|pc10022
+ACC-000161,north city,oak street 4,22,2,pc10022,fam x 000161,5,north city|oak street 4|22|2|pc10022
+ACC-000162,north city,oak street 4,22,3,pc10022,fam x 000162,5,north city|oak street 4|22|3|pc10022
+ACC-000163,north city,oak street 4,22,4,pc10022,fam x 000163,2,north city|oak street 4|22|4|pc10022
+ACC-000164,central city,pie street 4,23,1,pc20023,fam 00089,5,central city|pie street 4|23|1|pc20023
+ACC-000165,central city,pine street 4,23,1,pc20023,fam 00089,2,central city|pine street 4|23|1|pc20023
+ACC-000166,central city,pine street 4,23,2,pc20023,fam x 000166,4,central city|pine street 4|23|2|pc20023
+ACC-000167,central city,pine street 4,23,2,pc20023,fam x 000167,5,central city|pine street 4|23|2|pc20023
+ACC-000168,central city,pine street 4,23,2,pc20023,fam x 000168,3,central city|pine street 4|23|2|pc20023
+ACC-000169,central city,pine street 4,23,3,pc20023,fam x 000169,3,central city|pine street 4|23|3|pc20023
+ACC-000170,central city,pine street 4,23,4,pc20023,fam x 000170,4,central city|pine street 4|23|4|pc20023
+ACC-000171,south city,elm street 4,24,1,pc30024,fam x 000171,4,south city|elm street 4|24|1|pc30024
+ACC-000172,south city,elm s 4,24,,pc30024,fam x 000172,3,south city|elm s 4|24||pc30024
+ACC-000173,south city,elm street 4,24,2,pc30024,fam x 000173,5,south city|elm street 4|24|2|pc30024
+ACC-000174,south city,elm street 4,24,2,pc30024,fam x 000174,4,south city|elm street 4|24|2|pc30024
+ACC-000175,south city,elm street 4,24,3,pc30024,fam x 000175,2,south city|elm street 4|24|3|pc30024
+ACC-000176,south city,elm street 4,24,3,pc30024,fam x 000176,3,south city|elm street 4|24|3|pc30024
+ACC-000177,south city,elm street 4,24,4,pc30024,fam x 000177,2,south city|elm street 4|24|4|pc30024
+ACC-000178,north city,cedar street 5,25,1,pc10025,fam 00097,2,north city|cedar street 5|25|1|pc10025
+ACC-000179,north city,cedar street 5,25,1,pc10025,fam 00097,5,north city|cedar street 5|25|1|pc10025
+ACC-000180,north city,cedar street 5,25,2,pc10025,fam x 000180,2,north city|cedar street 5|25|2|pc10025
+ACC-000181,north city,cedar street 5,25,3,pc10025,fam x 000181,4,north city|cedar street 5|25|3|pc10025
+ACC-000182,north city,cedar street 5,25,4,pc10025,fam x 000182,4,north city|cedar street 5|25|4|pc10025
+ACC-000183,central city,maple street 5,26,1,pc20026,fam x 000183,4,central city|maple street 5|26|1|pc20026
+ACC-000184,central city,maple s 5,26,2,,fam 00102,4,central city|maple s 5|26|2|
+ACC-000185,central city,maple street 5,26,2,pc20026,fam x 000185,3,central city|maple street 5|26|2|pc20026
+ACC-000186,central city,maple street 5,26,3,pc20026,fam x 000186,5,central city|maple street 5|26|3|pc20026
+ACC-000187,central city,maple street 5,26,3,pc20026,fam x 000187,3,central city|maple street 5|26|3|pc20026
+ACC-000188,central city,maple street 5,26,3,pc20026,fam x 000188,4,central city|maple street 5|26|3|pc20026
+ACC-000189,central city,maple street 5,26,3,pc20026,fam x 000189,3,central city|maple street 5|26|3|pc20026
+ACC-000190,central city,male street 5,26,,,fam x 000190,2,central city|male street 5|26||
+ACC-000191,central city,mapl street 5,26,,,fam x 000191,5,central city|mapl street 5|26||
+ACC-000192,central city,maple street 5,26,4,pc20026,fam x 000192,2,central city|maple street 5|26|4|pc20026
+ACC-000193,south city,willow street 5,27,1,pc30027,fam x 000193,5,south city|willow street 5|27|1|pc30027
+ACC-000194,south city,wilow street 5,27,1,pc30027,fam x 000194,2,south city|wilow street 5|27|1|pc30027
+ACC-000195,south city,willow street 5,27,1,pc30027,fam x 000195,4,south city|willow street 5|27|1|pc30027
+ACC-000196,south city,willow street 5,27,1,pc30027,fam x 000196,4,south city|willow street 5|27|1|pc30027
+ACC-000197,south city,willow street 5,27,2,pc30027,fam x 000197,3,south city|willow street 5|27|2|pc30027
+ACC-000198,south city,willow street 5,27,2,pc30027,fam 00106,3,south city|willow street 5|27|2|pc30027
+ACC-000199,south city,wilow street 5,27,3,pc30027,fam x 000199,3,south city|wilow street 5|27|3|pc30027
+ACC-000200,south city,wilow street 5,27,,pc30027,fam x 000200,5,south city|wilow street 5|27||pc30027
+ACC-000201,south city,willow street 5,27,3,pc30027,fam x 000201,4,south city|willow street 5|27|3|pc30027
+ACC-000202,south city,willow street 5,27,4,pc30027,fam x 000202,3,south city|willow street 5|27|4|pc30027
+ACC-000203,south city,wllow street 5,27,4,,fam 00108,2,south city|wllow street 5|27|4|
+ACC-000204,south city,willow street 5,27,4,pc30027,fam 00108,3,south city|willow street 5|27|4|pc30027
+ACC-000205,north city,oak street 5,28,1,pc10028,fam 00109,4,north city|oak street 5|28|1|pc10028
+ACC-000206,north city,oak street 5,28,1,pc10028,fam 00109,3,north city|oak street 5|28|1|pc10028
+ACC-000207,north city,oak t 5,28,1,,fam 00109,5,north city|oak t 5|28|1|
+ACC-000208,north city,oak s 5,28,3,,fam x 000208,3,north city|oak s 5|28|3|
+ACC-000209,north city,oak street 5,28,2,pc10028,fam x 000209,2,north city|oak street 5|28|2|pc10028
+ACC-000210,north city,oa street 5,28,2,,fam x 000210,4,north city|oa street 5|28|2|
+ACC-000211,north city,oak street 5,28,2,pc10028,fam x 000211,3,north city|oak street 5|28|2|pc10028
+ACC-000212,north city,oak t 5,28,2,,fam x 000212,5,north city|oak t 5|28|2|
+ACC-000213,north city,oak street 5,28,2,pc10028,fam x 000213,4,north city|oak street 5|28|2|pc10028
+ACC-000214,north city,ak street 5,28,3,,fam x 000214,5,north city|ak street 5|28|3|
+ACC-000215,north city,oak street 5,28,4,pc10028,fam 00112,3,north city|oak street 5|28|4|pc10028
+ACC-000216,north city,oak street 5,28,4,pc10028,fam 00112,3,north city|oak street 5|28|4|pc10028
+ACC-000217,north city,oak street 5,28,4,pc10028,fam 00112,4,north city|oak street 5|28|4|pc10028
+ACC-000218,north city,oak street 5,28,4,pc10028,fam 00112,3,north city|oak street 5|28|4|pc10028
+ACC-000219,central city,pin street 5,29,1,,fam x 000219,5,central city|pin street 5|29|1|
+ACC-000220,central city,ine street 5,29,2,,fam x 000220,5,central city|ine street 5|29|2|
+ACC-000221,central city,pie street 5,29,3,pc20029,fam x 000221,5,central city|pie street 5|29|3|pc20029
+ACC-000222,central city,pine street 5,29,4,pc20029,fam x 000222,5,central city|pine street 5|29|4|pc20029
+ACC-000223,central city,pine street 5,29,4,pc20029,fam x 000223,2,central city|pine street 5|29|4|pc20029
+ACC-000224,south city,elm street 5,30,1,pc30030,fam 00117,2,south city|elm street 5|30|1|pc30030
+ACC-000225,south city,elm street 5,30,1,pc30030,fam x 000225,5,south city|elm street 5|30|1|pc30030
+ACC-000226,south city,elm street 5,30,1,pc30030,fam 00117,3,south city|elm street 5|30|1|pc30030
+ACC-000227,south city,elm street 5,30,1,pc30030,fam 00117,5,south city|elm street 5|30|1|pc30030
+ACC-000228,south city,elm street 5,30,2,pc30030,fam x 000228,5,south city|elm street 5|30|2|pc30030
+ACC-000229,south city,lm street 5,30,3,pc30030,fam 00119,4,south city|lm street 5|30|3|pc30030
+ACC-000230,south city,elm s 5,30,3,,fam 00119,2,south city|elm s 5|30|3|
+ACC-000231,south city,elm street 5,30,3,pc30030,fam 00119,2,south city|elm street 5|30|3|pc30030
+ACC-000232,south city,el street 5,30,5,pc30030,fam 00120,5,south city|el street 5|30|5|pc30030
+ACC-000233,south city,elm street 5,30,4,pc30030,fam 00120,2,south city|elm street 5|30|4|pc30030
+ACC-000234,north city,cedar s 6,31,2,,fam x 000234,5,north city|cedar s 6|31|2|
+ACC-000235,north city,cdar street 6,31,1,pc10031,fam x 000235,4,north city|cdar street 6|31|1|pc10031
+ACC-000236,north city,cedar street 6,31,1,pc10031,fam x 000236,2,north city|cedar street 6|31|1|pc10031
+ACC-000237,north city,edar street 6,31,1,,fam x 000237,4,north city|edar street 6|31|1|
+ACC-000238,north city,cedar street 6,31,1,pc10031,fam x 000238,2,north city|cedar street 6|31|1|pc10031
+ACC-000239,north city,cedar street 6,31,1,pc10031,fam x 000239,4,north city|cedar street 6|31|1|pc10031
+ACC-000240,north city,cedar street 6,31,2,pc10031,fam 00122,3,north city|cedar street 6|31|2|pc10031
+ACC-000241,north city,cedar street 6,31,2,pc10031,fam 00122,2,north city|cedar street 6|31|2|pc10031
+ACC-000242,north city,cdar street 6,31,3,pc10031,fam x 000242,2,north city|cdar street 6|31|3|pc10031
+ACC-000243,north city,cedar street 6,31,3,pc10031,fam 00123,3,north city|cedar street 6|31|3|pc10031
+ACC-000244,north city,ceda street 6,31,3,pc10031,fam 00123,2,north city|ceda street 6|31|3|pc10031
+ACC-000245,north city,cedar street 6,31,3,pc10031,fam x 000245,5,north city|cedar street 6|31|3|pc10031
+ACC-000246,north city,cedar street 6,31,4,pc10031,fam x 000246,5,north city|cedar street 6|31|4|pc10031
+ACC-000247,north city,cedar street 6,31,4,pc10031,fam x 000247,3,north city|cedar street 6|31|4|pc10031
+ACC-000248,north city,cedar street 6,31,4,pc10031,fam x 000248,2,north city|cedar street 6|31|4|pc10031
+ACC-000249,central city,maple s 6,32,1,pc20032,fam x 000249,4,central city|maple s 6|32|1|pc20032
+ACC-000250,central city,maple street 6,32,1,pc20032,fam x 000250,4,central city|maple street 6|32|1|pc20032
+ACC-000251,central city,maple street 6,32,1,pc20032,fam x 000251,5,central city|maple street 6|32|1|pc20032
+ACC-000252,central city,maple street 6,32,2,pc20032,fam x 000252,2,central city|maple street 6|32|2|pc20032
+ACC-000253,central city,aple street 6,32,3,,fam 00127,5,central city|aple street 6|32|3|
+ACC-000254,central city,maple street 6,32,3,pc20032,fam x 000254,5,central city|maple street 6|32|3|pc20032
+ACC-000255,central city,maple street 6,32,3,pc20032,fam 00127,2,central city|maple street 6|32|3|pc20032
+ACC-000256,central city,maple street 6,32,4,pc20032,fam 00128,4,central city|maple street 6|32|4|pc20032
+ACC-000257,central city,aple street 6,32,4,,fam 00128,3,central city|aple street 6|32|4|
+ACC-000258,central city,maple street 6,32,4,pc20032,fam 00128,5,central city|maple street 6|32|4|pc20032
+ACC-000259,central city,maple street 6,32,4,pc20032,fam 00128,3,central city|maple street 6|32|4|pc20032
+ACC-000260,south city,wllow street 6,33,2,,fam 00129,4,south city|wllow street 6|33|2|
+ACC-000261,south city,wilow street 6,33,1,,fam 00129,5,south city|wilow street 6|33|1|
+ACC-000262,south city,willow street 6,33,1,pc30033,fam 00129,4,south city|willow street 6|33|1|pc30033
+ACC-000263,south city,willow s 6,33,2,pc30033,fam 00130,3,south city|willow s 6|33|2|pc30033
+ACC-000264,south city,willow street 6,33,2,pc30033,fam 00130,3,south city|willow street 6|33|2|pc30033
+ACC-000265,south city,willow street 6,33,3,pc30033,fam x 000265,4,south city|willow street 6|33|3|pc30033
+ACC-000266,south city,willow street 6,33,3,pc30033,fam x 000266,4,south city|willow street 6|33|3|pc30033
+ACC-000267,south city,willow street 6,33,3,pc30033,fam x 000267,3,south city|willow street 6|33|3|pc30033
+ACC-000268,south city,willow street 6,33,3,pc30033,fam x 000268,2,south city|willow street 6|33|3|pc30033
+ACC-000269,south city,willow street 6,33,3,pc30033,fam x 000269,5,south city|willow street 6|33|3|pc30033
+ACC-000270,south city,willow street 6,33,3,pc30033,fam x 000270,2,south city|willow street 6|33|3|pc30033
+ACC-000271,south city,willow street 6,33,4,pc30033,fam x 000271,2,south city|willow street 6|33|4|pc30033
+ACC-000272,south city,willow street 6,33,4,pc30033,fam x 000272,2,south city|willow street 6|33|4|pc30033
+ACC-000273,north city,oak street 6,34,1,pc10034,fam x 000273,2,north city|oak street 6|34|1|pc10034
+ACC-000274,north city,oak street 6,34,2,pc10034,fam x 000274,2,north city|oak street 6|34|2|pc10034
+ACC-000275,north city,ak street 6,34,2,,fam x 000275,5,north city|ak street 6|34|2|
+ACC-000276,north city,oak street 6,34,3,pc10034,fam x 000276,3,north city|oak street 6|34|3|pc10034
+ACC-000277,north city,oak street 6,34,4,pc10034,fam 00136,2,north city|oak street 6|34|4|pc10034
+ACC-000278,north city,oak street 6,34,4,pc10034,fam 00136,5,north city|oak street 6|34|4|pc10034
+ACC-000279,north city,oak street 6,34,4,pc10034,fam 00136,2,north city|oak street 6|34|4|pc10034
+ACC-000280,central city,pine s 6,35,1,,fam x 000280,5,central city|pine s 6|35|1|
+ACC-000281,central city,pine street 6,35,1,pc20035,fam x 000281,3,central city|pine street 6|35|1|pc20035
+ACC-000282,central city,pine street 6,35,2,pc20035,fam x 000282,4,central city|pine street 6|35|2|pc20035
+ACC-000283,central city,pine s 6,35,2,pc20035,fam x 000283,2,central city|pine s 6|35|2|pc20035
+ACC-000284,central city,pine street 6,35,3,pc20035,fam x 000284,3,central city|pine street 6|35|3|pc20035
+ACC-000285,central city,pine street 6,35,4,pc20035,fam 00140,3,central city|pine street 6|35|4|pc20035
+ACC-000286,central city,pine street 6,35,4,pc20035,fam x 000286,5,central city|pine street 6|35|4|pc20035
+ACC-000287,south city,lm street 6,36,,pc30036,fam 00141,3,south city|lm street 6|36||pc30036
+ACC-000288,south city,lm street 6,36,2,,fam 00141,3,south city|lm street 6|36|2|
+ACC-000289,south city,elm street 6,36,1,pc30036,fam x 000289,5,south city|elm street 6|36|1|pc30036
+ACC-000290,south city,elm street 6,36,2,pc30036,fam x 000290,4,south city|elm street 6|36|2|pc30036
+ACC-000291,south city,lm street 6,36,,pc30036,fam x 000291,3,south city|lm street 6|36||pc30036
+ACC-000292,south city,elm street 6,36,2,pc30036,fam x 000292,2,south city|elm street 6|36|2|pc30036
+ACC-000293,south city,elm street 6,36,2,pc30036,fam x 000293,4,south city|elm street 6|36|2|pc30036
+ACC-000294,south city,elm t 6,36,2,,fam x 000294,2,south city|elm t 6|36|2|
+ACC-000295,south city,elm street 6,36,2,pc30036,fam x 000295,2,south city|elm street 6|36|2|pc30036
+ACC-000296,south city,elm street 6,36,3,pc30036,fam x 000296,2,south city|elm street 6|36|3|pc30036
+ACC-000297,south city,lm street 6,36,4,pc30036,fam 00144,4,south city|lm street 6|36|4|pc30036
+ACC-000298,south city,lm street 6,36,4,,fam x 000298,4,south city|lm street 6|36|4|
+ACC-000299,north city,cedar street 7,37,1,pc10037,fam x 000299,2,north city|cedar street 7|37|1|pc10037
+ACC-000300,north city,edar street 7,37,1,,fam x 000300,2,north city|edar street 7|37|1|
+ACC-000301,north city,cedar street 7,37,2,pc10037,fam x 000301,4,north city|cedar street 7|37|2|pc10037
+ACC-000302,north city,cedar street 7,37,3,pc10037,fam x 000302,5,north city|cedar street 7|37|3|pc10037
+ACC-000303,north city,cedar t 7,37,3,,fam x 000303,3,north city|cedar t 7|37|3|
+ACC-000304,north city,cedar street 7,37,3,pc10037,fam x 000304,4,north city|cedar street 7|37|3|pc10037
+ACC-000305,north city,cear street 7,37,3,,fam x 000305,5,north city|cear street 7|37|3|
+ACC-000306,north city,edar street 7,37,4,pc10037,fam x 000306,4,north city|edar street 7|37|4|pc10037
+ACC-000307,central city,mapl street 7,38,,pc20038,fam 00149,3,central city|mapl street 7|38||pc20038
+ACC-000308,central city,male street 7,38,1,,fam 00149,2,central city|male street 7|38|1|
+ACC-000309,central city,maple street 7,38,2,pc20038,fam x 000309,4,central city|maple street 7|38|2|pc20038
+ACC-000310,central city,maple street 7,38,2,pc20038,fam x 000310,4,central city|maple street 7|38|2|pc20038
+ACC-000311,central city,maple street 7,38,3,pc20038,fam x 000311,3,central city|maple street 7|38|3|pc20038
+ACC-000312,central city,maple street 7,38,3,pc20038,fam x 000312,4,central city|maple street 7|38|3|pc20038
+ACC-000313,central city,maple street 7,38,3,pc20038,fam 00151,3,central city|maple street 7|38|3|pc20038
+ACC-000314,central city,maple street 7,38,3,pc20038,fam 00151,3,central city|maple street 7|38|3|pc20038
+ACC-000315,central city,maple street 7,38,4,pc20038,fam x 000315,2,central city|maple street 7|38|4|pc20038
+ACC-000316,central city,maple street 7,38,4,pc20038,fam x 000316,3,central city|maple street 7|38|4|pc20038
+ACC-000317,south city,willow street 7,39,1,pc30039,fam 00153,5,south city|willow street 7|39|1|pc30039
+ACC-000318,south city,willow street 7,39,1,pc30039,fam 00153,5,south city|willow street 7|39|1|pc30039
+ACC-000319,south city,willow street 7,39,1,pc30039,fam x 000319,2,south city|willow street 7|39|1|pc30039
+ACC-000320,south city,illow street 7,39,2,,fam x 000320,5,south city|illow street 7|39|2|
+ACC-000321,south city,willow street 7,39,3,pc30039,fam 00155,4,south city|willow street 7|39|3|pc30039
+ACC-000322,south city,willow street 7,39,3,pc30039,fam 00155,5,south city|willow street 7|39|3|pc30039
+ACC-000323,south city,willow street 7,39,3,pc30039,fam x 000323,5,south city|willow street 7|39|3|pc30039
+ACC-000324,south city,willow street 7,39,4,pc30039,fam x 000324,4,south city|willow street 7|39|4|pc30039
+ACC-000325,north city,oak street 7,40,1,pc10040,fam x 000325,4,north city|oak street 7|40|1|pc10040
+ACC-000326,north city,oak street 7,40,2,pc10040,fam 00158,4,north city|oak street 7|40|2|pc10040
+ACC-000327,north city,oak street 7,40,2,pc10040,fam 00158,3,north city|oak street 7|40|2|pc10040
+ACC-000328,north city,oa street 7,40,3,pc10040,fam 00159,4,north city|oa street 7|40|3|pc10040
+ACC-000329,north city,oak street 7,40,3,pc10040,fam 00159,5,north city|oak street 7|40|3|pc10040
+ACC-000330,north city,oak street 7,40,3,pc10040,fam 00159,2,north city|oak street 7|40|3|pc10040
+ACC-000331,north city,oa street 7,40,4,,fam 00160,2,north city|oa street 7|40|4|
+ACC-000332,north city,oak street 7,40,4,pc10040,fam 00160,4,north city|oak street 7|40|4|pc10040
+ACC-000333,central city,pin street 7,41,,,fam x 000333,2,central city|pin street 7|41||
+ACC-000334,central city,pine street 7,41,2,pc20041,fam x 000334,4,central city|pine street 7|41|2|pc20041
+ACC-000335,central city,pine t 7,41,3,,fam x 000335,2,central city|pine t 7|41|3|
+ACC-000336,central city,pine street 7,41,3,pc20041,fam x 000336,4,central city|pine street 7|41|3|pc20041
+ACC-000337,central city,pine s 7,41,4,,fam 00164,4,central city|pine s 7|41|4|
+ACC-000338,central city,pie street 7,41,4,pc20041,fam 00164,5,central city|pie street 7|41|4|pc20041
+ACC-000339,south city,elm street 7,42,1,pc30042,fam 00165,4,south city|elm street 7|42|1|pc30042
+ACC-000340,south city,elm street 7,42,1,pc30042,fam 00165,3,south city|elm street 7|42|1|pc30042
+ACC-000341,south city,elm street 7,42,2,pc30042,fam x 000341,3,south city|elm street 7|42|2|pc30042
+ACC-000342,south city,elm street 7,42,3,pc30042,fam x 000342,2,south city|elm street 7|42|3|pc30042
+ACC-000343,south city,elm street 7,42,4,pc30042,fam x 000343,2,south city|elm street 7|42|4|pc30042
+ACC-000344,north city,ceda street 8,43,,,fam x 000344,2,north city|ceda street 8|43||
+ACC-000345,north city,cedr street 8,43,2,,fam x 000345,4,north city|cedr street 8|43|2|
+ACC-000346,north city,cedar street 8,43,3,pc10043,fam x 000346,4,north city|cedar street 8|43|3|pc10043
+ACC-000347,north city,cedar street 8,43,4,pc10043,fam x 000347,4,north city|cedar street 8|43|4|pc10043
+ACC-000348,north city,cedar street 8,43,4,pc10043,fam x 000348,3,north city|cedar street 8|43|4|pc10043
+ACC-000349,central city,maple street 8,44,1,pc20044,fam 00173,3,central city|maple street 8|44|1|pc20044
+ACC-000350,central city,maple t 8,44,1,,fam 00173,4,central city|maple t 8|44|1|
+ACC-000351,central city,maple street 8,44,1,pc20044,fam 00173,2,central city|maple street 8|44|1|pc20044
+ACC-000352,central city,mape street 8,44,2,pc20044,fam x 000352,2,central city|mape street 8|44|2|pc20044
+ACC-000353,central city,maple street 8,44,3,pc20044,fam x 000353,5,central city|maple street 8|44|3|pc20044
+ACC-000354,central city,maple t 8,44,3,pc20044,fam x 000354,2,central city|maple t 8|44|3|pc20044
+ACC-000355,central city,maple street 8,44,3,pc20044,fam x 000355,3,central city|maple street 8|44|3|pc20044
+ACC-000356,central city,maple street 8,44,3,pc20044,fam x 000356,4,central city|maple street 8|44|3|pc20044
+ACC-000357,central city,maple street 8,44,4,pc20044,fam 00176,4,central city|maple street 8|44|4|pc20044
+ACC-000358,central city,maple street 8,44,4,pc20044,fam 00176,3,central city|maple street 8|44|4|pc20044
+ACC-000359,central city,aple street 8,44,4,pc20044,fam 00176,2,central city|aple street 8|44|4|pc20044
+ACC-000360,south city,willow street 8,45,1,pc30045,fam x 000360,3,south city|willow street 8|45|1|pc30045
+ACC-000361,south city,willow street 8,45,2,pc30045,fam x 000361,3,south city|willow street 8|45|2|pc30045
+ACC-000362,south city,willow street 8,45,2,pc30045,fam x 000362,3,south city|willow street 8|45|2|pc30045
+ACC-000363,south city,willow street 8,45,3,pc30045,fam x 000363,4,south city|willow street 8|45|3|pc30045
+ACC-000364,south city,wilow street 8,45,3,,fam x 000364,4,south city|wilow street 8|45|3|
+ACC-000365,south city,willow street 8,45,3,pc30045,fam 00179,2,south city|willow street 8|45|3|pc30045
+ACC-000366,south city,willow street 8,45,4,pc30045,fam x 000366,4,south city|willow street 8|45|4|pc30045
+ACC-000367,north city,oak street 8,46,1,pc10046,fam x 000367,3,north city|oak street 8|46|1|pc10046
+ACC-000368,north city,oak street 8,46,2,pc10046,fam x 000368,4,north city|oak street 8|46|2|pc10046
+ACC-000369,north city,oak s 8,46,3,,fam x 000369,4,north city|oak s 8|46|3|
+ACC-000370,north city,oak street 8,46,4,pc10046,fam x 000370,4,north city|oak street 8|46|4|pc10046
+ACC-000371,central city,pine street 8,47,1,pc20047,fam x 000371,5,central city|pine street 8|47|1|pc20047
+ACC-000372,central city,pine t 8,47,,,fam x 000372,5,central city|pine t 8|47||
+ACC-000373,central city,ine street 8,47,,pc20047,fam x 000373,3,central city|ine street 8|47||pc20047
+ACC-000374,central city,pine street 8,47,3,pc20047,fam x 000374,3,central city|pine street 8|47|3|pc20047
+ACC-000375,central city,ine street 8,47,4,,fam x 000375,2,central city|ine street 8|47|4|
+ACC-000376,central city,pie street 8,47,3,pc20047,fam x 000376,5,central city|pie street 8|47|3|pc20047
+ACC-000377,central city,pine street 8,47,3,pc20047,fam x 000377,2,central city|pine street 8|47|3|pc20047
+ACC-000378,central city,pine street 8,47,3,pc20047,fam x 000378,5,central city|pine street 8|47|3|pc20047
+ACC-000379,central city,pine street 8,47,3,pc20047,fam x 000379,2,central city|pine street 8|47|3|pc20047
+ACC-000380,central city,pine street 8,47,4,pc20047,fam x 000380,4,central city|pine street 8|47|4|pc20047
+ACC-000381,south city,elm street 8,48,1,pc30048,fam x 000381,4,south city|elm street 8|48|1|pc30048
+ACC-000382,south city,em street 8,48,2,pc30048,fam 00190,2,south city|em street 8|48|2|pc30048
+ACC-000383,south city,elm street 8,48,2,pc30048,fam 00190,5,south city|elm street 8|48|2|pc30048
+ACC-000384,south city,elm street 8,48,3,pc30048,fam x 000384,2,south city|elm street 8|48|3|pc30048
+ACC-000385,south city,elm t 8,48,4,,fam x 000385,2,south city|elm t 8|48|4|
+ACC-000386,south city,elm street 8,48,3,pc30048,fam x 000386,4,south city|elm street 8|48|3|pc30048
+ACC-000387,south city,elm street 8,48,4,pc30048,fam 00192,5,south city|elm street 8|48|4|pc30048
+ACC-000388,south city,elm street 8,48,4,pc30048,fam 00192,5,south city|elm street 8|48|4|pc30048
+ACC-000389,south city,elm street 8,48,4,pc30048,fam 00192,4,south city|elm street 8|48|4|pc30048
+ACC-000390,south city,elm t 8,48,4,,fam 00192,5,south city|elm t 8|48|4|
+ACC-000391,north city,cedar street 9,49,1,pc10049,fam x 000391,2,north city|cedar street 9|49|1|pc10049
+ACC-000392,north city,cedar street 9,49,1,pc10049,fam x 000392,5,north city|cedar street 9|49|1|pc10049
+ACC-000393,north city,cedar street 9,49,1,pc10049,fam x 000393,5,north city|cedar street 9|49|1|pc10049
+ACC-000394,north city,cedar street 9,49,2,pc10049,fam x 000394,2,north city|cedar street 9|49|2|pc10049
+ACC-000395,north city,cedar street 9,49,2,pc10049,fam x 000395,5,north city|cedar street 9|49|2|pc10049
+ACC-000396,north city,cedar street 9,49,2,pc10049,fam x 000396,3,north city|cedar street 9|49|2|pc10049
+ACC-000397,north city,cedar s 9,49,4,,fam x 000397,5,north city|cedar s 9|49|4|
+ACC-000398,north city,cedar street 9,49,4,pc10049,fam x 000398,3,north city|cedar street 9|49|4|pc10049
+ACC-000399,central city,male street 9,50,2,pc20050,fam 00197,3,central city|male street 9|50|2|pc20050
+ACC-000400,central city,maple street 9,50,1,pc20050,fam 00197,4,central city|maple street 9|50|1|pc20050
+ACC-000401,central city,mapl street 9,50,,,fam x 000401,3,central city|mapl street 9|50||
+ACC-000402,central city,maple street 9,50,3,pc20050,fam x 000402,4,central city|maple street 9|50|3|pc20050
+ACC-000403,central city,maple street 9,50,3,pc20050,fam x 000403,4,central city|maple street 9|50|3|pc20050
+ACC-000404,central city,maple street 9,50,4,pc20050,fam x 000404,2,central city|maple street 9|50|4|pc20050
+ACC-000405,south city,willow street 9,51,1,pc30051,fam x 000405,4,south city|willow street 9|51|1|pc30051
+ACC-000406,south city,willow street 9,51,1,pc30051,fam x 000406,5,south city|willow street 9|51|1|pc30051
+ACC-000407,south city,willow street 9,51,2,pc30051,fam 00202,4,south city|willow street 9|51|2|pc30051
+ACC-000408,south city,willow street 9,51,2,pc30051,fam 00202,5,south city|willow street 9|51|2|pc30051
+ACC-000409,south city,willow street 9,51,2,pc30051,fam 00202,4,south city|willow street 9|51|2|pc30051
+ACC-000410,south city,willow street 9,51,2,pc30051,fam x 000410,3,south city|willow street 9|51|2|pc30051
+ACC-000411,south city,willow street 9,51,3,pc30051,fam x 000411,3,south city|willow street 9|51|3|pc30051
+ACC-000412,south city,willow street 9,51,4,pc30051,fam x 000412,4,south city|willow street 9|51|4|pc30051
+ACC-000413,north city,oak street 9,52,1,pc10052,fam 00205,3,north city|oak street 9|52|1|pc10052
+ACC-000414,north city,oak street 9,52,1,pc10052,fam x 000414,3,north city|oak street 9|52|1|pc10052
+ACC-000415,north city,oak street 9,52,2,pc10052,fam 00206,5,north city|oak street 9|52|2|pc10052
+ACC-000416,north city,oak street 9,52,2,pc10052,fam 00206,2,north city|oak street 9|52|2|pc10052
+ACC-000417,north city,oak street 9,52,2,pc10052,fam 00206,5,north city|oak street 9|52|2|pc10052
+ACC-000418,north city,ak street 9,52,,,fam x 000418,4,north city|ak street 9|52||
+ACC-000419,north city,oak street 9,52,3,pc10052,fam x 000419,2,north city|oak street 9|52|3|pc10052
+ACC-000420,north city,oak street 9,52,3,pc10052,fam x 000420,3,north city|oak street 9|52|3|pc10052
+ACC-000421,north city,oak street 9,52,4,pc10052,fam x 000421,2,north city|oak street 9|52|4|pc10052
+ACC-000422,north city,oa street 9,52,4,,fam x 000422,4,north city|oa street 9|52|4|
+ACC-000423,north city,oak street 9,52,4,pc10052,fam x 000423,4,north city|oak street 9|52|4|pc10052
+ACC-000424,north city,oak t 9,52,4,,fam x 000424,2,north city|oak t 9|52|4|
+ACC-000425,central city,pine street 9,53,1,pc20053,fam x 000425,3,central city|pine street 9|53|1|pc20053
+ACC-000426,central city,pine street 9,53,2,pc20053,fam x 000426,4,central city|pine street 9|53|2|pc20053
+ACC-000427,central city,pine street 9,53,2,pc20053,fam x 000427,2,central city|pine street 9|53|2|pc20053
+ACC-000428,central city,pine street 9,53,2,pc20053,fam x 000428,2,central city|pine street 9|53|2|pc20053
+ACC-000429,central city,pine s 9,53,,,fam x 000429,2,central city|pine s 9|53||
+ACC-000430,central city,ine street 9,53,4,,fam x 000430,2,central city|ine street 9|53|4|
+ACC-000431,central city,pine t 9,53,,pc20053,fam x 000431,3,central city|pine t 9|53||pc20053
+ACC-000432,central city,pine street 9,53,4,pc20053,fam 00212,4,central city|pine street 9|53|4|pc20053
+ACC-000433,south city,elm street 9,54,1,pc30054,fam x 000433,2,south city|elm street 9|54|1|pc30054
+ACC-000434,south city,elm street 9,54,2,pc30054,fam 00214,5,south city|elm street 9|54|2|pc30054
+ACC-000435,south city,elm street 9,54,2,pc30054,fam 00214,4,south city|elm street 9|54|2|pc30054
+ACC-000436,south city,el street 9,54,,,fam 00214,5,south city|el street 9|54||
+ACC-000437,south city,elm street 9,54,3,pc30054,fam x 000437,4,south city|elm street 9|54|3|pc30054
+ACC-000438,south city,elm street 9,54,4,pc30054,fam 00216,5,south city|elm street 9|54|4|pc30054
+ACC-000439,south city,elm street 9,54,4,pc30054,fam 00216,3,south city|elm street 9|54|4|pc30054
+ACC-000440,north city,cedar street 10,55,1,pc10055,fam x 000440,4,north city|cedar street 10|55|1|pc10055
+ACC-000441,north city,cedar street 10,55,2,pc10055,fam x 000441,5,north city|cedar street 10|55|2|pc10055
+ACC-000442,north city,cedar street 10,55,2,pc10055,fam x 000442,4,north city|cedar street 10|55|2|pc10055
+ACC-000443,north city,cedar street 10,55,2,pc10055,fam x 000443,2,north city|cedar street 10|55|2|pc10055
+ACC-000444,north city,cedar street 10,55,2,pc10055,fam x 000444,3,north city|cedar street 10|55|2|pc10055
+ACC-000445,north city,cedar street 10,55,2,pc10055,fam x 000445,4,north city|cedar street 10|55|2|pc10055
+ACC-000446,north city,cdar street 10,55,2,,fam x 000446,2,north city|cdar street 10|55|2|
+ACC-000447,north city,cedar s 10,55,3,,fam x 000447,5,north city|cedar s 10|55|3|
+ACC-000448,north city,cedar street 10,55,4,pc10055,fam x 000448,2,north city|cedar street 10|55|4|pc10055
+ACC-000449,central city,maple street 10,56,1,pc20056,fam 00221,5,central city|maple street 10|56|1|pc20056
+ACC-000450,central city,maple street 10,56,1,pc20056,fam 00221,5,central city|maple street 10|56|1|pc20056
+ACC-000451,central city,maple street 10,56,1,pc20056,fam 00221,3,central city|maple street 10|56|1|pc20056
+ACC-000452,central city,mple street 10,56,1,,fam 00221,4,central city|mple street 10|56|1|
+ACC-000453,central city,maple street 10,56,2,pc20056,fam x 000453,3,central city|maple street 10|56|2|pc20056
+ACC-000454,central city,maple street 10,56,3,pc20056,fam x 000454,5,central city|maple street 10|56|3|pc20056
+ACC-000455,central city,maple s 10,56,4,,fam 00224,4,central city|maple s 10|56|4|
+ACC-000456,central city,male street 10,56,4,,fam 00224,2,central city|male street 10|56|4|
+ACC-000457,central city,maple s 10,56,4,,fam 00224,4,central city|maple s 10|56|4|
+ACC-000458,south city,willow street 10,57,1,pc30057,fam 00225,3,south city|willow street 10|57|1|pc30057
+ACC-000459,south city,willow s 10,57,1,,fam 00225,2,south city|willow s 10|57|1|
+ACC-000460,south city,willow street 10,57,2,pc30057,fam x 000460,5,south city|willow street 10|57|2|pc30057
+ACC-000461,south city,willow street 10,57,3,pc30057,fam x 000461,5,south city|willow street 10|57|3|pc30057
+ACC-000462,south city,willow street 10,57,3,pc30057,fam 00227,4,south city|willow street 10|57|3|pc30057
+ACC-000463,south city,willo street 10,57,3,,fam 00227,4,south city|willo street 10|57|3|
+ACC-000464,south city,willow street 10,57,3,pc30057,fam 00227,4,south city|willow street 10|57|3|pc30057
+ACC-000465,south city,willow street 10,57,4,pc30057,fam x 000465,3,south city|willow street 10|57|4|pc30057
+ACC-000466,north city,oak street 10,58,1,pc10058,fam x 000466,5,north city|oak street 10|58|1|pc10058
+ACC-000467,north city,oak street 10,58,2,pc10058,fam x 000467,3,north city|oak street 10|58|2|pc10058
+ACC-000468,north city,oa street 10,58,3,,fam x 000468,4,north city|oa street 10|58|3|
+ACC-000469,north city,ak street 10,58,3,,fam x 000469,5,north city|ak street 10|58|3|
+ACC-000470,north city,oak street 10,58,3,pc10058,fam x 000470,4,north city|oak street 10|58|3|pc10058
+ACC-000471,north city,oak street 10,58,3,pc10058,fam x 000471,5,north city|oak street 10|58|3|pc10058
+ACC-000472,north city,oak street 10,58,4,pc10058,fam x 000472,4,north city|oak street 10|58|4|pc10058
+ACC-000473,central city,pine street 10,59,1,pc20059,fam 00233,4,central city|pine street 10|59|1|pc20059
+ACC-000474,central city,pine street 10,59,1,pc20059,fam 00233,4,central city|pine street 10|59|1|pc20059
+ACC-000475,central city,pine street 10,59,1,pc20059,fam 00233,4,central city|pine street 10|59|1|pc20059
+ACC-000476,central city,pine street 10,59,1,pc20059,fam x 000476,3,central city|pine street 10|59|1|pc20059
+ACC-000477,central city,pine street 10,59,2,pc20059,fam x 000477,2,central city|pine street 10|59|2|pc20059
+ACC-000478,central city,pine t 10,59,,pc20059,fam x 000478,3,central city|pine t 10|59||pc20059
+ACC-000479,central city,pine street 10,59,2,pc20059,fam x 000479,4,central city|pine street 10|59|2|pc20059
+ACC-000480,central city,pine street 10,59,3,pc20059,fam x 000480,3,central city|pine street 10|59|3|pc20059
+ACC-000481,central city,pine street 10,59,4,pc20059,fam x 000481,3,central city|pine street 10|59|4|pc20059
+ACC-000482,central city,pne street 10,59,,,fam x 000482,5,central city|pne street 10|59||
+ACC-000483,central city,pine street 10,59,4,pc20059,fam x 000483,4,central city|pine street 10|59|4|pc20059
+ACC-000484,south city,elm street 10,60,1,pc30060,fam x 000484,2,south city|elm street 10|60|1|pc30060
+ACC-000485,south city,el street 10,60,2,pc30060,fam 00238,3,south city|el street 10|60|2|pc30060
+ACC-000486,south city,lm street 10,60,2,pc30060,fam x 000486,5,south city|lm street 10|60|2|pc30060
+ACC-000487,south city,elm street 10,60,3,pc30060,fam 00239,2,south city|elm street 10|60|3|pc30060
+ACC-000488,south city,elm street 10,60,3,pc30060,fam 00239,2,south city|elm street 10|60|3|pc30060
+ACC-000489,south city,elm street 10,60,4,pc30060,fam 00240,4,south city|elm street 10|60|4|pc30060
+ACC-000490,south city,elm street 10,60,4,pc30060,fam 00240,2,south city|elm street 10|60|4|pc30060
+ACC-000491,north city,cedar s 11,61,1,pc10061,fam x 000491,5,north city|cedar s 11|61|1|pc10061
+ACC-000492,north city,cedar street 11,61,1,pc10061,fam 00241,5,north city|cedar street 11|61|1|pc10061
+ACC-000493,north city,cedar street 11,61,1,pc10061,fam 00241,4,north city|cedar street 11|61|1|pc10061
+ACC-000494,north city,cedar street 11,61,1,pc10061,fam 00241,2,north city|cedar street 11|61|1|pc10061
+ACC-000495,north city,cedar street 11,61,2,pc10061,fam 00242,5,north city|cedar street 11|61|2|pc10061
+ACC-000496,north city,cedar street 11,61,2,pc10061,fam 00242,3,north city|cedar street 11|61|2|pc10061
+ACC-000497,north city,cedr street 11,61,2,,fam 00242,4,north city|cedr street 11|61|2|
+ACC-000498,north city,cedar street 11,61,2,pc10061,fam 00242,4,north city|cedar street 11|61|2|pc10061
+ACC-000499,north city,cedar street 11,61,3,pc10061,fam x 000499,2,north city|cedar street 11|61|3|pc10061
+ACC-000500,north city,cear street 11,61,,pc10061,fam x 000500,4,north city|cear street 11|61||pc10061
+ACC-000501,north city,cedar street 11,61,4,pc10061,fam x 000501,5,north city|cedar street 11|61|4|pc10061
+ACC-000502,north city,cedar street 11,61,4,pc10061,fam x 000502,5,north city|cedar street 11|61|4|pc10061
+ACC-000503,north city,cedar street 11,61,4,pc10061,fam x 000503,2,north city|cedar street 11|61|4|pc10061
+ACC-000504,central city,maple street 11,62,1,pc20062,fam x 000504,3,central city|maple street 11|62|1|pc20062
+ACC-000505,central city,male street 11,62,2,pc20062,fam x 000505,4,central city|male street 11|62|2|pc20062
+ACC-000506,central city,maple street 11,62,1,pc20062,fam x 000506,5,central city|maple street 11|62|1|pc20062
+ACC-000507,central city,maple street 11,62,1,pc20062,fam x 000507,3,central city|maple street 11|62|1|pc20062
+ACC-000508,central city,maple street 11,62,1,pc20062,fam x 000508,2,central city|maple street 11|62|1|pc20062
+ACC-000509,central city,maple street 11,62,1,pc20062,fam x 000509,5,central city|maple street 11|62|1|pc20062
+ACC-000510,central city,maple street 11,62,2,pc20062,fam x 000510,3,central city|maple street 11|62|2|pc20062
+ACC-000511,central city,maple street 11,62,3,pc20062,fam x 000511,4,central city|maple street 11|62|3|pc20062
+ACC-000512,central city,maple street 11,62,3,pc20062,fam 00247,2,central city|maple street 11|62|3|pc20062
+ACC-000513,central city,maple street 11,62,3,pc20062,fam 00247,2,central city|maple street 11|62|3|pc20062
+ACC-000514,central city,maple street 11,62,4,pc20062,fam x 000514,4,central city|maple street 11|62|4|pc20062
+ACC-000515,central city,maple street 11,62,4,pc20062,fam x 000515,5,central city|maple street 11|62|4|pc20062
+ACC-000516,central city,mapl street 11,62,,,fam x 000516,2,central city|mapl street 11|62||
+ACC-000517,south city,willow s 11,63,1,,fam x 000517,3,south city|willow s 11|63|1|
+ACC-000518,south city,willow street 11,63,1,pc30063,fam x 000518,2,south city|willow street 11|63|1|pc30063
+ACC-000519,south city,willow street 11,63,2,pc30063,fam 00250,3,south city|willow street 11|63|2|pc30063
+ACC-000520,south city,willow street 11,63,2,pc30063,fam 00250,2,south city|willow street 11|63|2|pc30063
+ACC-000521,south city,willow street 11,63,3,pc30063,fam x 000521,4,south city|willow street 11|63|3|pc30063
+ACC-000522,south city,willow street 11,63,3,pc30063,fam x 000522,5,south city|willow street 11|63|3|pc30063
+ACC-000523,south city,willow street 11,63,4,pc30063,fam 00252,5,south city|willow street 11|63|4|pc30063
+ACC-000524,south city,willow street 11,63,4,pc30063,fam 00252,3,south city|willow street 11|63|4|pc30063
+ACC-000525,north city,oak street 11,64,1,pc10064,fam x 000525,2,north city|oak street 11|64|1|pc10064
+ACC-000526,north city,oak street 11,64,2,pc10064,fam x 000526,2,north city|oak street 11|64|2|pc10064
+ACC-000527,north city,oak street 11,64,3,pc10064,fam x 000527,4,north city|oak street 11|64|3|pc10064
+ACC-000528,north city,oak t 11,64,5,,fam x 000528,4,north city|oak t 11|64|5|
+ACC-000529,north city,oak street 11,64,4,pc10064,fam 00256,5,north city|oak street 11|64|4|pc10064
+ACC-000530,central city,pie street 11,65,1,,fam 00257,4,central city|pie street 11|65|1|
+ACC-000531,central city,pin street 11,65,1,,fam 00257,3,central city|pin street 11|65|1|
+ACC-000532,central city,pine street 11,65,2,pc20065,fam x 000532,2,central city|pine street 11|65|2|pc20065
+ACC-000533,central city,pine street 11,65,3,pc20065,fam x 000533,3,central city|pine street 11|65|3|pc20065
+ACC-000534,central city,pine street 11,65,4,pc20065,fam x 000534,5,central city|pine street 11|65|4|pc20065
+ACC-000535,central city,pine street 11,65,4,pc20065,fam x 000535,4,central city|pine street 11|65|4|pc20065
+ACC-000536,central city,pine street 11,65,4,pc20065,fam x 000536,2,central city|pine street 11|65|4|pc20065
+ACC-000537,south city,elm street 11,66,1,pc30066,fam x 000537,3,south city|elm street 11|66|1|pc30066
+ACC-000538,south city,elm street 11,66,2,pc30066,fam 00262,5,south city|elm street 11|66|2|pc30066
+ACC-000539,south city,elm street 11,66,2,pc30066,fam 00262,4,south city|elm street 11|66|2|pc30066
+ACC-000540,south city,elm street 11,66,3,pc30066,fam 00263,2,south city|elm street 11|66|3|pc30066
+ACC-000541,south city,elm t 11,66,,,fam x 000541,2,south city|elm t 11|66||
+ACC-000542,south city,elm street 11,66,4,pc30066,fam x 000542,3,south city|elm street 11|66|4|pc30066
+ACC-000543,south city,elm street 11,66,4,pc30066,fam x 000543,4,south city|elm street 11|66|4|pc30066
+ACC-000544,north city,cedar s 12,67,1,,fam x 000544,3,north city|cedar s 12|67|1|
+ACC-000545,north city,cedar street 12,67,2,pc10067,fam 00266,4,north city|cedar street 12|67|2|pc10067
+ACC-000546,north city,cedar street 12,67,2,pc10067,fam 00266,3,north city|cedar street 12|67|2|pc10067
+ACC-000547,north city,cedar street 12,67,2,pc10067,fam x 000547,2,north city|cedar street 12|67|2|pc10067
+ACC-000548,north city,cedar street 12,67,2,pc10067,fam 00266,4,north city|cedar street 12|67|2|pc10067
+ACC-000549,north city,cedar street 12,67,3,pc10067,fam 00267,4,north city|cedar street 12|67|3|pc10067
+ACC-000550,north city,cedar t 12,67,3,,fam 00267,3,north city|cedar t 12|67|3|
+ACC-000551,north city,cedar street 12,67,4,pc10067,fam x 000551,2,north city|cedar street 12|67|4|pc10067
+ACC-000552,north city,cedar street 12,67,4,pc10067,fam x 000552,4,north city|cedar street 12|67|4|pc10067
+ACC-000553,north city,cear street 12,67,4,pc10067,fam x 000553,5,north city|cear street 12|67|4|pc10067
+ACC-000554,north city,cdar street 12,67,4,,fam x 000554,3,north city|cdar street 12|67|4|
+ACC-000555,north city,cdar street 12,67,4,pc10067,fam x 000555,5,north city|cdar street 12|67|4|pc10067
+ACC-000556,north city,cedar street 12,67,4,pc10067,fam x 000556,3,north city|cedar street 12|67|4|pc10067
+ACC-000557,central city,maple street 12,68,1,pc20068,fam 00269,3,central city|maple street 12|68|1|pc20068
+ACC-000558,central city,maple street 12,68,1,pc20068,fam 00269,2,central city|maple street 12|68|1|pc20068
+ACC-000559,central city,maple street 12,68,2,pc20068,fam x 000559,4,central city|maple street 12|68|2|pc20068
+ACC-000560,central city,maple street 12,68,2,pc20068,fam x 000560,2,central city|maple street 12|68|2|pc20068
+ACC-000561,central city,maple street 12,68,2,pc20068,fam x 000561,2,central city|maple street 12|68|2|pc20068
+ACC-000562,central city,maple street 12,68,3,pc20068,fam x 000562,4,central city|maple street 12|68|3|pc20068
+ACC-000563,central city,maple street 12,68,4,pc20068,fam 00272,3,central city|maple street 12|68|4|pc20068
+ACC-000564,central city,maple street 12,68,4,pc20068,fam x 000564,5,central city|maple street 12|68|4|pc20068
+ACC-000565,south city,willow street 12,69,1,pc30069,fam x 000565,4,south city|willow street 12|69|1|pc30069
+ACC-000566,south city,willow street 12,69,2,pc30069,fam x 000566,3,south city|willow street 12|69|2|pc30069
+ACC-000567,south city,willow street 12,69,3,pc30069,fam x 000567,5,south city|willow street 12|69|3|pc30069
+ACC-000568,south city,willow street 12,69,3,pc30069,fam x 000568,3,south city|willow street 12|69|3|pc30069
+ACC-000569,south city,willow street 12,69,3,pc30069,fam x 000569,4,south city|willow street 12|69|3|pc30069
+ACC-000570,south city,willow street 12,69,4,pc30069,fam x 000570,3,south city|willow street 12|69|4|pc30069
+ACC-000571,north city,oak t 12,70,,,fam x 000571,3,north city|oak t 12|70||
+ACC-000572,north city,oak street 12,70,2,pc10070,fam 00278,4,north city|oak street 12|70|2|pc10070
+ACC-000573,north city,oak street 12,70,2,pc10070,fam 00278,5,north city|oak street 12|70|2|pc10070
+ACC-000574,north city,oak street 12,70,2,pc10070,fam x 000574,3,north city|oak street 12|70|2|pc10070
+ACC-000575,north city,oak street 12,70,3,pc10070,fam x 000575,5,north city|oak street 12|70|3|pc10070
+ACC-000576,north city,oak street 12,70,4,pc10070,fam 00280,3,north city|oak street 12|70|4|pc10070
+ACC-000577,north city,oak street 12,70,4,pc10070,fam x 000577,3,north city|oak street 12|70|4|pc10070
+ACC-000578,central city,pine street 12,71,1,pc20071,fam x 000578,3,central city|pine street 12|71|1|pc20071
+ACC-000579,central city,pie street 12,71,2,pc20071,fam x 000579,2,central city|pie street 12|71|2|pc20071
+ACC-000580,central city,pine street 12,71,3,pc20071,fam x 000580,5,central city|pine street 12|71|3|pc20071
+ACC-000581,central city,pine street 12,71,4,pc20071,fam x 000581,2,central city|pine street 12|71|4|pc20071
+ACC-000582,south city,elm street 12,72,1,pc30072,fam 00285,4,south city|elm street 12|72|1|pc30072
+ACC-000583,south city,elm s 12,72,1,pc30072,fam 00285,5,south city|elm s 12|72|1|pc30072
+ACC-000584,south city,elm street 12,72,1,pc30072,fam 00285,5,south city|elm street 12|72|1|pc30072
+ACC-000585,south city,elm street 12,72,2,pc30072,fam 00286,4,south city|elm street 12|72|2|pc30072
+ACC-000586,south city,elm street 12,72,2,pc30072,fam 00286,5,south city|elm street 12|72|2|pc30072
+ACC-000587,south city,elm street 12,72,2,pc30072,fam 00286,3,south city|elm street 12|72|2|pc30072
+ACC-000588,south city,elm street 12,72,3,pc30072,fam x 000588,3,south city|elm street 12|72|3|pc30072
+ACC-000589,south city,elm street 12,72,4,pc30072,fam 00288,3,south city|elm street 12|72|4|pc30072
+ACC-000590,south city,elm t 12,72,4,pc30072,fam 00288,4,south city|elm t 12|72|4|pc30072
+ACC-000591,north city,cedar street 13,73,1,pc10073,fam 00289,5,north city|cedar street 13|73|1|pc10073
+ACC-000592,north city,cedar street 13,73,1,pc10073,fam x 000592,5,north city|cedar street 13|73|1|pc10073
+ACC-000593,north city,ceda street 13,73,2,,fam 00289,3,north city|ceda street 13|73|2|
+ACC-000594,north city,cedar street 13,73,2,pc10073,fam x 000594,2,north city|cedar street 13|73|2|pc10073
+ACC-000595,north city,edar street 13,73,3,,fam 00291,2,north city|edar street 13|73|3|
+ACC-000596,north city,cedar street 13,73,3,pc10073,fam 00291,4,north city|cedar street 13|73|3|pc10073
+ACC-000597,north city,cdar street 13,73,3,pc10073,fam 00291,4,north city|cdar street 13|73|3|pc10073
+ACC-000598,north city,cedar street 13,73,3,pc10073,fam 00291,2,north city|cedar street 13|73|3|pc10073
+ACC-000599,north city,cedar street 13,73,4,pc10073,fam x 000599,5,north city|cedar street 13|73|4|pc10073
+ACC-000600,central city,maple street 13,74,1,pc20074,fam x 000600,2,central city|maple street 13|74|1|pc20074
+ACC-000601,central city,maple street 13,74,1,pc20074,fam x 000601,4,central city|maple street 13|74|1|pc20074
+ACC-000602,central city,maple street 13,74,1,pc20074,fam x 000602,4,central city|maple street 13|74|1|pc20074
+ACC-000603,central city,maple street 13,74,2,pc20074,fam x 000603,4,central city|maple street 13|74|2|pc20074
+ACC-000604,central city,maple s 13,74,3,,fam 00295,2,central city|maple s 13|74|3|
+ACC-000605,central city,maple street 13,74,3,pc20074,fam 00295,2,central city|maple street 13|74|3|pc20074
+ACC-000606,central city,maple street 13,74,3,pc20074,fam 00295,5,central city|maple street 13|74|3|pc20074
+ACC-000607,central city,maple street 13,74,3,pc20074,fam 00295,5,central city|maple street 13|74|3|pc20074
+ACC-000608,central city,mape street 13,74,4,,fam 00296,2,central city|mape street 13|74|4|
+ACC-000609,central city,maple street 13,74,4,pc20074,fam 00296,3,central city|maple street 13|74|4|pc20074
+ACC-000610,south city,wllow street 13,75,2,,fam x 000610,3,south city|wllow street 13|75|2|
+ACC-000611,south city,willow street 13,75,2,pc30075,fam 00298,4,south city|willow street 13|75|2|pc30075
+ACC-000612,south city,illow street 13,75,2,,fam 00298,5,south city|illow street 13|75|2|
+ACC-000613,south city,willow street 13,75,2,pc30075,fam 00298,5,south city|willow street 13|75|2|pc30075
+ACC-000614,south city,willow street 13,75,2,pc30075,fam 00298,2,south city|willow street 13|75|2|pc30075
+ACC-000615,south city,willow street 13,75,3,pc30075,fam x 000615,3,south city|willow street 13|75|3|pc30075
+ACC-000616,south city,wllow street 13,75,4,pc30075,fam 00300,4,south city|wllow street 13|75|4|pc30075
+ACC-000617,south city,willow street 13,75,4,pc30075,fam 00300,5,south city|willow street 13|75|4|pc30075
+ACC-000618,south city,willow street 13,75,4,pc30075,fam 00300,2,south city|willow street 13|75|4|pc30075
+ACC-000619,south city,willow street 13,75,4,pc30075,fam 00300,4,south city|willow street 13|75|4|pc30075
+ACC-000620,north city,oak street 13,76,1,pc10076,fam x 000620,4,north city|oak street 13|76|1|pc10076
+ACC-000621,north city,oak street 13,76,2,pc10076,fam x 000621,3,north city|oak street 13|76|2|pc10076
+ACC-000622,north city,oak street 13,76,2,pc10076,fam x 000622,3,north city|oak street 13|76|2|pc10076
+ACC-000623,north city,oak street 13,76,2,pc10076,fam x 000623,3,north city|oak street 13|76|2|pc10076
+ACC-000624,north city,oak street 13,76,2,pc10076,fam x 000624,4,north city|oak street 13|76|2|pc10076
+ACC-000625,north city,oak street 13,76,2,pc10076,fam x 000625,3,north city|oak street 13|76|2|pc10076
+ACC-000626,north city,oak t 13,76,2,,fam x 000626,4,north city|oak t 13|76|2|
+ACC-000627,north city,oak street 13,76,3,pc10076,fam x 000627,5,north city|oak street 13|76|3|pc10076
+ACC-000628,north city,oak street 13,76,4,pc10076,fam x 000628,2,north city|oak street 13|76|4|pc10076
+ACC-000629,north city,oa street 13,76,4,,fam x 000629,2,north city|oa street 13|76|4|
+ACC-000630,north city,oak street 13,76,4,pc10076,fam x 000630,3,north city|oak street 13|76|4|pc10076
+ACC-000631,central city,pine street 13,77,1,pc20077,fam x 000631,3,central city|pine street 13|77|1|pc20077
+ACC-000632,central city,pne street 13,77,,,fam 00306,3,central city|pne street 13|77||
+ACC-000633,central city,pine street 13,77,2,pc20077,fam 00306,3,central city|pine street 13|77|2|pc20077
+ACC-000634,central city,pine street 13,77,3,pc20077,fam x 000634,2,central city|pine street 13|77|3|pc20077
+ACC-000635,central city,pine street 13,77,4,pc20077,fam x 000635,3,central city|pine street 13|77|4|pc20077
+ACC-000636,south city,elm street 13,78,1,pc30078,fam 00309,4,south city|elm street 13|78|1|pc30078
+ACC-000637,south city,elm street 13,78,1,pc30078,fam 00309,3,south city|elm street 13|78|1|pc30078
+ACC-000638,south city,elm street 13,78,2,pc30078,fam x 000638,5,south city|elm street 13|78|2|pc30078
+ACC-000639,south city,elm street 13,78,2,pc30078,fam x 000639,4,south city|elm street 13|78|2|pc30078
+ACC-000640,south city,el street 13,78,3,,fam 00311,4,south city|el street 13|78|3|
+ACC-000641,south city,elm street 13,78,3,pc30078,fam 00311,5,south city|elm street 13|78|3|pc30078
+ACC-000642,south city,elm street 13,78,3,pc30078,fam 00311,5,south city|elm street 13|78|3|pc30078
+ACC-000643,south city,elm street 13,78,3,pc30078,fam 00311,2,south city|elm street 13|78|3|pc30078
+ACC-000644,south city,elm s 13,78,4,,fam 00312,5,south city|elm s 13|78|4|
+ACC-000645,south city,elm street 13,78,4,pc30078,fam 00312,4,south city|elm street 13|78|4|pc30078
+ACC-000646,south city,elm street 13,78,4,pc30078,fam 00312,2,south city|elm street 13|78|4|pc30078
+ACC-000647,north city,cedar street 14,79,1,pc10079,fam x 000647,2,north city|cedar street 14|79|1|pc10079
+ACC-000648,north city,cedar street 14,79,1,pc10079,fam x 000648,3,north city|cedar street 14|79|1|pc10079
+ACC-000649,north city,cedar street 14,79,1,pc10079,fam x 000649,5,north city|cedar street 14|79|1|pc10079
+ACC-000650,north city,cedar t 14,79,3,,fam 00314,2,north city|cedar t 14|79|3|
+ACC-000651,north city,cedar street 14,79,2,pc10079,fam 00314,3,north city|cedar street 14|79|2|pc10079
+ACC-000652,north city,cedar street 14,79,3,pc10079,fam x 000652,2,north city|cedar street 14|79|3|pc10079
+ACC-000653,north city,cedar street 14,79,4,pc10079,fam x 000653,3,north city|cedar street 14|79|4|pc10079
+ACC-000654,north city,cedar street 14,79,4,pc10079,fam x 000654,4,north city|cedar street 14|79|4|pc10079
+ACC-000655,central city,mple street 14,80,1,,fam x 000655,5,central city|mple street 14|80|1|
+ACC-000656,central city,maple street 14,80,1,pc20080,fam x 000656,5,central city|maple street 14|80|1|pc20080
+ACC-000657,central city,maple street 14,80,1,pc20080,fam x 000657,5,central city|maple street 14|80|1|pc20080
+ACC-000658,central city,maple street 14,80,1,pc20080,fam x 000658,5,central city|maple street 14|80|1|pc20080
+ACC-000659,central city,maple street 14,80,1,pc20080,fam x 000659,3,central city|maple street 14|80|1|pc20080
+ACC-000660,central city,maple t 14,80,1,,fam x 000660,3,central city|maple t 14|80|1|
+ACC-000661,central city,maple street 14,80,2,pc20080,fam 00318,2,central city|maple street 14|80|2|pc20080
+ACC-000662,central city,maple street 14,80,2,pc20080,fam 00318,4,central city|maple street 14|80|2|pc20080
+ACC-000663,central city,male street 14,80,2,pc20080,fam 00318,2,central city|male street 14|80|2|pc20080
+ACC-000664,central city,maple s 14,80,3,,fam x 000664,4,central city|maple s 14|80|3|
+ACC-000665,central city,mape street 14,80,4,pc20080,fam 00320,3,central city|mape street 14|80|4|pc20080
+ACC-000666,central city,maple s 14,80,4,,fam 00320,2,central city|maple s 14|80|4|
+ACC-000667,south city,willow street 14,81,1,pc30081,fam x 000667,5,south city|willow street 14|81|1|pc30081
+ACC-000668,south city,willow street 14,81,1,pc30081,fam x 000668,3,south city|willow street 14|81|1|pc30081
+ACC-000669,south city,willow street 14,81,2,pc30081,fam 00322,5,south city|willow street 14|81|2|pc30081
+ACC-000670,south city,willow street 14,81,2,pc30081,fam 00322,5,south city|willow street 14|81|2|pc30081
+ACC-000671,south city,willow street 14,81,3,pc30081,fam x 000671,5,south city|willow street 14|81|3|pc30081
+ACC-000672,south city,wilow street 14,81,,pc30081,fam x 000672,3,south city|wilow street 14|81||pc30081
+ACC-000673,south city,willow street 14,81,4,pc30081,fam x 000673,3,south city|willow street 14|81|4|pc30081
+ACC-000674,north city,oak street 14,82,1,pc10082,fam x 000674,3,north city|oak street 14|82|1|pc10082
+ACC-000675,north city,oak street 14,82,1,pc10082,fam x 000675,2,north city|oak street 14|82|1|pc10082
+ACC-000676,north city,ak street 14,82,2,,fam x 000676,4,north city|ak street 14|82|2|
+ACC-000677,north city,oak street 14,82,2,pc10082,fam x 000677,5,north city|oak street 14|82|2|pc10082
+ACC-000678,north city,oak street 14,82,2,pc10082,fam x 000678,3,north city|oak street 14|82|2|pc10082
+ACC-000679,north city,oak street 14,82,2,pc10082,fam x 000679,3,north city|oak street 14|82|2|pc10082
+ACC-000680,north city,oak t 14,82,2,pc10082,fam x 000680,3,north city|oak t 14|82|2|pc10082
+ACC-000681,north city,oak street 14,82,2,pc10082,fam x 000681,2,north city|oak street 14|82|2|pc10082
+ACC-000682,north city,oak t 14,82,4,pc10082,fam x 000682,3,north city|oak t 14|82|4|pc10082
+ACC-000683,north city,ok street 14,82,4,,fam x 000683,5,north city|ok street 14|82|4|
+ACC-000684,north city,oak street 14,82,4,pc10082,fam x 000684,4,north city|oak street 14|82|4|pc10082
+ACC-000685,north city,oak street 14,82,4,pc10082,fam x 000685,2,north city|oak street 14|82|4|pc10082
+ACC-000686,north city,oak street 14,82,4,pc10082,fam x 000686,2,north city|oak street 14|82|4|pc10082
+ACC-000687,north city,oak street 14,82,4,pc10082,fam x 000687,4,north city|oak street 14|82|4|pc10082
+ACC-000688,north city,oak street 14,82,4,pc10082,fam x 000688,4,north city|oak street 14|82|4|pc10082
+ACC-000689,central city,pne street 14,83,1,,fam x 000689,3,central city|pne street 14|83|1|
+ACC-000690,central city,pine street 14,83,2,pc20083,fam x 000690,4,central city|pine street 14|83|2|pc20083
+ACC-000691,central city,pine street 14,83,2,pc20083,fam x 000691,5,central city|pine street 14|83|2|pc20083
+ACC-000692,central city,pne street 14,83,4,,fam 00331,5,central city|pne street 14|83|4|
+ACC-000693,central city,pine street 14,83,3,pc20083,fam 00331,2,central city|pine street 14|83|3|pc20083
+ACC-000694,central city,pine street 14,83,4,pc20083,fam x 000694,3,central city|pine street 14|83|4|pc20083
+ACC-000695,south city,elm street 14,84,1,pc30084,fam x 000695,4,south city|elm street 14|84|1|pc30084
+ACC-000696,south city,elm street 14,84,2,pc30084,fam x 000696,2,south city|elm street 14|84|2|pc30084
+ACC-000697,south city,elm street 14,84,3,pc30084,fam x 000697,5,south city|elm street 14|84|3|pc30084
+ACC-000698,south city,elm street 14,84,4,pc30084,fam x 000698,3,south city|elm street 14|84|4|pc30084
+ACC-000699,north city,cedar street 15,85,1,pc10085,fam x 000699,5,north city|cedar street 15|85|1|pc10085
+ACC-000700,north city,cear street 15,85,2,,fam x 000700,3,north city|cear street 15|85|2|
+ACC-000701,north city,cedar street 15,85,3,pc10085,fam 00339,2,north city|cedar street 15|85|3|pc10085
+ACC-000702,north city,cedar street 15,85,3,pc10085,fam 00339,3,north city|cedar street 15|85|3|pc10085
+ACC-000703,north city,cedar street 15,85,3,pc10085,fam 00339,2,north city|cedar street 15|85|3|pc10085
+ACC-000704,north city,cedar street 15,85,4,pc10085,fam x 000704,2,north city|cedar street 15|85|4|pc10085
+ACC-000705,north city,cedar street 15,85,4,pc10085,fam x 000705,3,north city|cedar street 15|85|4|pc10085
+ACC-000706,central city,maple street 15,86,1,pc20086,fam 00341,4,central city|maple street 15|86|1|pc20086
+ACC-000707,central city,maple street 15,86,1,pc20086,fam 00341,3,central city|maple street 15|86|1|pc20086
+ACC-000708,central city,maple street 15,86,1,pc20086,fam x 000708,5,central city|maple street 15|86|1|pc20086
+ACC-000709,central city,maple street 15,86,1,pc20086,fam 00341,5,central city|maple street 15|86|1|pc20086
+ACC-000710,central city,maple street 15,86,2,pc20086,fam x 000710,4,central city|maple street 15|86|2|pc20086
+ACC-000711,central city,mape street 15,86,3,pc20086,fam x 000711,4,central city|mape street 15|86|3|pc20086
+ACC-000712,central city,maple street 15,86,3,pc20086,fam x 000712,2,central city|maple street 15|86|3|pc20086
+ACC-000713,central city,maple t 15,86,3,,fam 00343,2,central city|maple t 15|86|3|
+ACC-000714,central city,maple street 15,86,4,pc20086,fam x 000714,4,central city|maple street 15|86|4|pc20086
+ACC-000715,south city,willow street 15,87,1,pc30087,fam x 000715,5,south city|willow street 15|87|1|pc30087
+ACC-000716,south city,willow street 15,87,2,pc30087,fam 00346,3,south city|willow street 15|87|2|pc30087
+ACC-000717,south city,willow street 15,87,2,pc30087,fam x 000717,3,south city|willow street 15|87|2|pc30087
+ACC-000718,south city,willow street 15,87,2,pc30087,fam 00346,3,south city|willow street 15|87|2|pc30087
+ACC-000719,south city,willow street 15,87,3,pc30087,fam x 000719,3,south city|willow street 15|87|3|pc30087
+ACC-000720,south city,willow street 15,87,4,pc30087,fam x 000720,4,south city|willow street 15|87|4|pc30087
+ACC-000721,south city,willow street 15,87,4,pc30087,fam x 000721,3,south city|willow street 15|87|4|pc30087
+ACC-000722,south city,willow t 15,87,,pc30087,fam x 000722,3,south city|willow t 15|87||pc30087
+ACC-000723,south city,willow street 15,87,4,pc30087,fam x 000723,4,south city|willow street 15|87|4|pc30087
+ACC-000724,south city,willow street 15,87,4,pc30087,fam x 000724,2,south city|willow street 15|87|4|pc30087
+ACC-000725,south city,willow street 15,87,4,pc30087,fam x 000725,4,south city|willow street 15|87|4|pc30087
+ACC-000726,north city,oak street 15,88,1,pc10088,fam x 000726,2,north city|oak street 15|88|1|pc10088
+ACC-000727,north city,oak street 15,88,1,pc10088,fam x 000727,2,north city|oak street 15|88|1|pc10088
+ACC-000728,north city,oak street 15,88,2,pc10088,fam x 000728,2,north city|oak street 15|88|2|pc10088
+ACC-000729,north city,oak street 15,88,3,pc10088,fam x 000729,3,north city|oak street 15|88|3|pc10088
+ACC-000730,north city,oak street 15,88,4,pc10088,fam x 000730,5,north city|oak street 15|88|4|pc10088
+ACC-000731,north city,oak street 15,88,4,pc10088,fam x 000731,3,north city|oak street 15|88|4|pc10088
+ACC-000732,north city,oak street 15,88,4,pc10088,fam x 000732,2,north city|oak street 15|88|4|pc10088
+ACC-000733,north city,oak street 15,88,4,pc10088,fam x 000733,5,north city|oak street 15|88|4|pc10088
+ACC-000734,central city,pine street 15,89,1,pc20089,fam 00353,2,central city|pine street 15|89|1|pc20089
+ACC-000735,central city,pine street 15,89,1,pc20089,fam 00353,3,central city|pine street 15|89|1|pc20089
+ACC-000736,central city,pine street 15,89,1,pc20089,fam 00353,2,central city|pine street 15|89|1|pc20089
+ACC-000737,central city,pine t 15,89,3,pc20089,fam x 000737,5,central city|pine t 15|89|3|pc20089
+ACC-000738,central city,pine street 15,89,3,pc20089,fam 00355,4,central city|pine street 15|89|3|pc20089
+ACC-000739,central city,pine street 15,89,3,pc20089,fam 00355,3,central city|pine street 15|89|3|pc20089
+ACC-000740,central city,pine street 15,89,3,pc20089,fam 00355,4,central city|pine street 15|89|3|pc20089
+ACC-000741,central city,pine street 15,89,3,pc20089,fam 00355,5,central city|pine street 15|89|3|pc20089
+ACC-000742,central city,pine street 15,89,4,pc20089,fam 00356,2,central city|pine street 15|89|4|pc20089
+ACC-000743,central city,pine street 15,89,4,pc20089,fam 00356,3,central city|pine street 15|89|4|pc20089
+ACC-000744,central city,ine street 15,89,4,,fam x 000744,2,central city|ine street 15|89|4|
+ACC-000745,central city,pine street 15,89,4,pc20089,fam x 000745,3,central city|pine street 15|89|4|pc20089
+ACC-000746,south city,elm street 15,90,1,pc30090,fam x 000746,3,south city|elm street 15|90|1|pc30090
+ACC-000747,south city,elm s 15,90,2,,fam x 000747,5,south city|elm s 15|90|2|
+ACC-000748,south city,elm t 15,90,1,,fam x 000748,3,south city|elm t 15|90|1|
+ACC-000749,south city,elm street 15,90,1,pc30090,fam x 000749,2,south city|elm street 15|90|1|pc30090
+ACC-000750,south city,elm street 15,90,1,pc30090,fam x 000750,2,south city|elm street 15|90|1|pc30090
+ACC-000751,south city,elm street 15,90,1,pc30090,fam x 000751,3,south city|elm street 15|90|1|pc30090
+ACC-000752,south city,elm street 15,90,2,pc30090,fam x 000752,5,south city|elm street 15|90|2|pc30090
+ACC-000753,south city,elm street 15,90,2,pc30090,fam x 000753,3,south city|elm street 15|90|2|pc30090
+ACC-000754,south city,elm street 15,90,3,pc30090,fam x 000754,4,south city|elm street 15|90|3|pc30090
+ACC-000755,south city,elm street 15,90,3,pc30090,fam x 000755,3,south city|elm street 15|90|3|pc30090
+ACC-000756,south city,lm street 15,90,,,fam 00360,5,south city|lm street 15|90||
+ACC-000757,south city,elm street 15,90,4,pc30090,fam 00360,3,south city|elm street 15|90|4|pc30090
+ACC-000758,north city,cedar street 16,91,1,pc10091,fam x 000758,3,north city|cedar street 16|91|1|pc10091
+ACC-000759,north city,cdar street 16,91,3,,fam x 000759,5,north city|cdar street 16|91|3|
+ACC-000760,north city,edar street 16,91,2,,fam x 000760,2,north city|edar street 16|91|2|
+ACC-000761,north city,cedar street 16,91,3,pc10091,fam x 000761,3,north city|cedar street 16|91|3|pc10091
+ACC-000762,north city,cedar street 16,91,4,pc10091,fam 00364,3,north city|cedar street 16|91|4|pc10091
+ACC-000763,north city,cedar street 16,91,4,pc10091,fam 00364,4,north city|cedar street 16|91|4|pc10091
+ACC-000764,central city,maple street 16,92,1,pc20092,fam x 000764,4,central city|maple street 16|92|1|pc20092
+ACC-000765,central city,maple street 16,92,2,pc20092,fam x 000765,5,central city|maple street 16|92|2|pc20092
+ACC-000766,central city,maple street 16,92,3,pc20092,fam 00367,3,central city|maple street 16|92|3|pc20092
+ACC-000767,central city,maple s 16,92,3,,fam 00367,5,central city|maple s 16|92|3|
+ACC-000768,central city,maple street 16,92,4,pc20092,fam x 000768,2,central city|maple street 16|92|4|pc20092
+ACC-000769,south city,willow street 16,93,1,pc30093,fam x 000769,3,south city|willow street 16|93|1|pc30093
+ACC-000770,south city,willow street 16,93,2,pc30093,fam x 000770,4,south city|willow street 16|93|2|pc30093
+ACC-000771,south city,willow street 16,93,3,pc30093,fam x 000771,2,south city|willow street 16|93|3|pc30093
+ACC-000772,south city,wilow street 16,93,,,fam x 000772,4,south city|wilow street 16|93||
+ACC-000773,north city,oak street 16,94,1,pc10094,fam x 000773,5,north city|oak street 16|94|1|pc10094
+ACC-000774,north city,oak t 16,94,2,,fam x 000774,4,north city|oak t 16|94|2|
+ACC-000775,north city,oak street 16,94,2,pc10094,fam x 000775,5,north city|oak street 16|94|2|pc10094
+ACC-000776,north city,oak street 16,94,2,pc10094,fam x 000776,4,north city|oak street 16|94|2|pc10094
+ACC-000777,north city,ok street 16,94,2,pc10094,fam x 000777,4,north city|ok street 16|94|2|pc10094
+ACC-000778,north city,oak street 16,94,3,pc10094,fam x 000778,3,north city|oak street 16|94|3|pc10094
+ACC-000779,north city,oak street 16,94,4,pc10094,fam x 000779,3,north city|oak street 16|94|4|pc10094
+ACC-000780,north city,oa street 16,94,4,,fam x 000780,3,north city|oa street 16|94|4|
+ACC-000781,north city,oak t 16,94,4,,fam x 000781,4,north city|oak t 16|94|4|
+ACC-000782,central city,pine street 16,95,1,pc20095,fam x 000782,5,central city|pine street 16|95|1|pc20095
+ACC-000783,central city,pine street 16,95,1,pc20095,fam 00377,2,central city|pine street 16|95|1|pc20095
+ACC-000784,central city,pine street 16,95,1,pc20095,fam 00377,3,central city|pine street 16|95|1|pc20095
+ACC-000785,central city,pine street 16,95,2,pc20095,fam x 000785,3,central city|pine street 16|95|2|pc20095
+ACC-000786,central city,pine street 16,95,3,pc20095,fam x 000786,3,central city|pine street 16|95|3|pc20095
+ACC-000787,central city,pine street 16,95,3,pc20095,fam x 000787,2,central city|pine street 16|95|3|pc20095
+ACC-000788,central city,pine street 16,95,4,pc20095,fam x 000788,2,central city|pine street 16|95|4|pc20095
+ACC-000789,central city,pine street 16,95,4,pc20095,fam x 000789,3,central city|pine street 16|95|4|pc20095
+ACC-000790,central city,pine t 16,95,5,pc20095,fam x 000790,3,central city|pine t 16|95|5|pc20095
+ACC-000791,south city,elm street 16,96,1,pc30096,fam 00381,4,south city|elm street 16|96|1|pc30096
+ACC-000792,south city,em street 16,96,1,,fam 00381,3,south city|em street 16|96|1|
+ACC-000793,south city,el street 16,96,2,pc30096,fam 00381,3,south city|el street 16|96|2|pc30096
+ACC-000794,south city,em street 16,96,,,fam 00381,4,south city|em street 16|96||
+ACC-000795,south city,elm street 16,96,2,pc30096,fam 00382,4,south city|elm street 16|96|2|pc30096
+ACC-000796,south city,lm street 16,96,2,,fam 00382,5,south city|lm street 16|96|2|
+ACC-000797,south city,elm street 16,96,3,pc30096,fam x 000797,3,south city|elm street 16|96|3|pc30096
+ACC-000798,south city,elm street 16,96,4,pc30096,fam x 000798,3,south city|elm street 16|96|4|pc30096
+ACC-000799,north city,cedar street 17,97,1,pc10097,fam x 000799,3,north city|cedar street 17|97|1|pc10097
+ACC-000800,north city,cedar street 17,97,1,pc10097,fam 00385,3,north city|cedar street 17|97|1|pc10097
+ACC-000801,north city,cedar street 17,97,2,pc10097,fam x 000801,5,north city|cedar street 17|97|2|pc10097
+ACC-000802,north city,cear street 17,97,3,pc10097,fam 00387,4,north city|cear street 17|97|3|pc10097
+ACC-000803,north city,ceda street 17,97,3,pc10097,fam 00387,5,north city|ceda street 17|97|3|pc10097
+ACC-000804,north city,cedar street 17,97,4,pc10097,fam x 000804,5,north city|cedar street 17|97|4|pc10097
+ACC-000805,north city,cedar street 17,97,4,pc10097,fam x 000805,3,north city|cedar street 17|97|4|pc10097
+ACC-000806,north city,cedar s 17,97,5,,fam x 000806,4,north city|cedar s 17|97|5|
+ACC-000807,north city,cedar street 17,97,4,pc10097,fam x 000807,4,north city|cedar street 17|97|4|pc10097
+ACC-000808,central city,maple street 17,98,1,pc20098,fam x 000808,2,central city|maple street 17|98|1|pc20098
+ACC-000809,central city,maple street 17,98,1,pc20098,fam x 000809,4,central city|maple street 17|98|1|pc20098
+ACC-000810,central city,maple street 17,98,2,pc20098,fam x 000810,4,central city|maple street 17|98|2|pc20098
+ACC-000811,central city,maple street 17,98,3,pc20098,fam x 000811,3,central city|maple street 17|98|3|pc20098
+ACC-000812,central city,maple street 17,98,4,pc20098,fam 00392,3,central city|maple street 17|98|4|pc20098
+ACC-000813,central city,maple s 17,98,4,,fam 00392,2,central city|maple s 17|98|4|
+ACC-000814,south city,willow street 17,99,1,pc30099,fam x 000814,3,south city|willow street 17|99|1|pc30099
+ACC-000815,south city,willow street 17,99,2,pc30099,fam x 000815,5,south city|willow street 17|99|2|pc30099
+ACC-000816,south city,willow street 17,99,3,pc30099,fam x 000816,3,south city|willow street 17|99|3|pc30099
+ACC-000817,south city,willow street 17,99,3,pc30099,fam x 000817,3,south city|willow street 17|99|3|pc30099
+ACC-000818,south city,willow street 17,99,3,pc30099,fam x 000818,4,south city|willow street 17|99|3|pc30099
+ACC-000819,south city,willow street 17,99,4,pc30099,fam x 000819,2,south city|willow street 17|99|4|pc30099
+ACC-000820,north city,oak street 17,100,1,pc10100,fam x 000820,4,north city|oak street 17|100|1|pc10100
+ACC-000821,north city,oak street 17,100,2,pc10100,fam x 000821,3,north city|oak street 17|100|2|pc10100
+ACC-000822,north city,oak street 17,100,2,pc10100,fam x 000822,4,north city|oak street 17|100|2|pc10100
+ACC-000823,north city,oa street 17,100,2,,fam x 000823,5,north city|oa street 17|100|2|
+ACC-000824,north city,oak street 17,100,2,pc10100,fam x 000824,2,north city|oak street 17|100|2|pc10100
+ACC-000825,north city,oak street 17,100,3,pc10100,fam 00399,5,north city|oak street 17|100|3|pc10100
+ACC-000826,north city,oak s 17,100,,,fam x 000826,5,north city|oak s 17|100||
+ACC-000827,north city,oak street 17,100,3,pc10100,fam 00399,2,north city|oak street 17|100|3|pc10100
+ACC-000828,north city,oak street 17,100,4,pc10100,fam x 000828,2,north city|oak street 17|100|4|pc10100
+ACC-000829,central city,pine street 17,101,1,pc20101,fam x 000829,4,central city|pine street 17|101|1|pc20101
+ACC-000830,central city,pine street 17,101,1,pc20101,fam 00401,2,central city|pine street 17|101|1|pc20101
+ACC-000831,central city,pine s 17,101,3,pc20101,fam 00402,3,central city|pine s 17|101|3|pc20101
+ACC-000832,central city,pine t 17,101,2,pc20101,fam 00402,3,central city|pine t 17|101|2|pc20101
+ACC-000833,central city,pine street 17,101,3,pc20101,fam x 000833,2,central city|pine street 17|101|3|pc20101
+ACC-000834,central city,pin street 17,101,,,fam x 000834,5,central city|pin street 17|101||
+ACC-000835,central city,pine street 17,101,4,pc20101,fam x 000835,2,central city|pine street 17|101|4|pc20101
+ACC-000836,central city,pine street 17,101,4,pc20101,fam x 000836,4,central city|pine street 17|101|4|pc20101
+ACC-000837,south city,elm street 17,102,1,pc30102,fam x 000837,2,south city|elm street 17|102|1|pc30102
+ACC-000838,south city,el street 17,102,1,,fam 00405,5,south city|el street 17|102|1|
+ACC-000839,south city,elm street 17,102,2,pc30102,fam x 000839,5,south city|elm street 17|102|2|pc30102
+ACC-000840,south city,elm street 17,102,2,pc30102,fam x 000840,2,south city|elm street 17|102|2|pc30102
+ACC-000841,south city,elm street 17,102,3,pc30102,fam x 000841,4,south city|elm street 17|102|3|pc30102
+ACC-000842,south city,elm street 17,102,3,pc30102,fam x 000842,4,south city|elm street 17|102|3|pc30102
+ACC-000843,south city,elm street 17,102,3,pc30102,fam x 000843,3,south city|elm street 17|102|3|pc30102
+ACC-000844,south city,elm street 17,102,3,pc30102,fam x 000844,2,south city|elm street 17|102|3|pc30102
+ACC-000845,south city,elm street 17,102,3,pc30102,fam x 000845,4,south city|elm street 17|102|3|pc30102
+ACC-000846,south city,elm street 17,102,3,pc30102,fam x 000846,5,south city|elm street 17|102|3|pc30102
+ACC-000847,south city,elm street 17,102,4,pc30102,fam x 000847,4,south city|elm street 17|102|4|pc30102
+ACC-000848,south city,elm street 17,102,4,pc30102,fam x 000848,4,south city|elm street 17|102|4|pc30102
+ACC-000849,south city,elm street 17,102,4,pc30102,fam x 000849,2,south city|elm street 17|102|4|pc30102
+ACC-000850,north city,cedar street 18,103,1,pc10103,fam x 000850,3,north city|cedar street 18|103|1|pc10103
+ACC-000851,north city,cedar street 18,103,2,pc10103,fam x 000851,5,north city|cedar street 18|103|2|pc10103
+ACC-000852,north city,ceda street 18,103,2,pc10103,fam x 000852,5,north city|ceda street 18|103|2|pc10103
+ACC-000853,north city,cedar street 18,103,2,pc10103,fam x 000853,2,north city|cedar street 18|103|2|pc10103
+ACC-000854,north city,cedar street 18,103,3,pc10103,fam 00411,3,north city|cedar street 18|103|3|pc10103
+ACC-000855,north city,cedar street 18,103,3,pc10103,fam 00411,3,north city|cedar street 18|103|3|pc10103
+ACC-000856,north city,cedar street 18,103,3,pc10103,fam 00411,4,north city|cedar street 18|103|3|pc10103
+ACC-000857,north city,cedar street 18,103,4,pc10103,fam x 000857,5,north city|cedar street 18|103|4|pc10103
+ACC-000858,central city,male street 18,104,2,,fam 00413,3,central city|male street 18|104|2|
+ACC-000859,central city,maple s 18,104,,,fam 00413,3,central city|maple s 18|104||
+ACC-000860,central city,mapl street 18,104,2,pc20104,fam x 000860,4,central city|mapl street 18|104|2|pc20104
+ACC-000861,central city,maple street 18,104,3,pc20104,fam x 000861,3,central city|maple street 18|104|3|pc20104
+ACC-000862,central city,maple street 18,104,4,pc20104,fam x 000862,3,central city|maple street 18|104|4|pc20104
+ACC-000863,south city,willow street 18,105,1,pc30105,fam x 000863,4,south city|willow street 18|105|1|pc30105
+ACC-000864,south city,willow s 18,105,3,,fam x 000864,2,south city|willow s 18|105|3|
+ACC-000865,south city,willow street 18,105,3,pc30105,fam x 000865,3,south city|willow street 18|105|3|pc30105
+ACC-000866,south city,willow street 18,105,3,pc30105,fam 00419,3,south city|willow street 18|105|3|pc30105
+ACC-000867,south city,willow street 18,105,4,pc30105,fam x 000867,5,south city|willow street 18|105|4|pc30105
+ACC-000868,north city,oa street 18,106,,,fam x 000868,2,north city|oa street 18|106||
+ACC-000869,north city,oak street 18,106,1,pc10106,fam x 000869,3,north city|oak street 18|106|1|pc10106
+ACC-000870,north city,oak street 18,106,2,pc10106,fam x 000870,5,north city|oak street 18|106|2|pc10106
+ACC-000871,north city,oak street 18,106,3,pc10106,fam x 000871,2,north city|oak street 18|106|3|pc10106
+ACC-000872,north city,oak street 18,106,4,pc10106,fam 00424,5,north city|oak street 18|106|4|pc10106
+ACC-000873,north city,oak street 18,106,4,pc10106,fam 00424,5,north city|oak street 18|106|4|pc10106
+ACC-000874,north city,oak street 18,106,4,pc10106,fam 00424,5,north city|oak street 18|106|4|pc10106
+ACC-000875,central city,pine street 18,107,1,pc20107,fam x 000875,5,central city|pine street 18|107|1|pc20107
+ACC-000876,central city,pine street 18,107,1,pc20107,fam x 000876,4,central city|pine street 18|107|1|pc20107
+ACC-000877,central city,pine street 18,107,2,pc20107,fam x 000877,4,central city|pine street 18|107|2|pc20107
+ACC-000878,central city,pine street 18,107,3,pc20107,fam x 000878,2,central city|pine street 18|107|3|pc20107
+ACC-000879,central city,pine street 18,107,4,pc20107,fam x 000879,5,central city|pine street 18|107|4|pc20107
+ACC-000880,central city,pine street 18,107,4,pc20107,fam 00428,3,central city|pine street 18|107|4|pc20107
+ACC-000881,south city,elm street 18,108,1,pc30108,fam x 000881,4,south city|elm street 18|108|1|pc30108
+ACC-000882,south city,elm street 18,108,2,pc30108,fam x 000882,4,south city|elm street 18|108|2|pc30108
+ACC-000883,south city,elm street 18,108,3,pc30108,fam 00431,3,south city|elm street 18|108|3|pc30108
+ACC-000884,south city,elm street 18,108,3,pc30108,fam 00431,4,south city|elm street 18|108|3|pc30108
+ACC-000885,south city,elm street 18,108,3,pc30108,fam x 000885,5,south city|elm street 18|108|3|pc30108
+ACC-000886,south city,elm street 18,108,4,pc30108,fam 00432,5,south city|elm street 18|108|4|pc30108
+ACC-000887,south city,elm street 18,108,4,pc30108,fam 00432,3,south city|elm street 18|108|4|pc30108
+ACC-000888,north city,cedar street 19,109,1,pc10109,fam 00433,2,north city|cedar street 19|109|1|pc10109
+ACC-000889,north city,cdar street 19,109,1,,fam 00433,2,north city|cdar street 19|109|1|
+ACC-000890,north city,ceda street 19,109,1,pc10109,fam 00433,4,north city|ceda street 19|109|1|pc10109
+ACC-000891,north city,cedar street 19,109,1,pc10109,fam x 000891,2,north city|cedar street 19|109|1|pc10109
+ACC-000892,north city,cedar street 19,109,2,pc10109,fam x 000892,4,north city|cedar street 19|109|2|pc10109
+ACC-000893,north city,cedar street 19,109,3,pc10109,fam x 000893,3,north city|cedar street 19|109|3|pc10109
+ACC-000894,north city,cedr street 19,109,4,pc10109,fam x 000894,4,north city|cedr street 19|109|4|pc10109
+ACC-000895,central city,maple street 19,110,1,pc20110,fam x 000895,5,central city|maple street 19|110|1|pc20110
+ACC-000896,central city,maple street 19,110,2,pc20110,fam x 000896,3,central city|maple street 19|110|2|pc20110
+ACC-000897,central city,maple street 19,110,3,pc20110,fam x 000897,2,central city|maple street 19|110|3|pc20110
+ACC-000898,central city,maple street 19,110,4,pc20110,fam x 000898,2,central city|maple street 19|110|4|pc20110
+ACC-000899,south city,willow street 19,111,1,pc30111,fam x 000899,3,south city|willow street 19|111|1|pc30111
+ACC-000900,south city,willow street 19,111,2,pc30111,fam x 000900,5,south city|willow street 19|111|2|pc30111
+ACC-000901,south city,willow street 19,111,3,pc30111,fam x 000901,5,south city|willow street 19|111|3|pc30111
+ACC-000902,south city,willow street 19,111,4,pc30111,fam x 000902,5,south city|willow street 19|111|4|pc30111
+ACC-000903,north city,oak street 19,112,1,pc10112,fam 00445,5,north city|oak street 19|112|1|pc10112
+ACC-000904,north city,oak street 19,112,1,pc10112,fam 00445,5,north city|oak street 19|112|1|pc10112
+ACC-000905,north city,oak street 19,112,2,pc10112,fam 00446,3,north city|oak street 19|112|2|pc10112
+ACC-000906,north city,oak s 19,112,,pc10112,fam 00446,5,north city|oak s 19|112||pc10112
+ACC-000907,north city,oak street 19,112,3,pc10112,fam x 000907,2,north city|oak street 19|112|3|pc10112
+ACC-000908,north city,oak street 19,112,3,pc10112,fam x 000908,2,north city|oak street 19|112|3|pc10112
+ACC-000909,north city,oak street 19,112,4,pc10112,fam x 000909,3,north city|oak street 19|112|4|pc10112
+ACC-000910,central city,pine t 19,113,1,,fam x 000910,3,central city|pine t 19|113|1|
+ACC-000911,central city,pine street 19,113,1,pc20113,fam x 000911,3,central city|pine street 19|113|1|pc20113
+ACC-000912,central city,pne street 19,113,3,,fam x 000912,3,central city|pne street 19|113|3|
+ACC-000913,central city,pine street 19,113,3,pc20113,fam x 000913,3,central city|pine street 19|113|3|pc20113
+ACC-000914,central city,pine street 19,113,4,pc20113,fam x 000914,2,central city|pine street 19|113|4|pc20113
+ACC-000915,south city,elm street 19,114,1,pc30114,fam 00453,3,south city|elm street 19|114|1|pc30114
+ACC-000916,south city,elm street 19,114,1,pc30114,fam 00453,4,south city|elm street 19|114|1|pc30114
+ACC-000917,south city,elm t 19,114,2,,fam x 000917,4,south city|elm t 19|114|2|
+ACC-000918,south city,elm street 19,114,3,pc30114,fam x 000918,3,south city|elm street 19|114|3|pc30114
+ACC-000919,south city,elm street 19,114,4,pc30114,fam x 000919,4,south city|elm street 19|114|4|pc30114
+ACC-000920,north city,cedar street 20,115,1,pc10115,fam x 000920,5,north city|cedar street 20|115|1|pc10115
+ACC-000921,north city,cedar street 20,115,2,pc10115,fam x 000921,3,north city|cedar street 20|115|2|pc10115
+ACC-000922,north city,cedar street 20,115,2,pc10115,fam 00458,5,north city|cedar street 20|115|2|pc10115
+ACC-000923,north city,cedar street 20,115,2,pc10115,fam 00458,3,north city|cedar street 20|115|2|pc10115
+ACC-000924,north city,cedar street 20,115,2,pc10115,fam 00458,2,north city|cedar street 20|115|2|pc10115
+ACC-000925,north city,cedar street 20,115,3,pc10115,fam x 000925,5,north city|cedar street 20|115|3|pc10115
+ACC-000926,north city,cedar street 20,115,4,pc10115,fam x 000926,5,north city|cedar street 20|115|4|pc10115
+ACC-000927,central city,mple street 20,116,1,pc20116,fam 00461,3,central city|mple street 20|116|1|pc20116
+ACC-000928,central city,maple street 20,116,1,pc20116,fam 00461,3,central city|maple street 20|116|1|pc20116
+ACC-000929,central city,maple street 20,116,1,pc20116,fam 00461,3,central city|maple street 20|116|1|pc20116
+ACC-000930,central city,maple street 20,116,1,pc20116,fam 00461,5,central city|maple street 20|116|1|pc20116
+ACC-000931,central city,maple street 20,116,2,pc20116,fam x 000931,3,central city|maple street 20|116|2|pc20116
+ACC-000932,central city,maple street 20,116,2,pc20116,fam x 000932,3,central city|maple street 20|116|2|pc20116
+ACC-000933,central city,maple street 20,116,2,pc20116,fam x 000933,4,central city|maple street 20|116|2|pc20116
+ACC-000934,central city,maple street 20,116,3,pc20116,fam x 000934,4,central city|maple street 20|116|3|pc20116
+ACC-000935,central city,maple street 20,116,4,pc20116,fam 00464,4,central city|maple street 20|116|4|pc20116
+ACC-000936,central city,maple street 20,116,4,pc20116,fam 00464,5,central city|maple street 20|116|4|pc20116
+ACC-000937,central city,maple street 20,116,4,pc20116,fam 00464,4,central city|maple street 20|116|4|pc20116
+ACC-000938,south city,willow street 20,117,1,pc30117,fam x 000938,5,south city|willow street 20|117|1|pc30117
+ACC-000939,south city,willow street 20,117,2,pc30117,fam x 000939,5,south city|willow street 20|117|2|pc30117
+ACC-000940,south city,willow street 20,117,3,pc30117,fam x 000940,3,south city|willow street 20|117|3|pc30117
+ACC-000941,south city,willow street 20,117,4,pc30117,fam x 000941,5,south city|willow street 20|117|4|pc30117
+ACC-000942,north city,oak street 20,118,1,pc10118,fam 00469,2,north city|oak street 20|118|1|pc10118
+ACC-000943,north city,oak street 20,118,1,pc10118,fam x 000943,3,north city|oak street 20|118|1|pc10118
+ACC-000944,north city,oak street 20,118,1,pc10118,fam 00469,4,north city|oak street 20|118|1|pc10118
+ACC-000945,north city,oak street 20,118,1,pc10118,fam 00469,3,north city|oak street 20|118|1|pc10118
+ACC-000946,north city,oak street 20,118,2,pc10118,fam 00470,4,north city|oak street 20|118|2|pc10118
+ACC-000947,north city,oak street 20,118,2,pc10118,fam 00470,5,north city|oak street 20|118|2|pc10118
+ACC-000948,north city,oak street 20,118,3,pc10118,fam x 000948,2,north city|oak street 20|118|3|pc10118
+ACC-000949,north city,ok street 20,118,4,,fam x 000949,3,north city|ok street 20|118|4|
+ACC-000950,north city,oak street 20,118,3,pc10118,fam x 000950,2,north city|oak street 20|118|3|pc10118
+ACC-000951,north city,ok street 20,118,4,,fam x 000951,5,north city|ok street 20|118|4|
+ACC-000952,north city,oak street 20,118,4,pc10118,fam x 000952,3,north city|oak street 20|118|4|pc10118
+ACC-000953,central city,pine street 20,119,1,pc20119,fam 00473,2,central city|pine street 20|119|1|pc20119
+ACC-000954,central city,pine street 20,119,1,pc20119,fam 00473,5,central city|pine street 20|119|1|pc20119
+ACC-000955,central city,pine street 20,119,2,pc20119,fam x 000955,5,central city|pine street 20|119|2|pc20119
+ACC-000956,central city,pine street 20,119,3,pc20119,fam 00475,5,central city|pine street 20|119|3|pc20119
+ACC-000957,central city,pine street 20,119,3,pc20119,fam 00475,5,central city|pine street 20|119|3|pc20119
+ACC-000958,central city,pine street 20,119,4,pc20119,fam x 000958,2,central city|pine street 20|119|4|pc20119
+ACC-000959,south city,em street 20,120,,pc30120,fam x 000959,4,south city|em street 20|120||pc30120
+ACC-000960,south city,elm street 20,120,2,pc30120,fam x 000960,4,south city|elm street 20|120|2|pc30120
+ACC-000961,south city,elm street 20,120,2,pc30120,fam x 000961,4,south city|elm street 20|120|2|pc30120
+ACC-000962,south city,lm street 20,120,4,pc30120,fam x 000962,3,south city|lm street 20|120|4|pc30120
+ACC-000963,south city,elm street 20,120,4,pc30120,fam 00480,2,south city|elm street 20|120|4|pc30120
+ACC-000964,south city,elm street 20,120,4,pc30120,fam 00480,4,south city|elm street 20|120|4|pc30120
+ACC-000965,north city,edar street 21,121,1,,fam x 000965,2,north city|edar street 21|121|1|
+ACC-000966,north city,cdar street 21,121,3,,fam x 000966,5,north city|cdar street 21|121|3|
+ACC-000967,north city,cedar street 21,121,2,pc10121,fam x 000967,4,north city|cedar street 21|121|2|pc10121
+ACC-000968,north city,cedar street 21,121,2,pc10121,fam x 000968,2,north city|cedar street 21|121|2|pc10121
+ACC-000969,north city,cedar street 21,121,3,pc10121,fam 00483,5,north city|cedar street 21|121|3|pc10121
+ACC-000970,north city,cedar street 21,121,3,pc10121,fam 00483,4,north city|cedar street 21|121|3|pc10121
+ACC-000971,north city,cedar street 21,121,3,pc10121,fam 00483,2,north city|cedar street 21|121|3|pc10121
+ACC-000972,north city,cedar street 21,121,4,pc10121,fam x 000972,2,north city|cedar street 21|121|4|pc10121
+ACC-000973,north city,cedar street 21,121,4,pc10121,fam x 000973,4,north city|cedar street 21|121|4|pc10121
+ACC-000974,central city,maple street 21,122,1,pc20122,fam x 000974,5,central city|maple street 21|122|1|pc20122
+ACC-000975,central city,male street 21,122,2,,fam x 000975,4,central city|male street 21|122|2|
+ACC-000976,central city,maple street 21,122,2,pc20122,fam x 000976,4,central city|maple street 21|122|2|pc20122
+ACC-000977,central city,maple street 21,122,2,pc20122,fam x 000977,5,central city|maple street 21|122|2|pc20122
+ACC-000978,central city,mple street 21,122,3,pc20122,fam x 000978,5,central city|mple street 21|122|3|pc20122
+ACC-000979,central city,maple street 21,122,3,pc20122,fam x 000979,3,central city|maple street 21|122|3|pc20122
+ACC-000980,central city,mapl street 21,122,,,fam x 000980,5,central city|mapl street 21|122||
+ACC-000981,south city,willow street 21,123,1,pc30123,fam 00489,2,south city|willow street 21|123|1|pc30123
+ACC-000982,south city,willow street 21,123,1,pc30123,fam 00489,4,south city|willow street 21|123|1|pc30123
+ACC-000983,south city,wllow street 21,123,1,,fam 00489,3,south city|wllow street 21|123|1|
+ACC-000984,south city,willow street 21,123,2,pc30123,fam x 000984,2,south city|willow street 21|123|2|pc30123
+ACC-000985,south city,willow street 21,123,3,pc30123,fam x 000985,4,south city|willow street 21|123|3|pc30123
+ACC-000986,south city,willow street 21,123,3,pc30123,fam x 000986,5,south city|willow street 21|123|3|pc30123
+ACC-000987,south city,willow street 21,123,3,pc30123,fam x 000987,3,south city|willow street 21|123|3|pc30123
+ACC-000988,south city,willow street 21,123,3,pc30123,fam x 000988,4,south city|willow street 21|123|3|pc30123
+ACC-000989,south city,willow street 21,123,3,pc30123,fam x 000989,5,south city|willow street 21|123|3|pc30123
+ACC-000990,south city,willow street 21,123,3,pc30123,fam x 000990,3,south city|willow street 21|123|3|pc30123
+ACC-000991,south city,willw street 21,123,4,,fam 00492,4,south city|willw street 21|123|4|
+ACC-000992,south city,willow street 21,123,4,pc30123,fam 00492,5,south city|willow street 21|123|4|pc30123
+ACC-000993,north city,oak street 21,124,1,pc10124,fam x 000993,5,north city|oak street 21|124|1|pc10124
+ACC-000994,north city,oak street 21,124,2,pc10124,fam 00494,2,north city|oak street 21|124|2|pc10124
+ACC-000995,north city,oak street 21,124,2,pc10124,fam 00494,2,north city|oak street 21|124|2|pc10124
+ACC-000996,north city,oak street 21,124,2,pc10124,fam 00494,4,north city|oak street 21|124|2|pc10124
+ACC-000997,north city,ak street 21,124,2,,fam 00494,3,north city|ak street 21|124|2|
+ACC-000998,north city,oak street 21,124,3,pc10124,fam 00495,5,north city|oak street 21|124|3|pc10124
+ACC-000999,north city,oak street 21,124,3,pc10124,fam x 000999,4,north city|oak street 21|124|3|pc10124
+ACC-001000,north city,ak street 21,124,5,,fam 00496,4,north city|ak street 21|124|5|
+ACC-001001,north city,oak street 21,124,4,pc10124,fam 00496,4,north city|oak street 21|124|4|pc10124
+ACC-001002,north city,ok street 21,124,4,,fam 00496,4,north city|ok street 21|124|4|
+ACC-001003,north city,oak street 21,124,4,pc10124,fam 00496,3,north city|oak street 21|124|4|pc10124
+ACC-001004,central city,pine street 21,125,1,pc20125,fam x 001004,4,central city|pine street 21|125|1|pc20125
+ACC-001005,central city,pine street 21,125,1,pc20125,fam x 001005,4,central city|pine street 21|125|1|pc20125
+ACC-001006,central city,pine street 21,125,2,pc20125,fam 00498,4,central city|pine street 21|125|2|pc20125
+ACC-001007,central city,pine street 21,125,2,pc20125,fam 00498,3,central city|pine street 21|125|2|pc20125
+ACC-001008,central city,pine street 21,125,3,pc20125,fam x 001008,2,central city|pine street 21|125|3|pc20125
+ACC-001009,central city,pine s 21,125,3,,fam x 001009,4,central city|pine s 21|125|3|
+ACC-001010,central city,pine street 21,125,4,pc20125,fam x 001010,3,central city|pine street 21|125|4|pc20125
+ACC-001011,south city,elm street 21,126,1,pc30126,fam x 001011,2,south city|elm street 21|126|1|pc30126
+ACC-001012,south city,elm street 21,126,2,pc30126,fam x 001012,5,south city|elm street 21|126|2|pc30126
+ACC-001013,south city,elm street 21,126,3,pc30126,fam 00503,4,south city|elm street 21|126|3|pc30126
+ACC-001014,south city,elm street 21,126,3,pc30126,fam 00503,2,south city|elm street 21|126|3|pc30126
+ACC-001015,south city,elm street 21,126,3,pc30126,fam 00503,5,south city|elm street 21|126|3|pc30126
+ACC-001016,south city,elm street 21,126,3,pc30126,fam 00503,5,south city|elm street 21|126|3|pc30126
+ACC-001017,south city,elm street 21,126,4,pc30126,fam x 001017,4,south city|elm street 21|126|4|pc30126
+ACC-001018,north city,cedar street 22,127,1,pc10127,fam x 001018,2,north city|cedar street 22|127|1|pc10127
+ACC-001019,north city,cedar street 22,127,2,pc10127,fam x 001019,5,north city|cedar street 22|127|2|pc10127
+ACC-001020,north city,cedar street 22,127,3,pc10127,fam x 001020,2,north city|cedar street 22|127|3|pc10127
+ACC-001021,north city,cedar street 22,127,3,pc10127,fam 00507,2,north city|cedar street 22|127|3|pc10127
+ACC-001022,north city,cedar street 22,127,4,pc10127,fam 00508,4,north city|cedar street 22|127|4|pc10127
+ACC-001023,north city,cedar street 22,127,4,pc10127,fam x 001023,4,north city|cedar street 22|127|4|pc10127
+ACC-001024,north city,cedar street 22,127,4,pc10127,fam x 001024,2,north city|cedar street 22|127|4|pc10127
+ACC-001025,north city,cedr street 22,127,4,pc10127,fam x 001025,3,north city|cedr street 22|127|4|pc10127
+ACC-001026,central city,maple street 22,128,1,pc20128,fam x 001026,4,central city|maple street 22|128|1|pc20128
+ACC-001027,central city,male street 22,128,1,,fam x 001027,5,central city|male street 22|128|1|
+ACC-001028,central city,maple street 22,128,2,pc20128,fam x 001028,4,central city|maple street 22|128|2|pc20128
+ACC-001029,central city,maple street 22,128,3,pc20128,fam x 001029,5,central city|maple street 22|128|3|pc20128
+ACC-001030,central city,maple street 22,128,3,pc20128,fam x 001030,3,central city|maple street 22|128|3|pc20128
+ACC-001031,central city,maple street 22,128,4,pc20128,fam 00512,4,central city|maple street 22|128|4|pc20128
+ACC-001032,central city,maple street 22,128,4,pc20128,fam 00512,3,central city|maple street 22|128|4|pc20128
+ACC-001033,central city,maple street 22,128,4,pc20128,fam 00512,4,central city|maple street 22|128|4|pc20128
+ACC-001034,south city,willow street 22,129,1,pc30129,fam 00513,2,south city|willow street 22|129|1|pc30129
+ACC-001035,south city,wilow street 22,129,,,fam 00513,2,south city|wilow street 22|129||
+ACC-001036,south city,willow street 22,129,1,pc30129,fam 00513,4,south city|willow street 22|129|1|pc30129
+ACC-001037,south city,willow street 22,129,1,pc30129,fam 00513,2,south city|willow street 22|129|1|pc30129
+ACC-001038,south city,willow t 22,129,3,,fam x 001038,3,south city|willow t 22|129|3|
+ACC-001039,south city,willow street 22,129,2,pc30129,fam x 001039,4,south city|willow street 22|129|2|pc30129
+ACC-001040,south city,willow street 22,129,3,pc30129,fam x 001040,3,south city|willow street 22|129|3|pc30129
+ACC-001041,south city,willow street 22,129,3,pc30129,fam x 001041,4,south city|willow street 22|129|3|pc30129
+ACC-001042,south city,willow street 22,129,3,pc30129,fam x 001042,5,south city|willow street 22|129|3|pc30129
+ACC-001043,south city,willow street 22,129,4,pc30129,fam x 001043,5,south city|willow street 22|129|4|pc30129
+ACC-001044,south city,wilow street 22,129,4,,fam 00516,3,south city|wilow street 22|129|4|
+ACC-001045,north city,oak street 22,130,1,pc10130,fam x 001045,3,north city|oak street 22|130|1|pc10130
+ACC-001046,north city,oak street 22,130,1,pc10130,fam x 001046,4,north city|oak street 22|130|1|pc10130
+ACC-001047,north city,oak street 22,130,2,pc10130,fam 00518,4,north city|oak street 22|130|2|pc10130
+ACC-001048,north city,oak street 22,130,2,pc10130,fam x 001048,2,north city|oak street 22|130|2|pc10130
+ACC-001049,north city,ok street 22,130,2,,fam 00518,3,north city|ok street 22|130|2|
+ACC-001050,north city,oak street 22,130,3,pc10130,fam 00519,4,north city|oak street 22|130|3|pc10130
+ACC-001051,north city,oak street 22,130,3,pc10130,fam 00519,4,north city|oak street 22|130|3|pc10130
+ACC-001052,north city,oak street 22,130,4,pc10130,fam 00520,4,north city|oak street 22|130|4|pc10130
+ACC-001053,north city,oak street 22,130,4,pc10130,fam x 001053,3,north city|oak street 22|130|4|pc10130
+ACC-001054,north city,oak street 22,130,4,pc10130,fam 00520,3,north city|oak street 22|130|4|pc10130
+ACC-001055,central city,ine street 22,131,1,pc20131,fam 00521,2,central city|ine street 22|131|1|pc20131
+ACC-001056,central city,pine street 22,131,1,pc20131,fam 00521,3,central city|pine street 22|131|1|pc20131
+ACC-001057,central city,ine street 22,131,2,pc20131,fam 00521,2,central city|ine street 22|131|2|pc20131
+ACC-001058,central city,pine t 22,131,1,pc20131,fam 00521,2,central city|pine t 22|131|1|pc20131
+ACC-001059,central city,pine street 22,131,2,pc20131,fam 00522,3,central city|pine street 22|131|2|pc20131
+ACC-001060,central city,pne street 22,131,2,,fam 00522,3,central city|pne street 22|131|2|
+ACC-001061,central city,pine street 22,131,3,pc20131,fam 00523,3,central city|pine street 22|131|3|pc20131
+ACC-001062,central city,pine s 22,131,,,fam 00523,4,central city|pine s 22|131||
+ACC-001063,central city,pine street 22,131,4,pc20131,fam x 001063,2,central city|pine street 22|131|4|pc20131
+ACC-001064,south city,em street 22,132,,,fam 00525,5,south city|em street 22|132||
+ACC-001065,south city,elm t 22,132,,pc30132,fam 00525,3,south city|elm t 22|132||pc30132
+ACC-001066,south city,em street 22,132,3,pc30132,fam x 001066,3,south city|em street 22|132|3|pc30132
+ACC-001067,south city,elm street 22,132,3,pc30132,fam x 001067,4,south city|elm street 22|132|3|pc30132
+ACC-001068,south city,elm street 22,132,4,pc30132,fam 00528,4,south city|elm street 22|132|4|pc30132
+ACC-001069,south city,elm street 22,132,4,pc30132,fam 00528,2,south city|elm street 22|132|4|pc30132
+ACC-001070,south city,elm street 22,132,4,pc30132,fam x 001070,3,south city|elm street 22|132|4|pc30132
+ACC-001071,south city,elm street 22,132,4,pc30132,fam 00528,2,south city|elm street 22|132|4|pc30132
+ACC-001072,north city,cedar street 23,133,1,pc10133,fam x 001072,3,north city|cedar street 23|133|1|pc10133
+ACC-001073,north city,cedar street 23,133,2,pc10133,fam x 001073,5,north city|cedar street 23|133|2|pc10133
+ACC-001074,north city,cedar street 23,133,2,pc10133,fam 00530,3,north city|cedar street 23|133|2|pc10133
+ACC-001075,north city,cedar street 23,133,2,pc10133,fam 00530,3,north city|cedar street 23|133|2|pc10133
+ACC-001076,north city,edar street 23,133,2,,fam 00530,4,north city|edar street 23|133|2|
+ACC-001077,north city,cedar street 23,133,3,pc10133,fam x 001077,5,north city|cedar street 23|133|3|pc10133
+ACC-001078,north city,cedar street 23,133,3,pc10133,fam x 001078,2,north city|cedar street 23|133|3|pc10133
+ACC-001079,north city,cedar street 23,133,4,pc10133,fam x 001079,5,north city|cedar street 23|133|4|pc10133
+ACC-001080,central city,maple street 23,134,1,pc20134,fam x 001080,5,central city|maple street 23|134|1|pc20134
+ACC-001081,central city,maple street 23,134,2,pc20134,fam x 001081,2,central city|maple street 23|134|2|pc20134
+ACC-001082,central city,maple street 23,134,2,pc20134,fam 00534,3,central city|maple street 23|134|2|pc20134
+ACC-001083,central city,mple street 23,134,3,pc20134,fam x 001083,5,central city|mple street 23|134|3|pc20134
+ACC-001084,central city,male street 23,134,4,,fam x 001084,4,central city|male street 23|134|4|
+ACC-001085,central city,male street 23,134,4,,fam x 001085,5,central city|male street 23|134|4|
+ACC-001086,central city,maple street 23,134,4,pc20134,fam x 001086,2,central city|maple street 23|134|4|pc20134
+ACC-001087,south city,wilow street 23,135,1,,fam 00537,2,south city|wilow street 23|135|1|
+ACC-001088,south city,willow street 23,135,1,pc30135,fam 00537,4,south city|willow street 23|135|1|pc30135
+ACC-001089,south city,willow street 23,135,2,pc30135,fam x 001089,3,south city|willow street 23|135|2|pc30135
+ACC-001090,south city,willow street 23,135,3,pc30135,fam x 001090,5,south city|willow street 23|135|3|pc30135
+ACC-001091,south city,willow street 23,135,3,pc30135,fam x 001091,2,south city|willow street 23|135|3|pc30135
+ACC-001092,south city,willow street 23,135,4,pc30135,fam x 001092,2,south city|willow street 23|135|4|pc30135
+ACC-001093,south city,willow street 23,135,4,pc30135,fam x 001093,2,south city|willow street 23|135|4|pc30135
+ACC-001094,north city,oak street 23,136,1,pc10136,fam x 001094,2,north city|oak street 23|136|1|pc10136
+ACC-001095,north city,oak street 23,136,2,pc10136,fam 00542,2,north city|oak street 23|136|2|pc10136
+ACC-001096,north city,ok street 23,136,2,,fam 00542,5,north city|ok street 23|136|2|
+ACC-001097,north city,oak street 23,136,3,pc10136,fam x 001097,5,north city|oak street 23|136|3|pc10136
+ACC-001098,north city,oak street 23,136,4,pc10136,fam x 001098,5,north city|oak street 23|136|4|pc10136
+ACC-001099,central city,pine street 23,137,1,pc20137,fam x 001099,4,central city|pine street 23|137|1|pc20137
+ACC-001100,central city,pine street 23,137,2,pc20137,fam x 001100,4,central city|pine street 23|137|2|pc20137
+ACC-001101,central city,pin street 23,137,3,,fam x 001101,5,central city|pin street 23|137|3|
+ACC-001102,central city,pine street 23,137,3,pc20137,fam x 001102,5,central city|pine street 23|137|3|pc20137
+ACC-001103,central city,pie street 23,137,3,,fam x 001103,4,central city|pie street 23|137|3|
+ACC-001104,central city,pine street 23,137,3,pc20137,fam x 001104,2,central city|pine street 23|137|3|pc20137
+ACC-001105,central city,pine street 23,137,4,pc20137,fam x 001105,2,central city|pine street 23|137|4|pc20137
+ACC-001106,central city,pin street 23,137,4,,fam x 001106,2,central city|pin street 23|137|4|
+ACC-001107,central city,pine s 23,137,,pc20137,fam x 001107,2,central city|pine s 23|137||pc20137
+ACC-001108,south city,elm street 23,138,1,pc30138,fam x 001108,2,south city|elm street 23|138|1|pc30138
+ACC-001109,south city,elm street 23,138,1,pc30138,fam 00549,4,south city|elm street 23|138|1|pc30138
+ACC-001110,south city,elm street 23,138,1,pc30138,fam 00549,5,south city|elm street 23|138|1|pc30138
+ACC-001111,south city,elm street 23,138,2,pc30138,fam x 001111,5,south city|elm street 23|138|2|pc30138
+ACC-001112,south city,lm street 23,138,3,,fam x 001112,3,south city|lm street 23|138|3|
+ACC-001113,south city,elm street 23,138,3,pc30138,fam x 001113,4,south city|elm street 23|138|3|pc30138
+ACC-001114,south city,elm street 23,138,3,pc30138,fam x 001114,5,south city|elm street 23|138|3|pc30138
+ACC-001115,south city,elm t 23,138,3,pc30138,fam x 001115,2,south city|elm t 23|138|3|pc30138
+ACC-001116,south city,elm street 23,138,4,pc30138,fam x 001116,5,south city|elm street 23|138|4|pc30138
+ACC-001117,south city,elm s 23,138,,,fam x 001117,3,south city|elm s 23|138||
+ACC-001118,south city,elm street 23,138,4,pc30138,fam x 001118,3,south city|elm street 23|138|4|pc30138
+ACC-001119,south city,elm street 23,138,4,pc30138,fam x 001119,3,south city|elm street 23|138|4|pc30138
+ACC-001120,north city,cear street 24,139,1,,fam x 001120,5,north city|cear street 24|139|1|
+ACC-001121,north city,cedar street 24,139,2,pc10139,fam x 001121,4,north city|cedar street 24|139|2|pc10139
+ACC-001122,north city,cedar street 24,139,3,pc10139,fam x 001122,3,north city|cedar street 24|139|3|pc10139
+ACC-001123,north city,cedar street 24,139,4,pc10139,fam 00556,3,north city|cedar street 24|139|4|pc10139
+ACC-001124,north city,cedar street 24,139,4,pc10139,fam x 001124,4,north city|cedar street 24|139|4|pc10139
+ACC-001125,north city,cedar s 24,139,4,,fam 00556,2,north city|cedar s 24|139|4|
+ACC-001126,central city,maple street 24,140,1,pc20140,fam x 001126,2,central city|maple street 24|140|1|pc20140
+ACC-001127,central city,maple street 24,140,2,pc20140,fam x 001127,4,central city|maple street 24|140|2|pc20140
+ACC-001128,central city,maple street 24,140,2,pc20140,fam x 001128,4,central city|maple street 24|140|2|pc20140
+ACC-001129,central city,male street 24,140,,,fam x 001129,5,central city|male street 24|140||
+ACC-001130,central city,maple street 24,140,3,pc20140,fam x 001130,4,central city|maple street 24|140|3|pc20140
+ACC-001131,central city,maple street 24,140,3,pc20140,fam x 001131,3,central city|maple street 24|140|3|pc20140
+ACC-001132,central city,maple street 24,140,4,pc20140,fam x 001132,2,central city|maple street 24|140|4|pc20140
+ACC-001133,central city,maple street 24,140,4,pc20140,fam x 001133,3,central city|maple street 24|140|4|pc20140
+ACC-001134,south city,willow street 24,141,1,pc30141,fam x 001134,2,south city|willow street 24|141|1|pc30141
+ACC-001135,south city,willow street 24,141,1,pc30141,fam x 001135,3,south city|willow street 24|141|1|pc30141
+ACC-001136,south city,willow s 24,141,2,,fam x 001136,3,south city|willow s 24|141|2|
+ACC-001137,south city,willow street 24,141,3,pc30141,fam x 001137,3,south city|willow street 24|141|3|pc30141
+ACC-001138,south city,willow street 24,141,4,pc30141,fam 00564,5,south city|willow street 24|141|4|pc30141
+ACC-001139,south city,willow street 24,141,4,pc30141,fam 00564,2,south city|willow street 24|141|4|pc30141
+ACC-001140,south city,willow street 24,141,4,pc30141,fam 00564,3,south city|willow street 24|141|4|pc30141
+ACC-001141,south city,willow street 24,141,4,pc30141,fam 00564,3,south city|willow street 24|141|4|pc30141
+ACC-001142,north city,ak street 24,142,1,,fam 00565,2,north city|ak street 24|142|1|
+ACC-001143,north city,oak street 24,142,1,pc10142,fam 00565,2,north city|oak street 24|142|1|pc10142
+ACC-001144,north city,oak street 24,142,2,pc10142,fam 00566,3,north city|oak street 24|142|2|pc10142
+ACC-001145,north city,ok street 24,142,2,,fam 00566,3,north city|ok street 24|142|2|
+ACC-001146,north city,ok street 24,142,3,pc10142,fam 00567,4,north city|ok street 24|142|3|pc10142
+ACC-001147,north city,oak s 24,142,3,pc10142,fam 00567,2,north city|oak s 24|142|3|pc10142
+ACC-001148,north city,ok street 24,142,3,,fam 00567,5,north city|ok street 24|142|3|
+ACC-001149,north city,oak street 24,142,4,pc10142,fam x 001149,5,north city|oak street 24|142|4|pc10142
+ACC-001150,central city,pin street 24,143,2,,fam x 001150,4,central city|pin street 24|143|2|
+ACC-001151,central city,pine street 24,143,1,pc20143,fam x 001151,3,central city|pine street 24|143|1|pc20143
+ACC-001152,central city,pine t 24,143,1,,fam x 001152,2,central city|pine t 24|143|1|
+ACC-001153,central city,pine street 24,143,2,pc20143,fam x 001153,2,central city|pine street 24|143|2|pc20143
+ACC-001154,central city,pine street 24,143,3,pc20143,fam 00571,5,central city|pine street 24|143|3|pc20143
+ACC-001155,central city,pine street 24,143,3,pc20143,fam 00571,5,central city|pine street 24|143|3|pc20143
+ACC-001156,central city,pine street 24,143,4,pc20143,fam 00572,2,central city|pine street 24|143|4|pc20143
+ACC-001157,central city,pine street 24,143,4,pc20143,fam 00572,3,central city|pine street 24|143|4|pc20143
+ACC-001158,south city,elm street 24,144,1,pc30144,fam x 001158,4,south city|elm street 24|144|1|pc30144
+ACC-001159,south city,elm street 24,144,2,pc30144,fam x 001159,2,south city|elm street 24|144|2|pc30144
+ACC-001160,south city,elm street 24,144,3,pc30144,fam x 001160,4,south city|elm street 24|144|3|pc30144
+ACC-001161,south city,elm street 24,144,4,pc30144,fam 00576,3,south city|elm street 24|144|4|pc30144
+ACC-001162,south city,elm street 24,144,4,pc30144,fam 00576,3,south city|elm street 24|144|4|pc30144
+ACC-001163,south city,elm street 24,144,4,pc30144,fam 00576,2,south city|elm street 24|144|4|pc30144
+ACC-001164,north city,cedar street 25,145,1,pc10145,fam x 001164,5,north city|cedar street 25|145|1|pc10145
+ACC-001165,north city,cedar street 25,145,2,pc10145,fam 00578,3,north city|cedar street 25|145|2|pc10145
+ACC-001166,north city,cedar street 25,145,2,pc10145,fam 00578,5,north city|cedar street 25|145|2|pc10145
+ACC-001167,north city,cedar s 25,145,2,,fam 00578,4,north city|cedar s 25|145|2|
+ACC-001168,north city,cedar street 25,145,2,pc10145,fam x 001168,3,north city|cedar street 25|145|2|pc10145
+ACC-001169,north city,cedar street 25,145,3,pc10145,fam x 001169,5,north city|cedar street 25|145|3|pc10145
+ACC-001170,north city,cedar street 25,145,3,pc10145,fam x 001170,2,north city|cedar street 25|145|3|pc10145
+ACC-001171,north city,cedar street 25,145,3,pc10145,fam x 001171,4,north city|cedar street 25|145|3|pc10145
+ACC-001172,north city,cedar s 25,145,4,pc10145,fam x 001172,5,north city|cedar s 25|145|4|pc10145
+ACC-001173,central city,maple street 25,146,1,pc20146,fam x 001173,2,central city|maple street 25|146|1|pc20146
+ACC-001174,central city,aple street 25,146,2,pc20146,fam x 001174,2,central city|aple street 25|146|2|pc20146
+ACC-001175,central city,maple street 25,146,3,pc20146,fam x 001175,2,central city|maple street 25|146|3|pc20146
+ACC-001176,central city,maple street 25,146,4,pc20146,fam x 001176,3,central city|maple street 25|146|4|pc20146
+ACC-001177,central city,maple street 25,146,4,pc20146,fam x 001177,3,central city|maple street 25|146|4|pc20146
+ACC-001178,central city,maple street 25,146,4,pc20146,fam x 001178,2,central city|maple street 25|146|4|pc20146
+ACC-001179,south city,willow street 25,147,1,pc30147,fam x 001179,5,south city|willow street 25|147|1|pc30147
+ACC-001180,south city,willow street 25,147,2,pc30147,fam x 001180,4,south city|willow street 25|147|2|pc30147
+ACC-001181,south city,willow street 25,147,2,pc30147,fam x 001181,5,south city|willow street 25|147|2|pc30147
+ACC-001182,south city,willow street 25,147,2,pc30147,fam x 001182,2,south city|willow street 25|147|2|pc30147
+ACC-001183,south city,willow street 25,147,3,pc30147,fam 00587,2,south city|willow street 25|147|3|pc30147
+ACC-001184,south city,willow street 25,147,3,pc30147,fam 00587,4,south city|willow street 25|147|3|pc30147
+ACC-001185,south city,willow street 25,147,3,pc30147,fam 00587,5,south city|willow street 25|147|3|pc30147
+ACC-001186,south city,illow street 25,147,3,,fam 00587,2,south city|illow street 25|147|3|
+ACC-001187,south city,willow street 25,147,4,pc30147,fam x 001187,2,south city|willow street 25|147|4|pc30147
+ACC-001188,north city,oak street 25,148,1,pc10148,fam x 001188,3,north city|oak street 25|148|1|pc10148
+ACC-001189,north city,oak street 25,148,1,pc10148,fam x 001189,3,north city|oak street 25|148|1|pc10148
+ACC-001190,north city,oak street 25,148,1,pc10148,fam x 001190,4,north city|oak street 25|148|1|pc10148
+ACC-001191,north city,oa street 25,148,1,,fam x 001191,2,north city|oa street 25|148|1|
+ACC-001192,north city,oak street 25,148,1,pc10148,fam x 001192,4,north city|oak street 25|148|1|pc10148
+ACC-001193,north city,ak street 25,148,1,,fam x 001193,5,north city|ak street 25|148|1|
+ACC-001194,north city,oak street 25,148,2,pc10148,fam x 001194,2,north city|oak street 25|148|2|pc10148
+ACC-001195,north city,oak street 25,148,3,pc10148,fam x 001195,2,north city|oak street 25|148|3|pc10148
+ACC-001196,north city,oak street 25,148,4,pc10148,fam x 001196,2,north city|oak street 25|148|4|pc10148
+ACC-001197,central city,pine street 25,149,1,pc20149,fam x 001197,3,central city|pine street 25|149|1|pc20149
+ACC-001198,central city,pine street 25,149,2,pc20149,fam x 001198,3,central city|pine street 25|149|2|pc20149
+ACC-001199,central city,pine street 25,149,3,pc20149,fam x 001199,4,central city|pine street 25|149|3|pc20149
+ACC-001200,central city,pine street 25,149,4,pc20149,fam 00596,2,central city|pine street 25|149|4|pc20149
+ACC-001201,central city,pine t 25,149,4,pc20149,fam 00596,5,central city|pine t 25|149|4|pc20149
+ACC-001202,south city,elm street 25,150,1,pc30150,fam x 001202,2,south city|elm street 25|150|1|pc30150
+ACC-001203,south city,elm street 25,150,1,pc30150,fam 00597,2,south city|elm street 25|150|1|pc30150
+ACC-001204,south city,elm street 25,150,2,pc30150,fam 00598,5,south city|elm street 25|150|2|pc30150
+ACC-001205,south city,elm street 25,150,2,pc30150,fam 00598,3,south city|elm street 25|150|2|pc30150
+ACC-001206,south city,elm street 25,150,3,pc30150,fam 00599,5,south city|elm street 25|150|3|pc30150
+ACC-001207,south city,elm street 25,150,3,pc30150,fam 00599,5,south city|elm street 25|150|3|pc30150
+ACC-001208,south city,elm street 25,150,3,pc30150,fam 00599,3,south city|elm street 25|150|3|pc30150
+ACC-001209,south city,elm street 25,150,4,pc30150,fam x 001209,2,south city|elm street 25|150|4|pc30150
+ACC-001210,north city,cedar s 26,151,,pc10151,fam x 001210,3,north city|cedar s 26|151||pc10151
+ACC-001211,north city,cedar street 26,151,2,pc10151,fam 00602,3,north city|cedar street 26|151|2|pc10151
+ACC-001212,north city,cedar street 26,151,2,pc10151,fam x 001212,3,north city|cedar street 26|151|2|pc10151
+ACC-001213,north city,cedar street 26,151,3,pc10151,fam x 001213,4,north city|cedar street 26|151|3|pc10151
+ACC-001214,north city,cedar street 26,151,4,pc10151,fam x 001214,4,north city|cedar street 26|151|4|pc10151
+ACC-001215,north city,cedar street 26,151,4,pc10151,fam x 001215,2,north city|cedar street 26|151|4|pc10151
+ACC-001216,central city,maple street 26,152,1,pc20152,fam 00605,2,central city|maple street 26|152|1|pc20152
+ACC-001217,central city,mape street 26,152,1,pc20152,fam 00605,3,central city|mape street 26|152|1|pc20152
+ACC-001218,central city,maple street 26,152,2,pc20152,fam x 001218,2,central city|maple street 26|152|2|pc20152
+ACC-001219,central city,maple street 26,152,3,pc20152,fam 00607,4,central city|maple street 26|152|3|pc20152
+ACC-001220,central city,male street 26,152,3,,fam x 001220,4,central city|male street 26|152|3|
+ACC-001221,central city,maple s 26,152,4,,fam x 001221,4,central city|maple s 26|152|4|
+ACC-001222,south city,willow street 26,153,1,pc30153,fam 00609,4,south city|willow street 26|153|1|pc30153
+ACC-001223,south city,illow street 26,153,,,fam 00609,2,south city|illow street 26|153||
+ACC-001224,south city,willow street 26,153,1,pc30153,fam 00609,4,south city|willow street 26|153|1|pc30153
+ACC-001225,south city,willow street 26,153,1,pc30153,fam 00609,3,south city|willow street 26|153|1|pc30153
+ACC-001226,south city,willow street 26,153,2,pc30153,fam x 001226,3,south city|willow street 26|153|2|pc30153
+ACC-001227,south city,wilow street 26,153,4,pc30153,fam x 001227,5,south city|wilow street 26|153|4|pc30153
+ACC-001228,south city,wllow street 26,153,3,,fam 00611,3,south city|wllow street 26|153|3|
+ACC-001229,south city,willow street 26,153,4,pc30153,fam 00612,5,south city|willow street 26|153|4|pc30153
+ACC-001230,south city,willow street 26,153,4,pc30153,fam 00612,5,south city|willow street 26|153|4|pc30153
+ACC-001231,north city,oak street 26,154,1,pc10154,fam x 001231,2,north city|oak street 26|154|1|pc10154
+ACC-001232,north city,oak street 26,154,2,pc10154,fam 00614,4,north city|oak street 26|154|2|pc10154
+ACC-001233,north city,oak street 26,154,2,pc10154,fam 00614,3,north city|oak street 26|154|2|pc10154
+ACC-001234,north city,oak street 26,154,2,pc10154,fam 00614,2,north city|oak street 26|154|2|pc10154
+ACC-001235,north city,oak street 26,154,3,pc10154,fam 00615,3,north city|oak street 26|154|3|pc10154
+ACC-001236,north city,oak street 26,154,3,pc10154,fam 00615,3,north city|oak street 26|154|3|pc10154
+ACC-001237,north city,oak s 26,154,3,,fam 00615,5,north city|oak s 26|154|3|
+ACC-001238,north city,oak street 26,154,3,pc10154,fam 00615,5,north city|oak street 26|154|3|pc10154
+ACC-001239,north city,oak street 26,154,4,pc10154,fam x 001239,5,north city|oak street 26|154|4|pc10154
+ACC-001240,central city,pine street 26,155,1,pc20155,fam 00617,5,central city|pine street 26|155|1|pc20155
+ACC-001241,central city,pine street 26,155,1,pc20155,fam 00617,2,central city|pine street 26|155|1|pc20155
+ACC-001242,central city,pine street 26,155,2,pc20155,fam x 001242,4,central city|pine street 26|155|2|pc20155
+ACC-001243,central city,pine street 26,155,2,pc20155,fam x 001243,4,central city|pine street 26|155|2|pc20155
+ACC-001244,central city,pine street 26,155,2,pc20155,fam x 001244,5,central city|pine street 26|155|2|pc20155
+ACC-001245,central city,pine street 26,155,3,pc20155,fam x 001245,5,central city|pine street 26|155|3|pc20155
+ACC-001246,central city,ine street 26,155,4,,fam x 001246,4,central city|ine street 26|155|4|
+ACC-001247,central city,ine street 26,155,,,fam x 001247,4,central city|ine street 26|155||
+ACC-001248,central city,pine street 26,155,4,pc20155,fam x 001248,2,central city|pine street 26|155|4|pc20155
+ACC-001249,south city,elm street 26,156,1,pc30156,fam x 001249,4,south city|elm street 26|156|1|pc30156
+ACC-001250,south city,elm street 26,156,2,pc30156,fam x 001250,4,south city|elm street 26|156|2|pc30156
+ACC-001251,south city,elm street 26,156,3,pc30156,fam 00623,3,south city|elm street 26|156|3|pc30156
+ACC-001252,south city,elm street 26,156,3,pc30156,fam 00623,4,south city|elm street 26|156|3|pc30156
+ACC-001253,south city,elm street 26,156,3,pc30156,fam 00623,5,south city|elm street 26|156|3|pc30156
+ACC-001254,south city,elm street 26,156,3,pc30156,fam 00623,3,south city|elm street 26|156|3|pc30156
+ACC-001255,south city,elm street 26,156,4,pc30156,fam 00624,2,south city|elm street 26|156|4|pc30156
+ACC-001256,south city,elm t 26,156,4,pc30156,fam x 001256,3,south city|elm t 26|156|4|pc30156
+ACC-001257,south city,elm street 26,156,4,pc30156,fam 00624,2,south city|elm street 26|156|4|pc30156
+ACC-001258,south city,elm street 26,156,4,pc30156,fam 00624,2,south city|elm street 26|156|4|pc30156
+ACC-001259,north city,cedar street 27,157,1,pc10157,fam 00625,3,north city|cedar street 27|157|1|pc10157
+ACC-001260,north city,cedar street 27,157,1,pc10157,fam 00625,4,north city|cedar street 27|157|1|pc10157
+ACC-001261,north city,cedar street 27,157,2,pc10157,fam x 001261,3,north city|cedar street 27|157|2|pc10157
+ACC-001262,north city,cedar t 27,157,2,,fam x 001262,3,north city|cedar t 27|157|2|
+ACC-001263,north city,cedar street 27,157,2,pc10157,fam 00626,2,north city|cedar street 27|157|2|pc10157
+ACC-001264,north city,cedar street 27,157,3,pc10157,fam x 001264,4,north city|cedar street 27|157|3|pc10157
+ACC-001265,north city,cedar s 27,157,5,pc10157,fam x 001265,3,north city|cedar s 27|157|5|pc10157
+ACC-001266,north city,cedar street 27,157,4,pc10157,fam x 001266,4,north city|cedar street 27|157|4|pc10157
+ACC-001267,north city,cdar street 27,157,,,fam x 001267,3,north city|cdar street 27|157||
+ACC-001268,central city,maple street 27,158,1,pc20158,fam x 001268,3,central city|maple street 27|158|1|pc20158
+ACC-001269,central city,maple street 27,158,1,pc20158,fam x 001269,2,central city|maple street 27|158|1|pc20158
+ACC-001270,central city,maple street 27,158,2,pc20158,fam x 001270,5,central city|maple street 27|158|2|pc20158
+ACC-001271,central city,maple street 27,158,3,pc20158,fam x 001271,2,central city|maple street 27|158|3|pc20158
+ACC-001272,central city,maple street 27,158,4,pc20158,fam x 001272,5,central city|maple street 27|158|4|pc20158
+ACC-001273,central city,maple street 27,158,4,pc20158,fam x 001273,3,central city|maple street 27|158|4|pc20158
+ACC-001274,south city,wilow street 27,159,2,,fam x 001274,2,south city|wilow street 27|159|2|
+ACC-001275,south city,willow t 27,159,2,,fam x 001275,2,south city|willow t 27|159|2|
+ACC-001276,south city,willow street 27,159,3,pc30159,fam x 001276,2,south city|willow street 27|159|3|pc30159
+ACC-001277,south city,willo street 27,159,4,,fam x 001277,5,south city|willo street 27|159|4|
+ACC-001278,south city,willow street 27,159,4,pc30159,fam x 001278,3,south city|willow street 27|159|4|pc30159
+ACC-001279,south city,willow street 27,159,4,pc30159,fam 00636,2,south city|willow street 27|159|4|pc30159
+ACC-001280,south city,willow street 27,159,4,pc30159,fam x 001280,5,south city|willow street 27|159|4|pc30159
+ACC-001281,north city,ok street 27,160,1,pc10160,fam x 001281,4,north city|ok street 27|160|1|pc10160
+ACC-001282,north city,oak street 27,160,2,pc10160,fam x 001282,4,north city|oak street 27|160|2|pc10160
+ACC-001283,north city,oak street 27,160,2,pc10160,fam x 001283,2,north city|oak street 27|160|2|pc10160
+ACC-001284,north city,oak street 27,160,2,pc10160,fam x 001284,3,north city|oak street 27|160|2|pc10160
+ACC-001285,north city,oak s 27,160,2,pc10160,fam x 001285,2,north city|oak s 27|160|2|pc10160
+ACC-001286,north city,oak street 27,160,3,pc10160,fam x 001286,3,north city|oak street 27|160|3|pc10160
+ACC-001287,north city,oak street 27,160,4,pc10160,fam 00640,5,north city|oak street 27|160|4|pc10160
+ACC-001288,north city,oak street 27,160,4,pc10160,fam 00640,3,north city|oak street 27|160|4|pc10160
+ACC-001289,central city,pine street 27,161,1,pc20161,fam x 001289,3,central city|pine street 27|161|1|pc20161
+ACC-001290,central city,ine street 27,161,3,,fam 00642,3,central city|ine street 27|161|3|
+ACC-001291,central city,pine street 27,161,2,pc20161,fam 00642,2,central city|pine street 27|161|2|pc20161
+ACC-001292,central city,pine street 27,161,2,pc20161,fam x 001292,2,central city|pine street 27|161|2|pc20161
+ACC-001293,central city,pne street 27,161,4,,fam x 001293,2,central city|pne street 27|161|4|
+ACC-001294,central city,pine street 27,161,4,pc20161,fam 00644,3,central city|pine street 27|161|4|pc20161
+ACC-001295,central city,pine street 27,161,4,pc20161,fam x 001295,4,central city|pine street 27|161|4|pc20161
+ACC-001296,central city,pine street 27,161,4,pc20161,fam 00644,3,central city|pine street 27|161|4|pc20161
+ACC-001297,central city,pine street 27,161,4,pc20161,fam 00644,3,central city|pine street 27|161|4|pc20161
+ACC-001298,south city,elm street 27,162,1,pc30162,fam 00645,3,south city|elm street 27|162|1|pc30162
+ACC-001299,south city,elm street 27,162,1,pc30162,fam x 001299,3,south city|elm street 27|162|1|pc30162
+ACC-001300,south city,elm street 27,162,2,pc30162,fam x 001300,4,south city|elm street 27|162|2|pc30162
+ACC-001301,south city,elm street 27,162,2,pc30162,fam x 001301,3,south city|elm street 27|162|2|pc30162
+ACC-001302,south city,elm street 27,162,3,pc30162,fam x 001302,5,south city|elm street 27|162|3|pc30162
+ACC-001303,south city,elm street 27,162,4,pc30162,fam 00648,3,south city|elm street 27|162|4|pc30162
+ACC-001304,south city,elm street 27,162,4,pc30162,fam 00648,5,south city|elm street 27|162|4|pc30162
+ACC-001305,south city,elm street 27,162,4,pc30162,fam x 001305,3,south city|elm street 27|162|4|pc30162
+ACC-001306,north city,cedar street 28,163,1,pc10163,fam x 001306,2,north city|cedar street 28|163|1|pc10163
+ACC-001307,north city,cedar street 28,163,2,pc10163,fam 00650,5,north city|cedar street 28|163|2|pc10163
+ACC-001308,north city,cedar street 28,163,2,pc10163,fam 00650,3,north city|cedar street 28|163|2|pc10163
+ACC-001309,north city,cedar street 28,163,3,pc10163,fam x 001309,4,north city|cedar street 28|163|3|pc10163
+ACC-001310,north city,cedar street 28,163,3,pc10163,fam 00651,3,north city|cedar street 28|163|3|pc10163
+ACC-001311,north city,cedar street 28,163,4,pc10163,fam x 001311,4,north city|cedar street 28|163|4|pc10163
+ACC-001312,central city,maple street 28,164,1,pc20164,fam x 001312,4,central city|maple street 28|164|1|pc20164
+ACC-001313,central city,maple street 28,164,1,pc20164,fam x 001313,5,central city|maple street 28|164|1|pc20164
+ACC-001314,central city,maple street 28,164,2,pc20164,fam x 001314,2,central city|maple street 28|164|2|pc20164
+ACC-001315,central city,maple street 28,164,3,pc20164,fam x 001315,2,central city|maple street 28|164|3|pc20164
+ACC-001316,central city,mape street 28,164,4,pc20164,fam 00656,2,central city|mape street 28|164|4|pc20164
+ACC-001317,central city,male street 28,164,5,,fam 00656,4,central city|male street 28|164|5|
+ACC-001318,central city,maple street 28,164,4,pc20164,fam 00656,2,central city|maple street 28|164|4|pc20164
+ACC-001319,south city,willow street 28,165,1,pc30165,fam 00657,3,south city|willow street 28|165|1|pc30165
+ACC-001320,south city,willow street 28,165,1,pc30165,fam 00657,3,south city|willow street 28|165|1|pc30165
+ACC-001321,south city,willow street 28,165,2,pc30165,fam x 001321,3,south city|willow street 28|165|2|pc30165
+ACC-001322,south city,willow street 28,165,3,pc30165,fam x 001322,5,south city|willow street 28|165|3|pc30165
+ACC-001323,south city,willow street 28,165,3,pc30165,fam 00659,3,south city|willow street 28|165|3|pc30165
+ACC-001324,south city,willow street 28,165,4,pc30165,fam 00660,5,south city|willow street 28|165|4|pc30165
+ACC-001325,south city,willow street 28,165,4,pc30165,fam 00660,3,south city|willow street 28|165|4|pc30165
+ACC-001326,north city,oak street 28,166,1,pc10166,fam 00661,4,north city|oak street 28|166|1|pc10166
+ACC-001327,north city,oak street 28,166,1,pc10166,fam 00661,4,north city|oak street 28|166|1|pc10166
+ACC-001328,north city,oak street 28,166,2,pc10166,fam 00662,4,north city|oak street 28|166|2|pc10166
+ACC-001329,north city,oak street 28,166,2,pc10166,fam 00662,2,north city|oak street 28|166|2|pc10166
+ACC-001330,north city,oak street 28,166,2,pc10166,fam x 001330,5,north city|oak street 28|166|2|pc10166
+ACC-001331,north city,oak street 28,166,3,pc10166,fam x 001331,2,north city|oak street 28|166|3|pc10166
+ACC-001332,north city,oak street 28,166,4,pc10166,fam 00664,2,north city|oak street 28|166|4|pc10166
+ACC-001333,north city,oak street 28,166,4,pc10166,fam x 001333,5,north city|oak street 28|166|4|pc10166
+ACC-001334,central city,pin street 28,167,1,pc20167,fam 00665,4,central city|pin street 28|167|1|pc20167
+ACC-001335,central city,pine street 28,167,1,pc20167,fam 00665,5,central city|pine street 28|167|1|pc20167
+ACC-001336,central city,pine s 28,167,2,,fam x 001336,3,central city|pine s 28|167|2|
+ACC-001337,central city,pine street 28,167,2,pc20167,fam x 001337,2,central city|pine street 28|167|2|pc20167
+ACC-001338,central city,pne street 28,167,2,,fam x 001338,4,central city|pne street 28|167|2|
+ACC-001339,central city,pine street 28,167,2,pc20167,fam x 001339,2,central city|pine street 28|167|2|pc20167
+ACC-001340,central city,pine street 28,167,3,pc20167,fam x 001340,2,central city|pine street 28|167|3|pc20167
+ACC-001341,central city,pine street 28,167,4,pc20167,fam 00668,2,central city|pine street 28|167|4|pc20167
+ACC-001342,central city,pine street 28,167,4,pc20167,fam 00668,3,central city|pine street 28|167|4|pc20167
+ACC-001343,central city,pine street 28,167,4,pc20167,fam 00668,3,central city|pine street 28|167|4|pc20167
+ACC-001344,central city,pine street 28,167,4,pc20167,fam 00668,5,central city|pine street 28|167|4|pc20167
+ACC-001345,south city,elm street 28,168,1,pc30168,fam x 001345,5,south city|elm street 28|168|1|pc30168
+ACC-001346,south city,elm street 28,168,2,pc30168,fam x 001346,4,south city|elm street 28|168|2|pc30168
+ACC-001347,south city,elm street 28,168,2,pc30168,fam x 001347,4,south city|elm street 28|168|2|pc30168
+ACC-001348,south city,elm street 28,168,2,pc30168,fam x 001348,2,south city|elm street 28|168|2|pc30168
+ACC-001349,south city,lm street 28,168,,,fam x 001349,4,south city|lm street 28|168||
+ACC-001350,south city,elm street 28,168,3,pc30168,fam 00671,4,south city|elm street 28|168|3|pc30168
+ACC-001351,south city,el street 28,168,3,,fam 00671,4,south city|el street 28|168|3|
+ACC-001352,south city,elm street 28,168,4,pc30168,fam 00672,4,south city|elm street 28|168|4|pc30168
+ACC-001353,south city,elm street 28,168,4,pc30168,fam 00672,5,south city|elm street 28|168|4|pc30168
+ACC-001354,south city,em street 28,168,5,pc30168,fam 00672,3,south city|em street 28|168|5|pc30168
+ACC-001355,south city,elm street 28,168,4,pc30168,fam 00672,2,south city|elm street 28|168|4|pc30168
+ACC-001356,north city,cedar street 29,169,1,pc10169,fam 00673,5,north city|cedar street 29|169|1|pc10169
+ACC-001357,north city,cedar street 29,169,1,pc10169,fam 00673,4,north city|cedar street 29|169|1|pc10169
+ACC-001358,north city,cedar street 29,169,2,pc10169,fam x 001358,4,north city|cedar street 29|169|2|pc10169
+ACC-001359,north city,cedar street 29,169,2,pc10169,fam x 001359,4,north city|cedar street 29|169|2|pc10169
+ACC-001360,north city,cedar street 29,169,2,pc10169,fam x 001360,2,north city|cedar street 29|169|2|pc10169
+ACC-001361,north city,cedar street 29,169,3,pc10169,fam x 001361,5,north city|cedar street 29|169|3|pc10169
+ACC-001362,north city,cedar street 29,169,4,pc10169,fam 00676,2,north city|cedar street 29|169|4|pc10169
+ACC-001363,north city,cedar street 29,169,4,pc10169,fam 00676,4,north city|cedar street 29|169|4|pc10169
+ACC-001364,central city,mape street 29,170,2,pc20170,fam x 001364,2,central city|mape street 29|170|2|pc20170
+ACC-001365,central city,maple street 29,170,2,pc20170,fam x 001365,5,central city|maple street 29|170|2|pc20170
+ACC-001366,central city,maple street 29,170,2,pc20170,fam x 001366,4,central city|maple street 29|170|2|pc20170
+ACC-001367,central city,maple street 29,170,2,pc20170,fam x 001367,5,central city|maple street 29|170|2|pc20170
+ACC-001368,central city,maple street 29,170,2,pc20170,fam x 001368,5,central city|maple street 29|170|2|pc20170
+ACC-001369,central city,maple street 29,170,2,pc20170,fam x 001369,5,central city|maple street 29|170|2|pc20170
+ACC-001370,central city,mple street 29,170,2,pc20170,fam x 001370,4,central city|mple street 29|170|2|pc20170
+ACC-001371,central city,maple street 29,170,3,pc20170,fam x 001371,4,central city|maple street 29|170|3|pc20170
+ACC-001372,central city,maple street 29,170,4,pc20170,fam x 001372,5,central city|maple street 29|170|4|pc20170
+ACC-001373,south city,willow street 29,171,1,pc30171,fam x 001373,3,south city|willow street 29|171|1|pc30171
+ACC-001374,south city,willow street 29,171,2,pc30171,fam x 001374,5,south city|willow street 29|171|2|pc30171
+ACC-001375,south city,willow street 29,171,2,pc30171,fam x 001375,4,south city|willow street 29|171|2|pc30171
+ACC-001376,south city,willw street 29,171,,,fam x 001376,2,south city|willw street 29|171||
+ACC-001377,south city,willow street 29,171,2,pc30171,fam x 001377,4,south city|willow street 29|171|2|pc30171
+ACC-001378,south city,willo street 29,171,2,pc30171,fam x 001378,2,south city|willo street 29|171|2|pc30171
+ACC-001379,south city,willow street 29,171,2,pc30171,fam x 001379,2,south city|willow street 29|171|2|pc30171
+ACC-001380,south city,willow street 29,171,3,pc30171,fam x 001380,3,south city|willow street 29|171|3|pc30171
+ACC-001381,south city,willow street 29,171,3,pc30171,fam x 001381,5,south city|willow street 29|171|3|pc30171
+ACC-001382,south city,willow street 29,171,3,pc30171,fam x 001382,2,south city|willow street 29|171|3|pc30171
+ACC-001383,south city,wilow street 29,171,,,fam x 001383,3,south city|wilow street 29|171||
+ACC-001384,south city,willow street 29,171,3,pc30171,fam x 001384,2,south city|willow street 29|171|3|pc30171
+ACC-001385,south city,willow street 29,171,3,pc30171,fam x 001385,2,south city|willow street 29|171|3|pc30171
+ACC-001386,south city,willow street 29,171,4,pc30171,fam x 001386,2,south city|willow street 29|171|4|pc30171
+ACC-001387,south city,willow street 29,171,4,pc30171,fam x 001387,4,south city|willow street 29|171|4|pc30171
+ACC-001388,south city,willow t 29,171,4,pc30171,fam x 001388,2,south city|willow t 29|171|4|pc30171
+ACC-001389,north city,oak s 29,172,1,,fam x 001389,2,north city|oak s 29|172|1|
+ACC-001390,north city,oak street 29,172,1,pc10172,fam x 001390,2,north city|oak street 29|172|1|pc10172
+ACC-001391,north city,oak street 29,172,1,pc10172,fam x 001391,2,north city|oak street 29|172|1|pc10172
+ACC-001392,north city,oak street 29,172,1,pc10172,fam x 001392,4,north city|oak street 29|172|1|pc10172
+ACC-001393,north city,oak street 29,172,2,pc10172,fam x 001393,4,north city|oak street 29|172|2|pc10172
+ACC-001394,north city,oak street 29,172,3,pc10172,fam x 001394,5,north city|oak street 29|172|3|pc10172
+ACC-001395,north city,oak street 29,172,4,pc10172,fam x 001395,5,north city|oak street 29|172|4|pc10172
+ACC-001396,central city,pine t 29,173,1,,fam x 001396,4,central city|pine t 29|173|1|
+ACC-001397,central city,pine street 29,173,2,pc20173,fam x 001397,5,central city|pine street 29|173|2|pc20173
+ACC-001398,central city,pne street 29,173,3,pc20173,fam x 001398,3,central city|pne street 29|173|3|pc20173
+ACC-001399,central city,pine street 29,173,4,pc20173,fam 00692,3,central city|pine street 29|173|4|pc20173
+ACC-001400,central city,pine street 29,173,4,pc20173,fam 00692,3,central city|pine street 29|173|4|pc20173
+ACC-001401,central city,pine street 29,173,4,pc20173,fam 00692,2,central city|pine street 29|173|4|pc20173
+ACC-001402,south city,elm street 29,174,1,pc30174,fam x 001402,5,south city|elm street 29|174|1|pc30174
+ACC-001403,south city,elm street 29,174,1,pc30174,fam x 001403,3,south city|elm street 29|174|1|pc30174
+ACC-001404,south city,elm street 29,174,1,pc30174,fam x 001404,2,south city|elm street 29|174|1|pc30174
+ACC-001405,south city,elm street 29,174,2,pc30174,fam x 001405,5,south city|elm street 29|174|2|pc30174
+ACC-001406,south city,elm street 29,174,2,pc30174,fam x 001406,2,south city|elm street 29|174|2|pc30174
+ACC-001407,south city,lm street 29,174,3,pc30174,fam 00695,3,south city|lm street 29|174|3|pc30174
+ACC-001408,south city,elm street 29,174,3,pc30174,fam 00695,2,south city|elm street 29|174|3|pc30174
+ACC-001409,south city,elm street 29,174,4,pc30174,fam 00696,5,south city|elm street 29|174|4|pc30174
+ACC-001410,south city,elm street 29,174,4,pc30174,fam 00696,3,south city|elm street 29|174|4|pc30174
+ACC-001411,north city,cedar street 30,175,1,pc10175,fam x 001411,5,north city|cedar street 30|175|1|pc10175
+ACC-001412,north city,cedar street 30,175,2,pc10175,fam 00698,2,north city|cedar street 30|175|2|pc10175
+ACC-001413,north city,cedar t 30,175,,pc10175,fam 00698,5,north city|cedar t 30|175||pc10175
+ACC-001414,north city,cedar s 30,175,3,,fam x 001414,3,north city|cedar s 30|175|3|
+ACC-001415,north city,cdar street 30,175,4,,fam 00700,5,north city|cdar street 30|175|4|
+ACC-001416,north city,cedar street 30,175,4,pc10175,fam 00700,3,north city|cedar street 30|175|4|pc10175
+ACC-001417,central city,maple street 30,176,1,pc20176,fam 00701,4,central city|maple street 30|176|1|pc20176
+ACC-001418,central city,mple street 30,176,2,,fam 00701,4,central city|mple street 30|176|2|
+ACC-001419,central city,maple street 30,176,2,pc20176,fam x 001419,5,central city|maple street 30|176|2|pc20176
+ACC-001420,central city,maple street 30,176,3,pc20176,fam x 001420,4,central city|maple street 30|176|3|pc20176
+ACC-001421,central city,maple t 30,176,5,,fam x 001421,5,central city|maple t 30|176|5|
+ACC-001422,central city,maple street 30,176,4,pc20176,fam x 001422,5,central city|maple street 30|176|4|pc20176
+ACC-001423,central city,mape street 30,176,4,,fam x 001423,5,central city|mape street 30|176|4|
+ACC-001424,central city,maple street 30,176,4,pc20176,fam x 001424,5,central city|maple street 30|176|4|pc20176
+ACC-001425,central city,maple street 30,176,4,pc20176,fam x 001425,3,central city|maple street 30|176|4|pc20176
+ACC-001426,central city,male street 30,176,4,,fam x 001426,2,central city|male street 30|176|4|
+ACC-001427,south city,willow street 30,177,1,pc30177,fam 00705,3,south city|willow street 30|177|1|pc30177
+ACC-001428,south city,willow street 30,177,1,pc30177,fam 00705,5,south city|willow street 30|177|1|pc30177
+ACC-001429,south city,wilow street 30,177,,,fam 00705,4,south city|wilow street 30|177||
+ACC-001430,south city,willow street 30,177,2,pc30177,fam x 001430,4,south city|willow street 30|177|2|pc30177
+ACC-001431,south city,willow street 30,177,3,pc30177,fam 00707,2,south city|willow street 30|177|3|pc30177
+ACC-001432,south city,willow street 30,177,3,pc30177,fam 00707,5,south city|willow street 30|177|3|pc30177
+ACC-001433,south city,willow street 30,177,3,pc30177,fam 00707,2,south city|willow street 30|177|3|pc30177
+ACC-001434,south city,willow street 30,177,3,pc30177,fam 00707,3,south city|willow street 30|177|3|pc30177
+ACC-001435,south city,willow street 30,177,4,pc30177,fam x 001435,2,south city|willow street 30|177|4|pc30177
+ACC-001436,south city,willow street 30,177,4,pc30177,fam x 001436,4,south city|willow street 30|177|4|pc30177
+ACC-001437,south city,willow street 30,177,4,pc30177,fam x 001437,5,south city|willow street 30|177|4|pc30177
+ACC-001438,south city,willow street 30,177,4,pc30177,fam x 001438,3,south city|willow street 30|177|4|pc30177
+ACC-001439,north city,oak street 30,178,1,pc10178,fam 00709,2,north city|oak street 30|178|1|pc10178
+ACC-001440,north city,oak street 30,178,1,pc10178,fam 00709,2,north city|oak street 30|178|1|pc10178
+ACC-001441,north city,oak street 30,178,1,pc10178,fam 00709,5,north city|oak street 30|178|1|pc10178
+ACC-001442,north city,oak street 30,178,1,pc10178,fam 00709,3,north city|oak street 30|178|1|pc10178
+ACC-001443,north city,oak street 30,178,2,pc10178,fam x 001443,3,north city|oak street 30|178|2|pc10178
+ACC-001444,north city,oak street 30,178,3,pc10178,fam 00711,5,north city|oak street 30|178|3|pc10178
+ACC-001445,north city,oak street 30,178,3,pc10178,fam 00711,4,north city|oak street 30|178|3|pc10178
+ACC-001446,north city,oak street 30,178,4,pc10178,fam x 001446,5,north city|oak street 30|178|4|pc10178
+ACC-001447,central city,ine street 30,179,1,,fam 00713,5,central city|ine street 30|179|1|
+ACC-001448,central city,pine street 30,179,1,pc20179,fam 00713,3,central city|pine street 30|179|1|pc20179
+ACC-001449,central city,pine street 30,179,1,pc20179,fam 00713,5,central city|pine street 30|179|1|pc20179
+ACC-001450,central city,pine street 30,179,1,pc20179,fam 00713,2,central city|pine street 30|179|1|pc20179
+ACC-001451,central city,pine street 30,179,2,pc20179,fam x 001451,2,central city|pine street 30|179|2|pc20179
+ACC-001452,central city,pine street 30,179,3,pc20179,fam x 001452,5,central city|pine street 30|179|3|pc20179
+ACC-001453,central city,pine street 30,179,3,pc20179,fam 00715,3,central city|pine street 30|179|3|pc20179
+ACC-001454,central city,ine street 30,179,3,,fam 00715,5,central city|ine street 30|179|3|
+ACC-001455,central city,pine street 30,179,3,pc20179,fam 00715,3,central city|pine street 30|179|3|pc20179
+ACC-001456,central city,pine street 30,179,4,pc20179,fam 00716,4,central city|pine street 30|179|4|pc20179
+ACC-001457,central city,pine street 30,179,4,pc20179,fam 00716,3,central city|pine street 30|179|4|pc20179
+ACC-001458,central city,pine street 30,179,4,pc20179,fam x 001458,2,central city|pine street 30|179|4|pc20179
+ACC-001459,central city,pine street 30,179,4,pc20179,fam 00716,4,central city|pine street 30|179|4|pc20179
+ACC-001460,south city,elm street 30,180,1,pc30180,fam x 001460,3,south city|elm street 30|180|1|pc30180
+ACC-001461,south city,elm street 30,180,2,pc30180,fam x 001461,5,south city|elm street 30|180|2|pc30180
+ACC-001462,south city,elm street 30,180,2,pc30180,fam x 001462,4,south city|elm street 30|180|2|pc30180
+ACC-001463,south city,elm street 30,180,2,pc30180,fam x 001463,4,south city|elm street 30|180|2|pc30180
+ACC-001464,south city,elm street 30,180,2,pc30180,fam x 001464,3,south city|elm street 30|180|2|pc30180
+ACC-001465,south city,elm street 30,180,3,pc30180,fam x 001465,4,south city|elm street 30|180|3|pc30180
+ACC-001466,south city,elm street 30,180,3,pc30180,fam x 001466,4,south city|elm street 30|180|3|pc30180
+ACC-001467,south city,elm street 30,180,3,pc30180,fam x 001467,5,south city|elm street 30|180|3|pc30180
+ACC-001468,south city,elm t 30,180,5,,fam 00720,3,south city|elm t 30|180|5|
+ACC-001469,south city,elm street 30,180,4,pc30180,fam 00720,3,south city|elm street 30|180|4|pc30180

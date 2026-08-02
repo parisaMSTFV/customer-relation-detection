@@ -1,0 +1,40 @@
+{
+  "artifact_fingerprint": "f65736b3d447648b",
+  "candidate_recall": {
+    "test": 1.0,
+    "validation": 1.0
+  },
+  "cluster_ari": {
+    "exact_key_baseline": 0.7905050892079128,
+    "scored_resolution": 0.8763942871005539
+  },
+  "data": {
+    "accounts": 1469,
+    "buildings": 180,
+    "checks_passed": 9,
+    "orders": 5119,
+    "true_groups": 720
+  },
+  "evaluation_boundary": "Synthetic address observations and held-out buildings only",
+  "pair_evaluation": {
+    "exact_key_baseline": {
+      "f1": 0.7915869980879541,
+      "false_negatives": 108,
+      "false_positives": 1,
+      "precision": 0.9951923076923077,
+      "recall": 0.6571428571428571,
+      "true_negatives": 1007,
+      "true_positives": 207
+    },
+    "scored_resolution": {
+      "f1": 0.8771929824561403,
+      "false_negatives": 40,
+      "false_positives": 37,
+      "precision": 0.8814102564102564,
+      "recall": 0.873015873015873,
+      "true_negatives": 971,
+      "true_positives": 275
+    }
+  },
+  "selected_threshold": 0.86
+}
