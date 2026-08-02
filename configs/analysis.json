@@ -1,0 +1,10 @@
+{
+  "seed": 42,
+  "buildings": 180,
+  "units_per_building": 4,
+  "validation_share": 0.2,
+  "test_share": 0.2,
+  "threshold_min": 0.65,
+  "threshold_max": 0.95,
+  "threshold_step": 0.01
+}
