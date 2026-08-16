@@ -20,6 +20,7 @@ class AnalysisConfig:
     threshold_min: float
     threshold_max: float
     threshold_step: float
+    max_component_size: int
 
 
 def load_config(path: Path = DEFAULT_CONFIG_PATH) -> AnalysisConfig:
@@ -34,4 +35,6 @@ def load_config(path: Path = DEFAULT_CONFIG_PATH) -> AnalysisConfig:
         raise ValueError("Threshold range is invalid")
     if config.threshold_step <= 0:
         raise ValueError("threshold_step must be positive")
+    if config.max_component_size < 2:
+        raise ValueError("max_component_size must be at least two")
     return config

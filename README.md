@@ -2,17 +2,32 @@
 
 [![CI](https://github.com/parisaMSTFV/customer-relation-detection/actions/workflows/ci.yml/badge.svg)](https://github.com/parisaMSTFV/customer-relation-detection/actions/workflows/ci.yml)
 ![Python](https://img.shields.io/badge/python-3.11%20%7C%203.12-3C78A8)
-![Data](https://img.shields.io/badge/data-fully%20synthetic-4A9D8F)
+![Data](https://img.shields.io/badge/evidence-synthetic%20benchmark-D69E3D)
 
-A privacy-safe entity-resolution case study that links synthetic accounts through noisy shared-address evidence, selects a score threshold on validation buildings, and evaluates pair and graph recovery on held-out buildings.
+One false link can join two otherwise separate customer groups through graph transitivity. This case study makes that failure mode measurable: it scores noisy shared-address evidence, freezes a threshold on validation buildings, evaluates held-out buildings, and defers links that would expand a component beyond a configurable review cap.
+
+| Held-out decision evidence | Exact key | Scored links | Size-guarded groups |
+|---|---:|---:|---:|
+| Pair precision | 0.995 | 0.881 | **0.903** |
+| Pair recall | 0.657 | **0.873** | 0.794 |
+| Pair F1 | 0.792 | **0.877** | 0.845 |
+| Component ARI | 0.791 | **0.876** | 0.844 |
+
+The guardrail capped components at five accounts, reducing the largest synthetic component from seven to five and deferring 78 edges for review. It improved precision over unconstrained scored links, but reduced recall, F1, and ARI. The cap is a transparent safety policy—not a learned optimum or a production recommendation.
+
+![Held-out pair and component comparison](reports/figures/model_comparison.png)
+
+```bash
+python -m pip install -e ".[dev]" && make reproduce
+```
 
 ## Executive summary
 
 Multiple accounts may submit orders to the same location, but exact address matching breaks when strings contain abbreviations, Unicode digits, missing postcodes, typos, or incorrect unit numbers. This project separates candidate generation, evidence scoring, threshold selection, pair classification, and connected-component grouping.
 
-The checked-in run generated 5,119 synthetic orders for 1,469 accounts across 180 buildings. Candidate generation recovered all known positive pairs in validation and test. A threshold of `0.86` was selected using validation buildings only. On held-out buildings, the exact-key baseline reached precision `0.995`, recall `0.657`, and F1 `0.792`. The scored resolver reached precision `0.881`, recall `0.873`, and F1 `0.877`. Connected-component ARI improved from `0.791` to `0.876`.
+The checked-in run generated 5,119 synthetic orders for 1,469 accounts across 180 buildings. Candidate generation recovered all known positive pairs in validation and test. A threshold of `0.86` was selected using validation buildings only. On held-out buildings, the unconstrained scored resolver reached F1 `0.877` and component ARI `0.876`; the size-guarded output reached F1 `0.845` and ARI `0.844`.
 
-The improvement is not free: the scored method reduced false splits but produced 37 false-positive links, compared with 1 for the conservative baseline. Because one wrong edge can merge two groups through graph transitivity, every predicted group is marked `review_required=True`.
+The improvement over exact matching is not free: the scored method reduced false splits but produced 37 false-positive links, compared with 1 for the conservative baseline. The size guardrail reduced those accepted false positives to 27 while increasing false negatives from 40 to 65. Deferred edges remain explicit review candidates; they are not relabeled as negative evidence. Every predicted group is marked `review_required=True`.
 
 ## Safety boundary
 
@@ -39,8 +54,8 @@ flowchart TD
     C --> D["Pair evidence score"]
     D --> E["Validation threshold selection"]
     E --> F["Held-out building evaluation"]
-    F --> G["Connected components"]
-    G --> H["Review-required group signals"]
+    F --> G["Strongest-edge-first size guardrail"]
+    G --> H["Review groups + deferred edges"]
 ```
 
 ## Synthetic data and split design
@@ -81,19 +96,21 @@ Thresholds from `0.65` to `0.95` are evaluated on validation buildings. The meth
 
 ### Graph groups
 
-Predicted positive pairs become edges in an undirected account graph. Connected components form candidate groups, including singleton accounts. Pairwise F1 evaluates links; ARI evaluates the final component partition. Both are required because one false edge can merge multiple otherwise correct accounts.
+Predicted positive pairs are considered from strongest to weakest with stable account-ID tie-breaking. An edge is accepted when its merged component remains at or below `max_component_size`; otherwise it is written to `reports/component_guardrail.csv` as `deferred_component_cap`. Redundant edges inside an already accepted component remain accepted. The default cap of five is a visible review policy for this benchmark, not a universal household-size assumption.
+
+Connected components form candidate groups, including singleton accounts. Pairwise F1 evaluates links; ARI evaluates the final component partition. Both the unconstrained score and guarded grouping are reported because preventing component expansion can reduce false merges while creating additional false splits.
 
 ## Executed results
 
-| Test metric | Exact-key baseline | Scored resolution |
-|---|---:|---:|
-| Precision | 0.995 | 0.881 |
-| Recall | 0.657 | 0.873 |
-| F1 | 0.792 | 0.877 |
-| True positives | 207 | 275 |
-| False positives | 1 | 37 |
-| False negatives | 108 | 40 |
-| Cluster ARI | 0.791 | 0.876 |
+| Test metric | Exact-key baseline | Scored links | Size-guarded groups |
+|---|---:|---:|---:|
+| Precision | 0.995 | 0.881 | 0.903 |
+| Recall | 0.657 | 0.873 | 0.794 |
+| F1 | 0.792 | 0.877 | 0.845 |
+| True positives | 207 | 275 | 250 |
+| False positives | 1 | 37 | 27 |
+| False negatives | 108 | 40 | 65 |
+| Cluster ARI | 0.791 | 0.876 | 0.844 |
 
 Additional checks:
 
@@ -102,12 +119,13 @@ Additional checks:
 | Validation candidate recall | 100% |
 | Test candidate recall | 100% |
 | Selected validation threshold | 0.86 |
+| Component-size review cap | 5 |
+| Deferred edges, all splits | 78 |
+| Largest component, before → after | 7 → 5 |
 | Schema and separation checks | 9 passed |
-| Core artifact fingerprint | `f65736b3d447648b` |
+| Core artifact fingerprint | `33d05856bd72d6b9` |
 
-![Model comparison](reports/figures/model_comparison.png)
-
-The scored resolver trades some precision for substantially higher recall. Whether that trade-off is acceptable depends on the cost of review, false merges, and false splits; the synthetic F1 optimum is not a universal business threshold.
+The scored resolver trades some precision for substantially higher recall. The guardrail then gives back part of that recall to limit transitive expansion. Whether either trade-off is acceptable depends on review capacity and the relative costs of false merges and false splits; neither the synthetic F1 optimum nor the size cap is a universal business setting.
 
 ## Threshold and error analysis
 
@@ -125,7 +143,7 @@ Both methods recovered all clean and moderate positive pairs in the test fixture
 
 Node color represents a predicted connected component and edge width represents relation score. The visualization intentionally makes no claim about the relationship type.
 
-`reports/review_groups.csv` provides group size, a descriptive signal label, dominant synthetic family-token share, minimum and mean link scores, and the mandatory review flag.
+`reports/review_groups.csv` provides group size, a descriptive signal label, dominant synthetic family-token share, minimum and mean accepted-link scores, and the mandatory review flag. `reports/component_guardrail.csv` preserves every high-scoring edge decision, pre-merge component sizes, proposed size, and whether the edge was accepted or deferred.
 
 ## Repository structure
 
@@ -140,6 +158,7 @@ customer-relation-detection/
 ├── reports/
 │   ├── figures/
 │   ├── metrics.json
+│   ├── component_guardrail.csv
 │   ├── threshold_curve.csv
 │   ├── test_pair_predictions.csv
 │   ├── predicted_group_assignments.csv
@@ -172,7 +191,7 @@ Windows PowerShell activation:
 
 ## Tests and quality checks
 
-The test suite covers deterministic generation, ground-truth isolation, building-level split integrity, Unicode and abbreviation normalization, candidate recall, pair-feature ordering, validation-only threshold selection, noise breakdowns, singleton-aware components, required artifacts, and deterministic fingerprints.
+The test suite covers deterministic generation, ground-truth isolation, building-level split integrity, Unicode and abbreviation normalization, candidate recall, pair-feature ordering, validation-only threshold selection, noise breakdowns, singleton-aware components, deterministic strongest-edge-first guardrails, required artifacts, and fingerprints.
 
 GitHub Actions runs Ruff, format checks, Pytest on Python 3.11 and 3.12, the sensitive-content scan, and the complete smoke pipeline without credentials, connectors, or external data.
 
@@ -182,14 +201,15 @@ GitHub Actions runs Ruff, format checks, Pytest on Python 3.11 and 3.12, the sen
 - Candidate blocking is unusually strong in this fixture and reached 100% recall; production blocking requires separate monitoring.
 - Score weights are designed rules rather than coefficients fitted on representative labeled data.
 - Validation and test cover one synthetic generator and one seed.
-- A pairwise threshold does not explicitly optimize connected-component errors.
+- The pairwise threshold does not explicitly optimize connected-component errors; the size cap is a policy guardrail rather than a learned graph objective.
+- Strongest-edge-first processing is deterministic, but a different governance cap or edge-ordering policy can change which links are deferred.
 - The score does not model temporal residence changes, delivery intermediaries, offices, or shared pickup points.
 - The synthetic family token is a weak proxy and must never be treated as proof of family relation.
 - No fraud, abuse, eligibility, marketing uplift, or business-value claim is evaluated.
 
 ## Potential next steps
 
-A governed extension would add time-aware address histories, probabilistic linkage, threshold selection with explicit false-merge cost, calibrated review queues, protected-attribute testing, and monitoring for drift. Production use would also require strict purpose limitation, access control, retention policy, and human appeal.
+A governed extension would add time-aware address histories, probabilistic linkage, threshold and component-policy selection with explicit false-merge cost, calibrated review queues, protected-attribute testing, and monitoring for drift. Production use would also require strict purpose limitation, access control, retention policy, and human appeal.
 
 ## Portfolio distinction
 
