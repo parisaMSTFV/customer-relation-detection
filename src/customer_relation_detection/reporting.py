@@ -28,21 +28,30 @@ def plot_model_comparison(
     metrics = ["precision", "recall", "f1"]
     baseline = [float(summary["exact_key_baseline"][metric]) for metric in metrics]
     enhanced = [float(summary["scored_resolution"][metric]) for metric in metrics]
+    guarded = [float(summary["guarded_resolution"][metric]) for metric in metrics]
     baseline.append(cluster_scores["exact_key_baseline"])
     enhanced.append(cluster_scores["scored_resolution"])
+    guarded.append(cluster_scores["guarded_resolution"])
     labels = ["Precision", "Recall", "F1", "Cluster ARI"]
     positions = np.arange(len(labels))
     fig, axis = plt.subplots(figsize=(10, 5.5), constrained_layout=True)
     fig.patch.set_facecolor(COLORS["ivory"])
     baseline_bars = axis.bar(
-        positions - 0.18, baseline, width=0.36, color=COLORS["gray"], label="Exact key"
+        positions - 0.24, baseline, width=0.24, color=COLORS["gray"], label="Exact key"
     )
     enhanced_bars = axis.bar(
-        positions + 0.18,
+        positions,
         enhanced,
-        width=0.36,
+        width=0.24,
         color=COLORS["teal"],
-        label="Scored resolution",
+        label="Scored links",
+    )
+    guarded_bars = axis.bar(
+        positions + 0.24,
+        guarded,
+        width=0.24,
+        color=COLORS["navy"],
+        label="Size-guarded groups",
     )
     axis.set_xticks(positions, labels)
     axis.set_ylim(0, 1.08)
@@ -53,6 +62,7 @@ def plot_model_comparison(
     axis.legend(frameon=False, loc="lower right")
     axis.bar_label(baseline_bars, fmt="%.2f", padding=2)
     axis.bar_label(enhanced_bars, fmt="%.2f", padding=2)
+    axis.bar_label(guarded_bars, fmt="%.2f", padding=2)
     output_path.parent.mkdir(parents=True, exist_ok=True)
     fig.savefig(output_path, dpi=170, facecolor=fig.get_facecolor())
     plt.close(fig)

@@ -15,6 +15,7 @@ def _small_config() -> AnalysisConfig:
         threshold_min=0.65,
         threshold_max=0.95,
         threshold_step=0.01,
+        max_component_size=5,
     )
 
 
@@ -25,6 +26,7 @@ def test_pipeline_writes_required_artifacts(tmp_path: Path) -> None:
         "data/synthetic_ground_truth.csv",
         "reports/metrics.json",
         "reports/test_pair_predictions.csv",
+        "reports/component_guardrail.csv",
         "reports/review_groups.csv",
         "reports/figures/model_comparison.png",
         "reports/figures/threshold_selection.png",
@@ -33,6 +35,7 @@ def test_pipeline_writes_required_artifacts(tmp_path: Path) -> None:
     ]
     assert all((tmp_path / path).exists() for path in required)
     assert metrics["candidate_recall"]["test"] == 1.0
+    assert metrics["component_guardrail"]["largest_all_component_after"] <= 5
 
 
 def test_core_artifacts_are_deterministic(tmp_path: Path) -> None:

@@ -12,4 +12,6 @@ The project separates candidate generation, pair scoring, validation-only thresh
 - Why family-token agreement has low weight and cannot prove a relationship.
 - Why pairwise F1 and connected-component ARI answer different questions.
 - How one incorrect edge can merge otherwise separate groups through transitivity.
+- Why strongest-edge-first processing and a visible component cap defer risky expansion instead of silently accepting it.
+- Why the guardrail's higher precision but lower recall, F1, and ARI is an honest policy trade-off rather than a model win.
 - Why every output is a review signal and not a fraud or household determination.
