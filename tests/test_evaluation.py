@@ -4,14 +4,19 @@ from customer_relation_detection.evaluation import (
     select_threshold,
 )
 from customer_relation_detection.normalization import build_account_signatures
-from customer_relation_detection.pairs import build_pair_features, generate_candidate_pairs
+from customer_relation_detection.pairs import (
+    attach_evaluation_labels,
+    build_pair_features,
+    generate_candidate_pairs,
+)
 from customer_relation_detection.synthetic import generate_orders
 
 
 def _pairs():
     orders, truth = generate_orders(buildings=60)
     signatures = build_account_signatures(orders)
-    return build_pair_features(generate_candidate_pairs(signatures), signatures, truth)
+    features = build_pair_features(generate_candidate_pairs(signatures), signatures)
+    return attach_evaluation_labels(features, truth)
 
 
 def test_threshold_is_selected_on_validation_and_applied_to_test() -> None:

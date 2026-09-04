@@ -1,0 +1,10 @@
+noise_level,model,pairs,precision,recall,f1,true_positives,false_positives,false_negatives,true_negatives
+clean,exact_key_baseline,115,1.0,1.0,1.0,30,0,0,85
+clean,guarded_resolution,115,1.0,1.0,1.0,30,0,0,85
+clean,scored_resolution,115,1.0,1.0,1.0,30,0,0,85
+moderate,exact_key_baseline,715,1.0,1.0,1.0,177,0,0,538
+moderate,guarded_resolution,715,1.0,1.0,1.0,177,0,0,538
+moderate,scored_resolution,715,1.0,1.0,1.0,177,0,0,538
+heavy,exact_key_baseline,493,0.0,0.0,0.0,0,0,108,385
+heavy,guarded_resolution,493,0.6493506493506493,0.46296296296296297,0.5405405405405406,50,27,58,358
+heavy,scored_resolution,493,0.625,0.5092592592592593,0.5612244897959183,55,33,53,352

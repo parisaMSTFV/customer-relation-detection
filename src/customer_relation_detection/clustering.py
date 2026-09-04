@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import networkx as nx
+import numpy as np
 import pandas as pd
 from sklearn.metrics import adjusted_rand_score
 
@@ -23,10 +24,19 @@ def guarded_component_assignments(
     if max_component_size < 2:
         raise ValueError("max_component_size must be at least two")
     account_ids = sorted(set(accounts))
+    if len(account_ids) != len(accounts):
+        raise ValueError("Account list must not contain duplicates")
     required = {"account_a", "account_b", prediction_column, score_column}
     missing = required.difference(pairs.columns)
     if missing:
         raise ValueError(f"Pairs are missing required columns: {sorted(missing)}")
+    if not pairs[prediction_column].isin([0, 1]).all():
+        raise ValueError("Prediction column must contain only zero or one")
+    scores = pd.to_numeric(pairs[score_column], errors="coerce")
+    if not np.isfinite(scores).all() or not scores.between(0, 1).all():
+        raise ValueError("Relation scores must be finite values in [0, 1]")
+    if pairs["account_a"].eq(pairs["account_b"]).any():
+        raise ValueError("Self-pairs are not allowed")
 
     parent = {account: account for account in account_ids}
     sizes = {account: 1 for account in account_ids}
@@ -118,8 +128,22 @@ def component_assignments(
     prediction_column: str,
 ) -> pd.DataFrame:
     """Create stable connected-component labels including singleton accounts."""
+    account_ids = sorted(set(accounts))
+    if len(account_ids) != len(accounts):
+        raise ValueError("Account list must not contain duplicates")
+    required = {"account_a", "account_b", prediction_column}
+    missing = required.difference(pairs.columns)
+    if missing:
+        raise ValueError(f"Pairs are missing required columns: {sorted(missing)}")
+    if not pairs[prediction_column].isin([0, 1]).all():
+        raise ValueError("Prediction column must contain only zero or one")
+    if pairs["account_a"].eq(pairs["account_b"]).any():
+        raise ValueError("Self-pairs are not allowed")
+    pair_accounts = set(pairs["account_a"].astype(str)) | set(pairs["account_b"].astype(str))
+    if not pair_accounts.issubset(account_ids):
+        raise ValueError("Predicted pairs contain accounts outside the supplied account list")
     graph = nx.Graph()
-    graph.add_nodes_from(sorted(accounts))
+    graph.add_nodes_from(account_ids)
     predicted = pairs[pairs[prediction_column] == 1]
     graph.add_edges_from(predicted[["account_a", "account_b"]].itertuples(index=False, name=None))
     components = sorted(
@@ -157,7 +181,12 @@ def build_group_profiles(
         scores = positive_pairs[
             positive_pairs["account_a"].isin(members) & positive_pairs["account_b"].isin(members)
         ]["relation_score"]
-        family_share = float(group["family_token_norm"].value_counts(normalize=True).max())
+        family_tokens = group.loc[group["family_token_norm"].ne(""), "family_token_norm"]
+        family_share = (
+            float(family_tokens.value_counts(normalize=True).max())
+            if not family_tokens.empty
+            else 0.0
+        )
         if len(members) == 1:
             signal = "singleton"
         elif len(members) <= 5 and family_share >= 0.60:
