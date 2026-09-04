@@ -4,146 +4,156 @@
 ![Python](https://img.shields.io/badge/python-3.11%20%7C%203.12-3C78A8)
 ![Data](https://img.shields.io/badge/evidence-synthetic%20benchmark-D69E3D)
 
-One false link can join two otherwise separate customer groups through graph transitivity. This case study makes that failure mode measurable: it scores noisy shared-address evidence, freezes a threshold on validation buildings, evaluates held-out buildings, and defers links that would expand a component beyond a configurable review cap.
+One false link can join two otherwise separate customer groups through graph transitivity. This project makes that failure mode measurable and reviewable: it normalizes multilingual address observations, generates bounded candidates, scores evidence without loading truth, selects a graph policy on validation buildings, and evaluates the frozen decision on held-out buildings.
 
-| Held-out decision evidence | Exact key | Scored links | Size-guarded groups |
+| Held-out metric | Exact key | Scored links | Guarded groups |
 |---|---:|---:|---:|
-| Pair precision | 0.995 | 0.881 | **0.903** |
-| Pair recall | 0.657 | **0.873** | 0.794 |
-| Pair F1 | 0.792 | **0.877** | 0.845 |
-| Component ARI | 0.791 | **0.876** | 0.844 |
+| Pair precision | **1.000** | 0.888 | 0.905 |
+| Pair recall | 0.657 | **0.832** | 0.816 |
+| Pair F1 | 0.793 | **0.859** | 0.858 |
+| Component-pair F1 | 0.793 | 0.857 | **0.857** |
+| Component ARI | 0.792 | 0.856 | **0.856** |
+| B-cubed F1 | 0.901 | **0.927** | 0.927 |
 
-The guardrail capped components at five accounts, reducing the largest synthetic component from seven to five and deferring 78 edges for review. It improved precision over unconstrained scored links, but reduced recall, F1, and ARI. The cap is a transparent safety policy—not a learned optimum or a production recommendation.
+The selected validation policy uses threshold `0.82` and a six-account component cap. On test buildings, the cap reduced component false merges from 36 to 29 and increased false splits from 52 to 57. It is a transparent safety trade-off, not a universal household-size assumption.
 
 ![Held-out pair and component comparison](reports/figures/model_comparison.png)
 
-```bash
-python -m pip install -e ".[dev]" && make reproduce
-```
-
-## Executive summary
-
-Multiple accounts may submit orders to the same location, but exact address matching breaks when strings contain abbreviations, Unicode digits, missing postcodes, typos, or incorrect unit numbers. This project separates candidate generation, evidence scoring, threshold selection, pair classification, and connected-component grouping.
-
-The checked-in run generated 5,119 synthetic orders for 1,469 accounts across 180 buildings. Candidate generation recovered all known positive pairs in validation and test. A threshold of `0.86` was selected using validation buildings only. On held-out buildings, the unconstrained scored resolver reached F1 `0.877` and component ARI `0.876`; the size-guarded output reached F1 `0.845` and ARI `0.844`.
-
-The improvement over exact matching is not free: the scored method reduced false splits but produced 37 false-positive links, compared with 1 for the conservative baseline. The size guardrail reduced those accepted false positives to 27 while increasing false negatives from 40 to 65. Deferred edges remain explicit review candidates; they are not relabeled as negative evidence. Every predicted group is marked `review_required=True`.
-
 ## Safety boundary
 
-This repository detects shared-address signals. It does not prove family relationship, identity, residence, fraud, eligibility, ownership, or legal association. The labels `shared_household_signal`, `shared_residence_signal`, and `shared_location_review` describe evidence patterns and require analyst review.
+The output is a shared-address review signal. It does not prove family relationship, identity, residence, fraud, eligibility, ownership, or legal association. Every predicted group requires human review. A comparable system must not support adverse decisions without a separately approved purpose, consent or other lawful basis, access control, retention limits, bias assessment, monitoring, and an appeal process.
 
-A similar system must not be used for adverse decisions without consent, governance, bias assessment, access controls, retention limits, and an appeal process.
+This repository contains only generated observations. The operational CLI does not export raw address fields or raw account IDs.
 
-## Business problem
+## What changed in the hardened design
 
-A reusable entity-resolution workflow must answer several questions before anyone acts on its output:
-
-- Does the blocking rule retain true related pairs, or are they lost before scoring?
-- How much recall does fuzzy, missing-aware evidence recover over exact matching?
-- What precision is sacrificed at the selected threshold?
-- Do pair-level improvements remain improvements after graph connected components are formed?
-- Which address-noise conditions still create false splits or false merges?
+- Packaged configuration is included inside the wheel; CI builds and smoke-tests a non-editable wheel.
+- Normalization preserves Unicode letters, canonicalizes Persian/Arabic character variants and digits, and parses building and unit numbers with field-specific keywords.
+- An account signature is one address tuple that was actually observed. A snapshot date and per-account history window prevent future observations and stale addresses from being mixed.
+- Candidate generation combines `city_building`, `postcode`, and `city_street` passes, deduplicates pairs, and defers oversized blocks before quadratic enumeration.
+- City and building agreement remain diagnostic features but are excluded from the weighted score because they often define the candidate block.
+- `build_pair_features` has no truth argument. Synthetic labels are attached only through a separate evaluation function.
+- Threshold and component cap are selected together using component outcomes, a validation precision floor, and explicit 5:1 false-merge versus false-split cost.
+- Evaluation includes pair metrics, component-pair merge/split errors, ARI, B-cubed metrics, subgroup errors by noise severity, block recall, and guardrail audits.
+- The operational path uses a versioned frozen policy and pseudonymizes account identifiers with HMAC-SHA256.
 
 ## Workflow
 
 ```mermaid
 flowchart TD
-    A["Synthetic order observations"] --> B["Normalization and account signatures"]
-    B --> C["City-building candidate blocks"]
-    C --> D["Pair evidence score"]
-    D --> E["Validation threshold selection"]
-    E --> F["Held-out building evaluation"]
-    F --> G["Strongest-edge-first size guardrail"]
-    G --> H["Review groups + deferred edges"]
+    A["Order observations"] --> B["Unicode-safe temporal signatures"]
+    B --> C["Bounded multi-pass candidates"]
+    C --> D["Truth-free evidence scores"]
+    D --> E["Frozen graph policy"]
+    E --> F["Pseudonymized review artifacts"]
+    D --> G["Synthetic labels: evaluation only"]
+    G --> H["Validation selection + held-out test"]
 ```
 
-## Synthetic data and split design
+## Synthetic benchmark
 
-The generator creates 180 fictional buildings with four units each. Each unit contains one or more synthetic accounts and has a planted relation-group identifier stored in a separate ground-truth table. Repeated order observations contain fictional city, street, building, unit, postcode, and family-token fields.
+The checked-in run contains 5,119 generated orders, 1,469 accounts, 720 true groups, and 180 buildings. Whole buildings are assigned to train, validation, or test. Truth, split, relation type, and noise labels never enter normalization or scoring.
 
-Address noise is assigned at the account level:
+Candidate generation recovered 100% of planted positive pairs in validation and test and produced 5,805 unique candidate pairs. That perfect recall belongs only to this generator; production block recall must be measured on representative labeled samples.
 
-- `clean`: consistent address representation;
-- `moderate`: abbreviations, punctuation, casing, spacing, and Unicode digits;
-- `heavy`: street typos, missing postcodes, missing units, or shifted unit numbers.
+### Normalization and temporal signatures
 
-A whole building belongs to exactly one split. Accounts and orders from the same building can never appear in both validation and test. Ground-truth group labels and split labels are absent from the observations passed to normalization and scoring. See [data provenance](DATA_PROVENANCE.md).
+The normalizer applies Unicode NFKC, Persian/Arabic digit conversion, canonical Persian characters such as `ي → ی` and `ك → ک`, case folding, punctuation removal, and common English address abbreviations. It preserves non-Latin letters.
 
-## Methodology
+Repeated orders are reduced to one complete observed address tuple per account. Selection uses tuple frequency, then recency, then a stable tie-break. The default history window is 365 days relative to each account's latest eligible observation. `--snapshot-date` excludes later observations.
 
-### Normalization
+### Candidate generation and block control
 
-The pipeline normalizes Unicode, Persian and Arabic digits, casing, punctuation, spacing, and common address abbreviations. Repeated orders are collapsed to one modal signature per account.
+Candidates are the union of three passes:
 
-### Candidate generation
+- normalized city plus building;
+- normalized postcode;
+- normalized city plus street.
 
-Pairs are generated only inside a normalized city-building block. This step controls computational cost, but it can make later recall impossible if the block is too strict. Candidate recall is therefore measured against every planted positive pair before model metrics are calculated.
+Pairs found by several passes are emitted once with their evidence sources. Blocks above `max_block_size=250` are not enumerated; their hashed key, size, strategy, and `deferred_oversized` decision are written to `candidate_block_audit.csv`.
 
-### Exact-key baseline
+### Missing-aware score
 
-The baseline predicts a link only when normalized city, street, building, unit, and postcode keys are identical. It is intentionally conservative and provides a meaningful reference for the scored method.
+The score uses street similarity (45%), unit agreement (35%), postcode agreement (15%), and the low-weight generated family token (5%). Missing optional postcode or family-token evidence is removed from the denominator. Missing unit evidence remains disagreement because unit information separates neighboring accounts. The family token can support address evidence but cannot establish a relationship.
 
-### Missing-aware relation score
+### Component-aware policy selection
 
-The score combines city agreement, fuzzy street similarity, building agreement, unit agreement, postcode agreement, and a low-weight synthetic family-token signal. Missing postcode evidence is removed from the available-evidence denominator. Missing unit evidence is treated as disagreement because unit is required to distinguish neighboring accounts in the same building.
+Each threshold from `0.65` through `0.95` is evaluated with component caps of 4, 5, 6, 8, and 10 on validation buildings. Policies must meet a component-pair precision floor of 0.90. Eligible policies minimize:
 
-Family-token agreement receives only 2% weight. It can support another address signal, but it cannot establish a relationship by itself.
+\[
+5 \times \text{false merges} + 1 \times \text{false splits}
+\]
 
-### Threshold selection
+The selected validation policy reached component precision `0.978`, component recall `0.821`, and weighted error cost `74`. Threshold `0.82` and cap `6` were frozen before test evaluation. Test component precision was `0.899`, which demonstrates that a validation floor is not a production guarantee.
 
-Thresholds from `0.65` to `0.95` are evaluated on validation buildings. The method selects the highest-precision threshold among F1 ties. The chosen threshold is frozen before test buildings are evaluated.
+### Held-out results
 
-### Graph groups
-
-Predicted positive pairs are considered from strongest to weakest with stable account-ID tie-breaking. An edge is accepted when its merged component remains at or below `max_component_size`; otherwise it is written to `reports/component_guardrail.csv` as `deferred_component_cap`. Redundant edges inside an already accepted component remain accepted. The default cap of five is a visible review policy for this benchmark, not a universal household-size assumption.
-
-Connected components form candidate groups, including singleton accounts. Pairwise F1 evaluates links; ARI evaluates the final component partition. Both the unconstrained score and guarded grouping are reported because preventing component expansion can reduce false merges while creating additional false splits.
-
-## Executed results
-
-| Test metric | Exact-key baseline | Scored links | Size-guarded groups |
+| Test metric | Exact key | Scored links | Guarded groups |
 |---|---:|---:|---:|
-| Precision | 0.995 | 0.881 | 0.903 |
-| Recall | 0.657 | 0.873 | 0.794 |
-| F1 | 0.792 | 0.877 | 0.845 |
-| True positives | 207 | 275 | 250 |
-| False positives | 1 | 37 | 27 |
-| False negatives | 108 | 40 | 65 |
-| Cluster ARI | 0.791 | 0.876 | 0.844 |
+| True-positive edges | 207 | 262 | 257 |
+| False-positive edges | 0 | 33 | 27 |
+| False-negative edges | 108 | 53 | 58 |
+| Component false merges | 0 | 36 | 29 |
+| Component false splits | 108 | 52 | 57 |
+| B-cubed precision | 1.000 | 0.943 | 0.949 |
+| B-cubed recall | 0.819 | 0.912 | 0.907 |
 
-Additional checks:
+The guardrail deferred 11 edges across the full fixture and reduced the largest component from seven to six accounts. Deferred edges remain review candidates; they are not converted into negative evidence.
 
-| Check | Result |
-|---|---:|
-| Validation candidate recall | 100% |
-| Test candidate recall | 100% |
-| Selected validation threshold | 0.86 |
-| Component-size review cap | 5 |
-| Deferred edges, all splits | 78 |
-| Largest component, before → after | 7 → 5 |
-| Schema and separation checks | 9 passed |
-| Core artifact fingerprint | `33d05856bd72d6b9` |
+### Fixed-policy seed stability
 
-The scored resolver trades some precision for substantially higher recall. The guardrail then gives back part of that recall to limit transitive expansion. Whether either trade-off is acceptable depends on review capacity and the relative costs of false merges and false splits; neither the synthetic F1 optimum nor the size cap is a universal business setting.
+The frozen threshold and cap were also evaluated—without re-selection—on five additional generated fixtures of 60 buildings each (`1`, `7`, `42`, `99`, `123`). Results are stored in `reports/policy_stability.csv`.
 
-## Threshold and error analysis
+| Guarded metric across seeds | Mean | Std. dev. | Min | Max |
+|---|---:|---:|---:|---:|
+| Pair precision | 0.948 | 0.031 | 0.901 | 0.989 |
+| Pair recall | 0.799 | 0.088 | 0.676 | 0.935 |
+| Pair F1 | 0.866 | 0.061 | 0.772 | 0.961 |
+| Component-pair F1 | 0.866 | 0.060 | 0.779 | 0.961 |
+| B-cubed F1 | 0.938 | 0.026 | 0.896 | 0.976 |
 
-![Threshold selection](reports/figures/threshold_selection.png)
+The recall range is material. Multi-seed evaluation reduces dependence on one draw but does not replace external validation or uncertainty estimates from representative real data.
 
-Only validation data appears in this curve. Test metrics were calculated after `0.86` was selected.
+![Validation graph-policy selection](reports/figures/threshold_selection.png)
 
-![Recall by address noise](reports/figures/noise_recall.png)
+![Recall by generated address noise](reports/figures/noise_recall.png)
 
-Both methods recovered all clean and moderate positive pairs in the test fixture. Under heavy noise, exact-key recall fell to `0.000`, while scored resolution recovered `0.630`. The remaining gap shows that fuzzy evidence does not solve missing or incorrect unit information reliably.
+![Guarded review graph](reports/figures/review_graph.png)
 
-## Review artifact
+## Run the benchmark
 
-![Synthetic review graph](reports/figures/review_graph.png)
+Python 3.11 or 3.12 and [uv](https://docs.astral.sh/uv/) are required.
 
-Node color represents a predicted connected component and edge width represents relation score. The visualization intentionally makes no claim about the relationship type.
+```bash
+uv sync --locked --all-extras --dev
+make check
+make reproduce
+make wheel-smoke
+```
 
-`reports/review_groups.csv` provides group size, a descriptive signal label, dominant synthetic family-token share, minimum and mean accepted-link scores, and the mandatory review flag. `reports/component_guardrail.csv` preserves every high-scoring edge decision, pre-merge component sizes, proposed size, and whether the edge was accepted or deferred.
+`make wheel-smoke` builds a wheel and runs the complete smoke command in an isolated, non-editable environment.
+
+## Analyze an unlabeled CSV
+
+The CSV contract is documented in [`docs/input_contract.md`](docs/input_contract.md). Set an application-specific secret salt; do not put it in source control or shell history.
+
+```bash
+export RELATION_ID_SALT='replace-with-a-secret-value'
+uv run relation-detection analyze \
+  --input path/to/orders.csv \
+  --output-root path/to/review-output \
+  --snapshot-date 2026-08-24
+```
+
+The command uses the frozen `relation-policy-v2` threshold and cap. It writes only:
+
+- pseudonymized group assignments;
+- pseudonymized accepted/deferred edge audits;
+- aggregate review-group profiles;
+- hashed block audits;
+- policy, privacy, retention, and run metadata.
+
+It does not copy the input, normalized signatures, raw addresses, raw identifiers, or truth labels to the output directory.
 
 ## Repository structure
 
@@ -151,69 +161,38 @@ Node color represents a predicted connected component and edge width represents 
 customer-relation-detection/
 ├── configs/analysis.json
 ├── data/
-│   ├── README.md
-│   ├── synthetic_orders.csv
-│   └── synthetic_ground_truth.csv
-├── docs/interview_guide.md
+├── docs/
+│   ├── input_contract.md
+│   └── interview_guide.md
 ├── reports/
 │   ├── figures/
-│   ├── metrics.json
-│   ├── component_guardrail.csv
-│   ├── threshold_curve.csv
-│   ├── test_pair_predictions.csv
-│   ├── predicted_group_assignments.csv
-│   └── review_groups.csv
+│   ├── candidate_block_audit.csv
+│   ├── component_policy_curve.csv
+│   ├── policy_stability.csv
+│   ├── subgroup_errors.csv
+│   └── metrics.json
 ├── scripts/check_sensitive.py
 ├── src/customer_relation_detection/
 ├── tests/
+├── uv.lock
 └── .github/workflows/ci.yml
 ```
 
-## Reproduce the project
+## Quality and security checks
 
-Python 3.11 or 3.12 is required.
-
-```bash
-python -m venv .venv
-source .venv/bin/activate
-python -m pip install -e ".[dev]"
-make reproduce
-make check
-```
-
-Windows PowerShell activation:
-
-```powershell
-.venv\Scripts\Activate.ps1
-```
-
-`relation-detection smoke` runs the full pipeline in a temporary directory without changing checked-in artifacts.
-
-## Tests and quality checks
-
-The test suite covers deterministic generation, ground-truth isolation, building-level split integrity, Unicode and abbreviation normalization, candidate recall, pair-feature ordering, validation-only threshold selection, noise breakdowns, singleton-aware components, deterministic strongest-edge-first guardrails, required artifacts, and fingerprints.
-
-GitHub Actions runs Ruff, format checks, Pytest on Python 3.11 and 3.12, the sensitive-content scan, and the complete smoke pipeline without credentials, connectors, or external data.
+GitHub Actions uses the locked environment on Python 3.11 and 3.12. It runs Ruff lint and formatting checks, Pytest with a 90% coverage gate, a sensitive-content scan over tracked and non-ignored files, and an isolated wheel smoke test. The pipeline needs no network, credential, connector, or production data.
 
 ## Limitations
 
-- All locations and relations are synthetic; real address distributions and error processes will differ.
-- Candidate blocking is unusually strong in this fixture and reached 100% recall; production blocking requires separate monitoring.
-- Score weights are designed rules rather than coefficients fitted on representative labeled data.
-- Validation and test cover one synthetic generator and one seed.
-- The pairwise threshold does not explicitly optimize connected-component errors; the size cap is a policy guardrail rather than a learned graph objective.
-- Strongest-edge-first processing is deterministic, but a different governance cap or edge-ordering policy can change which links are deferred.
-- The score does not model temporal residence changes, delivery intermediaries, offices, or shared pickup points.
-- The synthetic family token is a weak proxy and must never be treated as proof of family relation.
+- All addresses, accounts, orders, and labels are generated; no real-world performance claim is made.
+- The main held-out benchmark uses one seed; a five-seed generated stress check is included, but it still uses the same generator. Representative external validation remains required.
+- Rule weights are designed, not fitted or calibrated on representative labeled observations.
+- The generated `noise_level` groups are error conditions, not protected demographic groups; real subgroup and fairness evaluation is still required.
+- The temporal signature chooses one recent address and does not model simultaneous legitimate locations, delivery intermediaries, offices, pickup points, or uncertain move dates.
+- Oversized blocks are deferred, so an operational review process must resolve them and monitor their rate.
+- A precision floor selected on validation data can fail on new data, as the held-out result illustrates.
+- HMAC pseudonymization is not anonymization. Linkable artifacts still need purpose limitation, restricted access, and deletion.
 - No fraud, abuse, eligibility, marketing uplift, or business-value claim is evaluated.
-
-## Potential next steps
-
-A governed extension would add time-aware address histories, probabilistic linkage, threshold and component-policy selection with explicit false-merge cost, calibrated review queues, protected-attribute testing, and monitoring for drift. Production use would also require strict purpose limitation, access control, retention policy, and human appeal.
-
-## Portfolio distinction
-
-This repository demonstrates entity resolution, candidate generation, validation splits, pair classification, and graph transitivity risk. The community-detection repository instead discovers affinity topology in a user-category network; the two projects answer different questions and use different evaluation frameworks.
 
 ## Author
 

@@ -4,11 +4,12 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "customer-relation-detection"
-version = "1.0.0"
+version = "1.1.0"
 description = "Evaluated shared-address entity resolution with fully synthetic observations."
 readme = "README.md"
 requires-python = ">=3.11"
-license = { file = "LICENSE" }
+license = "MIT"
+license-files = ["LICENSE"]
 authors = [{ name = "Parisa Mostafavi" }]
 dependencies = [
   "matplotlib>=3.9",
@@ -19,7 +20,12 @@ dependencies = [
 ]
 
 [project.optional-dependencies]
-dev = ["pytest>=8.3", "ruff>=0.9"]
+dev = [
+  "build>=1.2",
+  "pytest>=8.3",
+  "pytest-cov>=6.0",
+  "ruff>=0.9",
+]
 
 [project.scripts]
 relation-detection = "customer_relation_detection.cli:main"
@@ -27,9 +33,12 @@ relation-detection = "customer_relation_detection.cli:main"
 [tool.setuptools.packages.find]
 where = ["src"]
 
+[tool.setuptools.package-data]
+customer_relation_detection = ["resources/*.json"]
+
 [tool.pytest.ini_options]
 testpaths = ["tests"]
-addopts = "-q"
+addopts = "-q --cov=customer_relation_detection --cov-report=term-missing --cov-fail-under=90"
 
 [tool.ruff]
 line-length = 100

@@ -15,22 +15,29 @@ jobs:
       matrix:
         python-version: ["3.11", "3.12"]
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
+          persist-credentials: false
+      - name: Install uv and Python
+        uses: astral-sh/setup-uv@c771a70e6277c0a99b617c7a806ffedaca235ff9 # v9.0.0
+        with:
+          version: "0.12.5"
           python-version: ${{ matrix.python-version }}
-          cache: pip
-      - name: Install
-        run: python -m pip install -e ".[dev]"
+          enable-cache: true
+      - name: Install locked environment
+        run: uv sync --locked --all-extras --dev
       - name: Lint and format check
-        run: python -m ruff check . && python -m ruff format --check .
-      - name: Test
+        run: uv run ruff check . && uv run ruff format --check .
+      - name: Test with coverage gate
         env:
           MPLCONFIGDIR: /tmp/matplotlib
-        run: python -m pytest
+        run: uv run pytest
       - name: Sensitive-content check
-        run: python scripts/check_sensitive.py
-      - name: Pipeline smoke test
+        run: uv run python scripts/check_sensitive.py
+      - name: Packaged pipeline smoke test
+        if: matrix.python-version == '3.12'
         env:
           MPLCONFIGDIR: /tmp/matplotlib
-        run: python -m customer_relation_detection.cli smoke
+        run: |
+          uv build --wheel
+          uv run --isolated --no-project --with dist/*.whl relation-detection smoke

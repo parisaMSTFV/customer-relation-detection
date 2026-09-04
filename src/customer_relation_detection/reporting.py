@@ -73,7 +73,7 @@ def plot_threshold_curve(
     selected_threshold: float,
     output_path: Path,
 ) -> None:
-    """Plot validation-only threshold selection metrics."""
+    """Plot validation-only component policy metrics."""
     fig, axis = plt.subplots(figsize=(10, 5.5), constrained_layout=True)
     fig.patch.set_facecolor(COLORS["ivory"])
     for metric, color in (
@@ -90,8 +90,8 @@ def plot_threshold_curve(
     )
     axis.set_ylim(0, 1.05)
     axis.set_xlabel("Relation score threshold")
-    axis.set_ylabel("Validation score")
-    axis.set_title("Threshold selection on validation buildings", loc="left", weight="bold")
+    axis.set_ylabel("Component pair score")
+    axis.set_title("Graph-policy selection on validation buildings", loc="left", weight="bold")
     axis.grid(alpha=0.2)
     axis.spines[["top", "right"]].set_visible(False)
     axis.legend(frameon=False, loc="upper right")
@@ -137,8 +137,9 @@ def plot_review_graph(
     test_pairs: pd.DataFrame,
     assignments: pd.DataFrame,
     output_path: Path,
+    prediction_column: str = "guardrail_match",
 ) -> None:
-    """Plot one complex synthetic building as an analyst-review example."""
+    """Plot one complex synthetic building using operationally accepted links."""
     account_counts = test_pairs.groupby("building_id")[["account_a", "account_b"]].agg(
         lambda column: set(column)
     )
@@ -155,7 +156,7 @@ def plot_review_graph(
     accounts = sorted(account_counts.loc[building_id, "accounts"])
     graph = nx.Graph()
     graph.add_nodes_from(accounts)
-    for row in building_pairs[building_pairs["enhanced_match"] == 1].itertuples(index=False):
+    for row in building_pairs[building_pairs[prediction_column] == 1].itertuples(index=False):
         graph.add_edge(row.account_a, row.account_b, score=row.relation_score)
     assignment_map = assignments.set_index("account_id")["predicted_group_id"].to_dict()
     group_codes = {group: index for index, group in enumerate(sorted(set(assignment_map.values())))}
@@ -182,7 +183,7 @@ def plot_review_graph(
     axis.text(
         0,
         -0.03,
-        "Color = predicted component · edge width = relation score · no relationship type is asserted",
+        "Color = guarded component · edge width = accepted-link score · no relationship type is asserted",
         transform=axis.transAxes,
         color=COLORS["gray"],
     )

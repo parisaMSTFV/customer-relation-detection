@@ -1,4 +1,4 @@
-"""Fail CI when common credentials or private infrastructure appear in tracked text."""
+"""Fail when common credentials appear in tracked or non-ignored workspace text."""
 
 from __future__ import annotations
 
@@ -26,7 +26,11 @@ PATTERNS = {
 def candidate_files() -> list[Path]:
     try:
         output = subprocess.run(
-            ["git", "ls-files"], cwd=ROOT, check=True, capture_output=True, text=True
+            ["git", "ls-files", "--cached", "--others", "--exclude-standard"],
+            cwd=ROOT,
+            check=True,
+            capture_output=True,
+            text=True,
         ).stdout
         paths = [ROOT / line for line in output.splitlines()]
     except (FileNotFoundError, subprocess.CalledProcessError):

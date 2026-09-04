@@ -1,21 +1,28 @@
-.PHONY: install reproduce smoke test lint security check
+.PHONY: install reproduce smoke test lint format-check security wheel-smoke check
 
 install:
-	python -m pip install -e ".[dev]"
+	uv sync --locked --all-extras --dev
 
 reproduce:
-	MPLCONFIGDIR=.matplotlib python -m customer_relation_detection.cli reproduce
+	MPLCONFIGDIR=.matplotlib uv run relation-detection reproduce
 
 smoke:
-	MPLCONFIGDIR=.matplotlib python -m customer_relation_detection.cli smoke
+	MPLCONFIGDIR=.matplotlib uv run relation-detection smoke
 
 test:
-	MPLCONFIGDIR=.matplotlib python -m pytest
+	MPLCONFIGDIR=.matplotlib uv run pytest
 
 lint:
-	python -m ruff check .
+	uv run ruff check .
+
+format-check:
+	uv run ruff format --check .
 
 security:
-	python scripts/check_sensitive.py
+	uv run python scripts/check_sensitive.py
 
-check: lint test security
+wheel-smoke:
+	uv build --wheel
+	MPLCONFIGDIR=.matplotlib uv run --isolated --no-project --with dist/*.whl relation-detection smoke
+
+check: lint format-check test security
