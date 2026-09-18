@@ -155,6 +155,19 @@ The command uses the frozen `relation-policy-v2` threshold and cap. It writes on
 
 It does not copy the input, normalized signatures, raw addresses, raw identifiers, or truth labels to the output directory.
 
+## Audit human review feedback
+
+Reviewer decisions can be fed back into a separate aggregate quality audit without reintroducing raw identifiers or addresses. The feedback contract is documented in [`docs/review_feedback.md`](docs/review_feedback.md).
+
+```bash
+uv run relation-detection audit-review-feedback \
+  --guardrail path/to/review-output/reports/component_guardrail.csv \
+  --feedback path/to/review-feedback.csv \
+  --output-root path/to/review-audit
+```
+
+The audit reports review coverage, uncertainty, observed accepted-edge precision and false-merge rate, plus the observed match rate for deferred edges. These rates are conditional on the reviewed sample; they do not estimate recall or full component quality. The exported audit is aggregate JSON and contains no pair references.
+
 ## Repository structure
 
 ```text
@@ -163,7 +176,8 @@ customer-relation-detection/
 ├── data/
 ├── docs/
 │   ├── input_contract.md
-│   └── interview_guide.md
+│   ├── interview_guide.md
+│   └── review_feedback.md
 ├── reports/
 │   ├── figures/
 │   ├── candidate_block_audit.csv
