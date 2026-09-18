@@ -44,6 +44,8 @@ Raw account IDs are replaced with deterministic run-level references of the form
 
 No input copy, raw address, normalized address, raw account ID, pair-level negative evidence, or evaluation label is exported.
 
+Human review outcomes can be audited separately with `audit-review-feedback`; see [`review_feedback.md`](review_feedback.md). That path accepts only pseudonymous guardrail references and writes aggregate metrics without re-exporting pair references.
+
 ## Operational controls
 
 - Restrict input and output access to authorized staff with an approved review purpose.

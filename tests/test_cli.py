@@ -76,3 +76,41 @@ def test_analyze_command_fails_closed_without_salt(monkeypatch, tmp_path) -> Non
     )
     with pytest.raises(SystemExit, match="Set RELATION_ID_SALT"):
         cli.main()
+
+
+def test_review_feedback_command_reads_both_inputs(monkeypatch, tmp_path, capsys) -> None:
+    loaded = []
+
+    def fake_read_csv(path):
+        loaded.append(str(path))
+        return pd.DataFrame({"source": [str(path)]})
+
+    monkeypatch.setattr(cli.pd, "read_csv", fake_read_csv)
+    monkeypatch.setattr(
+        cli,
+        "run_review_feedback_audit",
+        lambda guardrail, feedback, output: {
+            "guardrail_rows": len(guardrail),
+            "feedback_rows": len(feedback),
+            "output": str(output),
+        },
+    )
+    monkeypatch.setattr(
+        sys,
+        "argv",
+        [
+            "relation-detection",
+            "audit-review-feedback",
+            "--guardrail",
+            "guardrail.csv",
+            "--feedback",
+            "feedback.csv",
+            "--output-root",
+            str(tmp_path),
+        ],
+    )
+    cli.main()
+    assert loaded == ["guardrail.csv", "feedback.csv"]
+    result = json.loads(capsys.readouterr().out)
+    assert result["guardrail_rows"] == 1
+    assert result["feedback_rows"] == 1
