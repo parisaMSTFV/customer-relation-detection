@@ -12,6 +12,7 @@ import pandas as pd
 
 from customer_relation_detection.config import load_config
 from customer_relation_detection.pipeline import run_analysis, run_pipeline
+from customer_relation_detection.review_feedback import run_review_feedback_audit
 
 
 def _parser() -> argparse.ArgumentParser:
@@ -34,6 +35,14 @@ def _parser() -> argparse.ArgumentParser:
         default="RELATION_ID_SALT",
         help="environment variable containing the HMAC salt (default: RELATION_ID_SALT)",
     )
+
+    audit = subparsers.add_parser(
+        "audit-review-feedback",
+        help="audit pseudonymized reviewer outcomes against a guardrail export",
+    )
+    audit.add_argument("--guardrail", type=Path, required=True)
+    audit.add_argument("--feedback", type=Path, required=True)
+    audit.add_argument("--output-root", type=Path, required=True)
     return parser
 
 
@@ -44,6 +53,12 @@ def main() -> None:
             metrics = run_pipeline(Path(directory))
     elif args.command == "reproduce":
         metrics = run_pipeline(args.output_root, config=load_config(args.config))
+    elif args.command == "audit-review-feedback":
+        metrics = run_review_feedback_audit(
+            pd.read_csv(args.guardrail),
+            pd.read_csv(args.feedback),
+            args.output_root,
+        )
     else:
         identifier_salt = os.environ.get(args.identifier_salt_env)
         if not identifier_salt:
