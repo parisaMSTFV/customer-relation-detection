@@ -42,7 +42,11 @@ def _canonicalize_pairs(
         result[column] = result[column].astype("string").str.strip()
         if result[column].isna().any() or result[column].eq("").any():
             raise ReviewFeedbackError(f"{column} must not be null or blank")
-        if not result[column].map(lambda value: bool(REFERENCE_PATTERN.fullmatch(str(value)))).all():
+        if (
+            not result[column]
+            .map(lambda value: bool(REFERENCE_PATTERN.fullmatch(str(value))))
+            .all()
+        ):
             raise ReviewFeedbackError(
                 f"{column} must contain pseudonymous references in REF-<20 hex> format"
             )
@@ -90,9 +94,10 @@ def validate_review_inputs(
     safe_guardrail["guardrail_decision"] = (
         safe_guardrail["guardrail_decision"].astype("string").str.strip()
     )
-    if safe_guardrail["guardrail_decision"].isna().any() or safe_guardrail[
-        "guardrail_decision"
-    ].eq("").any():
+    if (
+        safe_guardrail["guardrail_decision"].isna().any()
+        or safe_guardrail["guardrail_decision"].eq("").any()
+    ):
         raise ReviewFeedbackError("guardrail_decision must not be null or blank")
     unsupported_decisions = set(safe_guardrail["guardrail_decision"]).difference(
         SUPPORTED_DECISIONS
@@ -171,12 +176,12 @@ def review_feedback_metrics(
 
     digest = hashlib.sha256()
     for frame in (
-        safe_guardrail[
-            ["pair_left", "pair_right", "guardrail_decision"]
-        ].sort_values(["pair_left", "pair_right"], kind="mergesort"),
-        safe_feedback[
-            ["pair_left", "pair_right", "review_outcome"]
-        ].sort_values(["pair_left", "pair_right"], kind="mergesort"),
+        safe_guardrail[["pair_left", "pair_right", "guardrail_decision"]].sort_values(
+            ["pair_left", "pair_right"], kind="mergesort"
+        ),
+        safe_feedback[["pair_left", "pair_right", "review_outcome"]].sort_values(
+            ["pair_left", "pair_right"], kind="mergesort"
+        ),
     ):
         digest.update(frame.to_csv(index=False).encode("utf-8"))
 
@@ -185,9 +190,7 @@ def review_feedback_metrics(
         "accepted_edges": {
             **accepted_summary,
             "observed_precision": accepted_summary["match_rate_among_decisive"],
-            "observed_false_merge_rate": accepted_summary[
-                "non_match_rate_among_decisive"
-            ],
+            "observed_false_merge_rate": accepted_summary["non_match_rate_among_decisive"],
         },
         "deferred_edges": {
             **deferred_summary,
